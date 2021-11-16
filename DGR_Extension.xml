@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceExtension
+	[
+	<!ENTITY PST_unidDeviceGearRebalance			"0xD314FFFF">
+]>
+<TranscendenceExtension
+	unid="&PST_unidDeviceGearRebalance;"
+	name="Device and Gear Rebalance"
+	apiVersion="53"
+	>
+
+	<!-- Modules -->
+	
+	<Module filename="DGR_weapons.xml"/>
+	<Module filename="DGR_shields.xml"/>
+	<Module filename="DGR_armors.xml"/>
+	<Module filename="DGR_reactors.xml"/>
+	<Module filename="DGR_devices.xml"/>
+	<Module filename="DGR_items.xml"/>
+	<Module filename="DGR_stations.xml"/>
+	<Module filename="DGR_ships.xml"/>
+	<Module filename="DGR_mechanics_shield_overcharge.xml"/>
+	<Module filename="DGR_mechanics_vertical_miss.xml"/>
+	
+</TranscendenceExtension>

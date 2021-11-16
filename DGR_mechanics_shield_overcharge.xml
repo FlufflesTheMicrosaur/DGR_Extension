@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+
+	<Globals>
+		(block Nil
+
+            ;;; PUBLIC LAMBDAS
+
+            ;;; This lambda is used to apply the shield overcharge effect
+            ;;;     this - the target object
+            ;;;     activeDurtion - how long the overlay will remain in effect once triggered by receiving damage
+            (setq DGR_applyShieldOvercharge (lambda (this activeDuration)
+                (if (eq (objGetData this 'DGR_shieldOverchargeID) Nil)
+                    ;;; only add it if we dont have it already
+                    (block (theOverlay))
+                        (setq theOverlay (objAddOverlay this &DGR_ovShieldOvercharge;))
+                        (objSetData this 'DGR_shieldOverchargeID theOverlay)
+                        (objSetOverlayData this theOverlay 'DGR_activeDuration activeDuration)
+                    )
+                )
+            ))
+
+            ;;; This lambda is used to prematurely remove the shield overcharge effect
+            ;;; (ex, if the shield goes down due to being disabled)
+            ;;;     this - the target object
+            (setq DGR_removeShieldOvercharge (lambda (this)
+                (block (theOverlay)
+                    (setq theOverlay (objGetData this 'DGR_shieldOverchargeID))
+                    (if (neq theOverlay Nil)
+                        ;;; only remove if there is something to remove
+                        (block (theManager)
+                            (setq theManager (objGetOverlayData this theOverlay 'DGR_eventManager))
+                            (if (neq theManager Nil)
+                                (objDestroy theManager)
+                            )
+                            (objRemoveOverlay this theOverlay)
+                            (objSetData this 'DGR_shieldOverchargeID Nil)
+                        )
+                    )
+                )
+            ))
+
+            ;;; INTERNAL LAMBDAS
+
+            ;;; This lambda handles the uninstall/disable code
+            (setq _DGR_shieldOffEvent (lambda (this)
+                (block (theOverlay theManager)
+                    (setq theOverlay (objGetData this 'DGR_shieldOverchargeID))
+                    (setq theManager (objGetOverlayData this theOverlay 'DGR_eventManager))
+                    (if (neq theManager Nil)
+                        (objDestroy theManager)
+                    )
+                    (DGR_removeShieldOvercharge this)
+                )
+            ))
+        )
+    </Globals>
+
+    <StationType UNID="&DGR_vstShieldOverchargeEventManager;"
+            name=           "(DGR Shield overcharge event manager virtual station)"
+            virtual=        "true"
+            >
+        <Events>
+            <RemoveShieldOverchargeOverlay>
+                (DGR_removeShieldOvercharge (objGetData gSource 'DGR_overchargeOrigin))
+            </RemoveShieldOverchargeOverlay>
+            <ApplyShieldOverchargeOverlay>
+                (DGR_applyShieldOvercharge (objGetData gSource 'DGR_overchargeOrigin) (objGetData gSource 'DGR_activeDuration))
+            </ApplyShieldOverchargeOverlay>
+        </Events>
+    </StationType>
+
+    <ItemType UNID="&DGR_bitShieldOverchargeScripts;"
+            name=           "(DGR Shield overcharge base shield)"
+            virtual=        "true"
+			attributes=		"baseClass"
+            >
+        <Events>
+            <OnShieldDamage>
+            </OnShieldDamage>
+            <OnUpdate>
+            </OnUpdate>
+            <OnInstall>
+            </OnInstall>
+            <OnUninstall>
+                (_DGR_shieldOffEvent gSource)
+            </OnUninstall>
+            <OnEnable>
+            </OnEnable>
+            <OnDisable>
+                (_DGR_shieldOffEvent gSource)
+            </OnDisable>
+        </Events>
+    </ItemType>
+
+	<OverlayType UNID="&DGR_ovShieldOvercharge;"
+			name=			"Defend"
+			attributes=     "energyField, temporary"
+				 
+			absorbAdj=		"100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100"
+
+			showInHUD=		"true"
+			>
+        <Events>
+            <OnDamage>
+                (if (eq (objGetOverlayData gSource aOverlayID 'DGR_activated) Nil)
+                    ;;; if we have not been activated before, activate
+                    (block (theManager)
+                        (objSetOverlayData gSource aOverlayID 'DGR_activated 1)
+                        (setq theManager (sysCreateStation &DGR_vstShieldOverchargeEventManager; (sysVectorPixelOffset Nil 0 0)))
+                        (objSetData theManager 'DGR_overchargeOrigin gSource)
+                        (objSetOverlayData gSource aOverlayID 'DGR_eventManager theManager)
+                        (sysAddObjTimerEvent (objGetOverlayData gSource aOverlayID 'DGR_activeDuration) theManager 'RemoveShieldOverchargeOverlay)
+                    )
+                )
+            </OnDamage>
+        </Events>
+	</OverlayType>
+	
+	
+</TranscendenceModule>
