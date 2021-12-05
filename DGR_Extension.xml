@@ -12,12 +12,17 @@
 
 	<!-- Modules -->
 	
-	<Module filename="DGR_weapons.xml"/>
-	<Module filename="DGR_shields.xml"/>
-	<Module filename="DGR_armors.xml"/>
-	<Module filename="DGR_reactors.xml"/>
-	<Module filename="DGR_devices.xml"/>
-	<Module filename="DGR_items.xml"/>
+	<Module filename="DGR_Weapons.xml"/>
+	<Module filename="DGR_Shields.xml"/>
+	<Module filename="DGR_Armors.xml"/>
+	<Module filename="DGR_Reactors.xml"/>
+	<Module filename="DGR_Devices.xml"/>
+	<Module filename="DGR_Items.xml"/>
+	<Module filename="DGR_AutoDefenses.xml"/>
+	<Module filename="DGR_CargoHolds.xml"/>
+	<Module filename="DGR_CyberDecks.xml"/>
+	<Module filename="DGR_Repairers.xml"/>
+	<Module filename="DGR_SolarDevices.xml"/>
 	<Module filename="DGR_stations.xml"/>
 	<Module filename="DGR_ships.xml"/>
 	<Module filename="DGR_mechanics_shield_overcharge.xml"/>

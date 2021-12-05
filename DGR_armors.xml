@@ -1,7 +1,2637 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TranscendenceModule>
-	
-	
-	
+<!-- Abbasid.xml -->
+<!-- Achievements.xml -->
+<!-- AgriculturalMission01.xml -->
+<!-- Analyzers.xml -->
+<!-- Anarchists.xml -->
+<!-- Antarctica.xml -->
+<!-- Antarctica01.xml -->
+<!-- Antarctica02.xml -->
+<!-- AntarcticaD01.xml -->
+<!-- AresItems.xml -->
+<ItemType UNID="&itLightTharsisPlate;"
+			name=				"[segment(s) of ]light Tharsis plate"
+			level=				"6"
+			value=				"750"
+			mass=				"1500"
+			attributes=			"Ares; MinorItem; NotForSale;"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"The standard armor used by Ares gunships is light, yet resistant to particle beam damage; it is, however, vulnerable to blast damage."
+
+			sortName=			"Tharsis plate, light, segment of"
+			>
+
+		<Image imageID="&rsItems6;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"60"
+				hpBonus=	"particle:+50; blast:-25"
+				/>
+	</ItemType>
+<ItemType UNID="&itTharsisPlate;"
+			name=				"[segment(s) of ]Tharsis plate"
+			level=				"8"
+			value=				"6000"
+			mass=				"3500"
+			attributes=			"Ares; Military; MinorItem; NotForSale;"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"Tharsis plate is used by the Tundra heavy gunship; it is resistant to thermonuclear damage."
+
+			sortName=			"Tharsis plate, segment of"
+			>
+
+		<Image imageID="&rsItems6;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"200"
+				hpBonus=	"  +0,  +0, +50, +25, -25, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyTharsisPlate;"
+			name=				"[segment(s) of ]massive Tharsis plate"
+			level=				"9"
+			value=				"18000"
+			mass=				"10000"
+			attributes=			"Ares; Military; MinorItem; NotForSale;"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			description=		"This is a double layer of Tharsis plate."
+
+			sortName=			"Tharsis plate, heavy, segment of"
+			>
+
+		<Image imageID="&rsItems6;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"400"
+				hpBonus=	"  +0,  +0, +50, +25, -25, +25"
+				repairTech=	"8"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMassiveTharsisPlate;"
+			name=				"[segment(s) of ]dreadnought Tharsis plate"
+			level=				"10"
+			value=				"50000"
+			mass=				"25000"
+			attributes=			"Ares; Military; MinorItem; NotForSale;"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+
+			description=		"The capital ships of the Ares Orthodoxy use this armor."
+
+			sortName=			"Tharsis plate, massive, segment of"
+			>
+
+		<Image imageID="&rsItems6;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"600"
+				hpBonus=	"  +0,  +0, +50, +25, -25, +25"
+				repairTech=	"8"
+				/>
+
+	</ItemType>
+<!-- AresOrthodoxy.xml -->
+<!-- AresShips.xml -->
+<!-- ArmorEnhancementItems.xml -->
+<!-- ArmorRepairItems.xml -->
+<!-- AsteroidFields.xml -->
+<!-- Barricades.xml -->
+<ItemType UNID="&itReinforcedTitanium1;"
+			name=				"titanium barricade"
+			attributes=			"barricade, humanTech, minorItem, nami, specialty"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"200"
+			mass=				"5000"
+			  
+			description=		"These reinforced titanium plates are used in station construction both as bulkheads and as exterior armor."
+			>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="480" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"100"
+
+				repairTech=	"1"
+				damageAdjLevel="2"
+				/>
+
+		<Invoke uninstalledOnly="true">
+			(intBarricadeUse &stBarricade1;)
+		</Invoke>
+
+	</ItemType>
+<ItemType UNID="&itReinforcedTitanium2;"
+			name=				"double titanium barricade"
+			attributes=			"barricade, humanTech, minorItem, nami, specialty"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"500"
+			mass=				"10000"
+			  
+			description=		"These reinforced titanium plates are used in station construction both as bulkheads and as exterior armor."
+			>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="480" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"200"
+
+				repairTech=	"1"
+				damageAdjLevel="2"
+				/>
+
+		<Invoke uninstalledOnly="true">
+			(intBarricadeUse &stBarricade2;)
+		</Invoke>
+
+	</ItemType>
+<ItemType UNID="&itReinforcedTitanium3;"
+			name=				"quad titanium barricade"
+			attributes=			"barricade, humanTech, minorItem, nami, specialty"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"1000"
+			mass=				"20000"
+			  
+			description=		"These reinforced titanium plates are used in station construction both as bulkheads and as exterior armor."
+			>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="480" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"400"
+
+				repairTech=	"1"
+				damageAdjLevel="2"
+				/>
+
+		<Invoke uninstalledOnly="true">
+			(intBarricadeUse &stBarricade3;)
+		</Invoke>
+
+	</ItemType>
+<!-- BattleArena.xml -->
+<!-- BattleArenaChallenger.xml -->
+<!-- BattleArenaFight.xml -->
+<!-- BattleArenaGladiators.xml -->
+<!-- BattleArenaKidnapped.xml -->
+<!-- BattleArenaMelee.xml -->
+<!-- Benedict.xml -->
+<!-- Benedict00.xml -->
+<!-- Benedict01.xml -->
+<!-- Benedict02.xml -->
+<!-- Benedict04.xml -->
+<!-- Benedict05.xml -->
+<!-- Benedict05A.xml -->
+<!-- Benedict06.xml -->
+<!-- Benedict07.xml -->
+<!-- Benedict08.xml -->
+<!-- BenedictStoryArc.xml -->
+<!-- BlackMarket.xml -->
+<!-- BlackMarketMember.xml -->
+<!-- BlackMarketMission00.xml -->
+<!-- BlackMarketMission01.xml -->
+<!-- BlackMarketMission02.xml -->
+<!-- BlackMarketMissionSmuggle01.xml -->
+<!-- BlackMarketPlayerShips.xml -->
+<!-- CentauriWarlords.xml -->
+<!-- CharonFortress.xml -->
+<!-- CharonPirates.xml -->
+<!-- Code.xml -->
+<!-- Commonwealth.xml -->
+<!-- CommonwealthAgricultural.xml -->
+<!-- CommonwealthCenturions.xml -->
+<!-- CommonwealthCharacters.xml -->
+<!-- CommonwealthFleet.xml -->
+<!-- CommonwealthFleetMission01.xml -->
+<!-- CommonwealthFleetMission02.xml -->
+<!-- CommonwealthFleetMission03.xml -->
+<!-- CommonwealthFleetMission04.xml -->
+<!-- CommonwealthFleetMission05.xml -->
+<!-- CommonwealthFleetMission06.xml -->
+<!-- CommonwealthFleetMission07.xml -->
+<!-- CommonwealthFleetMission08.xml -->
+<!-- CommonwealthFleetMission09.xml -->
+<!-- CommonwealthFleetMission10.xml -->
+<!-- CommonwealthFleetMission11.xml -->
+<!-- CommonwealthFleetMissionLL01.xml -->
+<!-- CommonwealthFleetMissionLL02.xml -->
+<!-- CommonwealthFleetMissionLL03.xml -->
+<!-- CommonwealthFleetMissionLL04.xml -->
+<!-- CommonwealthFleetMissionPJ01.xml -->
+<!-- CommonwealthMetropolis.xml -->
+<!-- CommonwealthMilitia.xml -->
+<!-- CommonwealthMilitiaMission01.xml -->
+<!-- CommonwealthMilitiaMission02.xml -->
+<!-- CommonwealthMilitiaMission03.xml -->
+<!-- CommonwealthMilitiaMission04.xml -->
+<!-- CommonwealthMilitiaMissionSK01.xml -->
+<!-- CommonwealthMining.xml -->
+<!-- CommonwealthMiningMission01.xml -->
+<!-- CommonwealthMiningMission02.xml -->
+<!-- CommonwealthMiningMission03.xml -->
+<!-- CommonwealthMiningMission04.xml -->
+<!-- CommonwealthMiningMission05.xml -->
+<!-- CommonwealthMission01.xml -->
+<!-- CommonwealthMissionRevenge01.xml -->
+<!-- CommonwealthRonins.xml -->
+<!-- CommonwealthShips.xml -->
+<!-- CommonwealthStarCarrier.xml -->
+<!-- CommonwealthVolunteerMission01.xml -->
+<!-- CommonwealthVolunteerMission02.xml -->
+<!-- CommonwealthVolunteerMission03.xml -->
+<!-- Compatibility10.xml -->
+<ItemType UNID="&itNeutroniumPlate;"
+			obsoleteVersion=			"41"
+			name=				"[segment(s) of ]neutronium armor"
+			level=				"11"
+			value=				"100000"
+			mass=				"15000"
+			attributes=			"MinorItem; Specialty; Military"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"Forged in the heart of a neutron star, neutronium is massive, nearly indestructible, and impossible to repair."
+
+			sortName=			"neutronium armor, segment of"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"1000"
+
+				repairTech=	"21"
+
+				disintegrationImmune="true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itDarkMatterPlate;"
+			obsoleteVersion=			"41"
+			name=				"[segment(s) of ]dark matter armor"
+			level=				"15"
+			value=				"2000000"
+			mass=				"5000"
+			attributes=			"Alien; MinorItem"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"Very little is known about this exotic form of dark-matter. It is impervious to most low-level forms of energy and yet light enough to protect a small ship."
+
+			sortName=			"dark matter armor, segment of"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"900"
+				radiationImmune="true"
+				disintegrationImmune="true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHierosteelPlate;"
+			obsoleteVersion=			"41"
+			name=				"[segment(s) of ]hierosteel armor"
+			level=				"21"
+			value=				"20000000"
+			mass=				"5000"
+			attributes=			"Alien; MinorItem"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"Forged by the ancient Hierodules, this miraculous material can withstand all but the most brutal forms of energy."
+
+			sortName=			"hierosteel armor, segment of"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"4000"
+				radiationImmune="true"
+				disintegrationImmune="true"
+				/>
+
+	</ItemType>
+<!-- CompatibilityLibrary.xml -->
+<!-- ContainerHabitat.xml -->
+<!-- CoreCode.xml -->
+<!-- CoreDiagnostics.xml -->
+<!-- CoreEffects.xml -->
+<!-- CoreEngineText.xml -->
+<!-- CoreExplosions.xml -->
+<!-- CoreFireEffects.xml -->
+<!-- CoreHitEffects.xml -->
+<!-- CoreItems.xml -->
+<!-- CorePlaceholders.xml -->
+<ItemType UNID="&itHeavyPlasteelPlate;"
+			name=				"[segment(s) of ]heavy plasteel armor"
+			level=				"5"
+			value=				"800"
+			mass=				"3000"
+			attributes=			"notStandard"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+
+			description=		"This is a stronger plate of the popular plasteel armor."
+
+			sortName=			"plasteel armor.10"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"120"
+				/>
+
+	</ItemType>
+<!-- CoreProjectileEffects.xml -->
+<!-- CoreTypesLibrary.xml -->
+<!-- CorporateAutonDealer.xml -->
+<!-- CorporateHierarchy.xml -->
+<!-- CorporateInsurance.xml -->
+<!-- CorporateTradingPost.xml -->
+<!-- Cryovolcanic.xml -->
+<!-- CSCTerra.xml -->
+<!-- Dall01.xml -->
+<!-- Dantalion.xml -->
+<!-- DeathDrugsCartel.xml -->
+<!-- Debris.xml -->
+<!-- Domina.xml -->
+<!-- DwargRaiders.xml -->
+<ItemType UNID="&itDwargChitonArmor;"
+			name=				"[segment(s) of ]Dwarg chiton armor"
+			level=				"3"
+			value=				"100"
+			mass=				"1000"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			attributes=			"Dwarg; MinorItem; NotForSale;"
+
+			description=		"Dwarg raiders use a tough polyceramic armor that resists particle beams."
+
+			sortName=			"Dwarg.2.30"
+			>
+
+		<Image imageID="&rsItems3;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"30"
+				hpBonus=	"  +0,  +0, +50,  +0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itDwargCatoptricArmor;"
+			name=				"[segment(s) of ]Dwarg catoptric armor"
+			level=				"5"
+			value=				"600"
+			mass=				"2500"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			attributes=			"Dwarg; MinorItem; NotForSale; NotStandard"
+
+			description=		"Dwarg engineers developed this particle-reflecting armor to defend themselves against Sung slavers."
+
+			sortName=			"Dwarg.2.20"
+			>
+
+		<Image imageID="&rsItems3;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"75"
+				reflect=	"particle"
+
+				repairCostAdj=	"300"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itDwargHolochroalArmor;"
+			name=				"[segment(s) of ]Dwarg holochroal armor"
+			level=				"7"
+			value=				"7000"
+			mass=				"12000"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			attributes=			"Dwarg; Military; MinorItem; NotForSale; NotStandard"
+
+			description=		"This heavy armor is used by Dwarg behemoths. It reflects particle and ion damage."
+
+			sortName=			"Dwarg.2.10"
+			>
+
+		<Image imageID="&rsItems3;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"200"
+				reflect=	"particle; ion"
+
+				repairCostAdj=	"300"
+				/>
+
+	</ItemType>
+<!-- Elysium.xml -->
+<!-- EnricoGaul.xml -->
+<!-- Environments.xml -->
+<!-- Eridani.xml -->
+<!-- EridaniStations.xml -->
+<!-- EtaCeti.xml -->
+<!-- FerianMission01.xml -->
+<!-- Ferians.xml -->
+<!-- Fiona.xml -->
+<!-- FirstContactMonument.xml -->
+<!-- Gaians.xml -->
+<!-- GalaxyCompatibility.xml -->
+<!-- GalaxyEffects.xml -->
+<!-- GalaxyLibrary.xml -->
+<!-- GroupIAsteroids.xml -->
+<!-- Groups.xml -->
+<!-- HaloGems.xml -->
+<!-- HarperThompson.xml -->
+<!-- Heliotropes.xml -->
+<!-- Heretic.xml -->
+<!-- Heretic00.xml -->
+<!-- Heretic01.xml -->
+<!-- Heretic02.xml -->
+<!-- Heretic03.xml -->
+<!-- Heretic04.xml -->
+<!-- Heretic05.xml -->
+<!-- Heretic06.xml -->
+<!-- Heretic07.xml -->
+<!-- Heretic08.xml -->
+<!-- Himal.xml -->
+<!-- HSCompatibility.xml -->
+<!-- Huaramarca.xml -->
+<!-- HuaramarcaMission01.xml -->
+<!-- HuaramarcaMission02.xml -->
+<!-- HuaramarcaMission03.xml -->
+<!-- HuaramarcaMission04.xml -->
+<!-- HuaramarcaMission05.xml -->
+<!-- HuaramarcaMission06.xml -->
+<!-- HuaramarcaMission07.xml -->
+<!-- Huari.xml -->
+<!-- HuariMission01.xml -->
+<!-- HuariMission02.xml -->
+<!-- HuariMission03.xml -->
+<!-- HUD.xml -->
+<!-- HugoSandoval.xml -->
+<!-- HumanSpaceMap.xml -->
+<!-- HumanSpaceVol01.xml -->
+<!-- HumanTech.xml -->
+<!-- Ice.xml -->
+<!-- Iocrym.xml -->
+<ItemType UNID="&itIocrymPlate;"
+			name=				"[segment(s) of ]massive Iocrym armor"
+			level=				"12"
+			value=				"100000"
+			mass=				"12000"
+			attributes=			"Alien; Iocrym; MinorItem"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"This armor is used by the enormous command ships of the Iocrym fleet."
+
+			sortName=			"Iocrym armor, heavy, segment of"
+			>
+
+		<Image imageID="&rsItems10;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"800"
+
+				blindingDamageAdj="0"
+				deviceDamageAdj="0"
+				EMPDamageAdj=	"0"
+				radiationImmune="true"
+				disintegrationImmune="true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightIocrymPlate;"
+			name=				"[segment(s) of ]light Iocrym armor"
+			level=				"11"
+			value=				"50000"
+			mass=				"2000"
+			attributes=			"Alien; Iocrym; MinorItem"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			description=		"The carbon aerogel armor of Iocrym ships is beyond human technology."
+
+			sortName=			"Iocrym armor, light, segment of"
+			>
+
+		<Image imageID="&rsItems10;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=		"325"
+
+				blindingDamageAdj="0"
+				deviceDamageAdj="0"
+				EMPDamageAdj=	"0"
+				radiationImmune="true"
+				disintegrationImmune="true"
+				/>
+
+	</ItemType>
+<!-- Jenna.xml -->
+<!-- JiangsStar.xml -->
+<!-- KateMorgental.xml -->
+<!-- KobolWarlords.xml -->
+<!-- KorolovFreighters.xml -->
+<!-- KorolovShipping.xml -->
+<!-- Kronosaurus.xml -->
+<!-- KronosaurusMission01.xml -->
+<!-- KSMission01.xml -->
+<!-- KSMission02.xml -->
+<!-- KSMission03.xml -->
+<!-- KSMissionC01.xml -->
+<!-- KSMissionC02.xml -->
+<!-- LiaPereira.xml -->
+<!-- Luminous.xml -->
+<ItemType UNID="&itLuminousArmature;"
+			name=				"[segment(s) of ]Luminous armature"
+			level=				"5"
+			value=				"900"
+			mass=				"3500"
+			attributes=			"Luminous; MinorItem; NotForSale; NotStandard"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			description=		"The Luminous's drones are protected with this armor. It is a conductive exotic alloy that resists ion and thermo damage."
+
+			sortName=			"Luminous armature, segment of"
+			>
+
+		<Image imageID="&rsItems5;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"100"
+				hpBonus=	"  +0,  +0,  +0,  +0,+100,+100"
+
+				repairTech=	"6"
+				repairCostAdj=	"200"
+				installCostAdj=	"250"
+				/>
+
+	</ItemType>
+<!-- Makayev.xml -->
+<!-- Marauders.xml -->
+<!-- Metallic.xml -->
+<!-- Mining.xml -->
+<!-- MiningPods.xml -->
+<!-- MiscItems.xml -->
+<!-- MRAD.xml -->
+<!-- MuhammadCondi.xml -->
+<!-- Neurohack.xml -->
+<!-- NewVictoria.xml -->
+<!-- NPCPilgrims.xml -->
+<!-- Ore.xml -->
+<!-- OreStone.xml -->
+<!-- OutlawMiners.xml -->
+<!-- Outlaws.xml -->
+<!-- Ovoids.xml -->
+<!-- OvoidsCompatibility.xml -->
+<!-- Part1Compatibility.xml -->
+<!-- Penitents.xml -->
+<!-- Pilgrim.xml -->
+<!-- PlayerShips.xml -->
+<!-- PointJuno.xml -->
+<!-- Primordial.xml -->
+<!-- Psych00.xml -->
+<!-- Psych01.xml -->
+<!-- Pteravores.xml -->
+<!-- QuantumCPU.xml -->
+<!-- RaisuMission01.xml -->
+<!-- RaisuMission02.xml -->
+<!-- RaisuMission03.xml -->
+<!-- RaisuStation.xml -->
+<!-- Rama.xml -->
+<!-- RanxEmpire.xml -->
+<ItemType UNID="&itDepletedUraniumArmor;"
+			name=				"[segment(s) of ]depleted uranium armor"
+			level=				"4"
+			value=				"500"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			mass=				"5000"
+			attributes=			"minorItem, notForSale, ranx"
+
+			description=		"Though dense and extremely strong, depleted uranium is difficult to repair."
+			>
+
+		<Image imageID="&rsItems4;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"100"
+				hpBonus=	"  +0,  +0, +25, +25, +25, +25"
+
+				repairTech=	"6"
+				installCostAdj="150"
+				/>
+	</ItemType>
+<!-- Rasiermesser.xml -->
+<ItemType UNID="&itDvalinArmor;"
+			name=				"[segment(s) of ]Dvalin armor"
+			level=				"9"
+			value=				"15000"
+			frequency=			"notrandom"
+			mass=				"3500"
+			attributes=			"military, minorItem, rasiermesser, notStandard"
+
+			description=		"Dvalin's nano-sintering process can create armor that is stronger than hexphase."
+
+			sortName=			"Dvalin armor"
+			>
+
+		<Image imageID="&rsItems7;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"320"
+				hpBonus=	"  +0,  +0,+100, +0, +100,  +0"
+
+				repairCostAdj=	"150"
+				/>
+
+	</ItemType>
+<!-- RasiermesserMission01.xml -->
+<!-- RejuvTank.xml -->
+<!-- ResidentialsMission01.xml -->
+<!-- ResidentialsMission02.xml -->
+<!-- ResidentialsMission03.xml -->
+<!-- Ringers.xml -->
+<!-- Rocky.xml -->
+<!-- RogueFleet.xml -->
+<!-- RPGAnalyzers.xml -->
+<!-- RPGAutons.xml -->
+<!-- RPGAuxDevices.xml -->
+<!-- RPGBehaviors.xml -->
+<!-- RPGCharacterClasses.xml -->
+<!-- RPGCharacters.xml -->
+<!-- RPGCode.xml -->
+<!-- RPGCommoditiesExchange.xml -->
+<!-- RPGCommonText.xml -->
+<!-- RPGCompatibility.xml -->
+<!-- RPGComponents.xml -->
+<!-- RPGCrime.xml -->
+<!-- RPGDeviceDockScreens.xml -->
+<!-- RPGDialog.xml -->
+<!-- RPGDockManagement.xml -->
+<!-- RPGDockScreens.xml -->
+<!-- RPGDockServices.xml -->
+<!-- RPGLibrary.xml -->
+<!-- RPGMembership.xml -->
+<!-- RPGMining.xml -->
+<!-- RPGMissions.xml -->
+<!-- RPGMissionTemplate01.xml -->
+<!-- RPGMissionTemplate02.xml -->
+<!-- RPGMissionTemplate03.xml -->
+<!-- RPGMissionTemplate04.xml -->
+<!-- RPGMissionTemplate05.xml -->
+<!-- RPGMissionTemplate06.xml -->
+<!-- RPGMissionTemplate07.xml -->
+<!-- RPGPlayer.xml -->
+<!-- RPGRumors.xml -->
+<!-- RPGShipBroker.xml -->
+<!-- RPGShipScreens.xml -->
+<!-- RPGSlaves.xml -->
+<!-- RPGSquadronUI.xml -->
+<!-- RPGTradingComputer.xml -->
+<!-- RPGTypes.xml -->
+<!-- RPGUsefulItems.xml -->
+<!-- RPGViewers.xml -->
+<!-- RPGWingmen.xml -->
+<!-- Salvagers.xml -->
+<!-- Sanctuary.xml -->
+<!-- Sapiens.xml -->
+<!-- Scoria.xml -->
+<!-- ShieldEnhancementItems.xml -->
+<!-- Sisters01.xml -->
+<!-- Sisters02.xml -->
+<!-- Sisters03.xml -->
+<!-- SistersDonate.xml -->
+<!-- SistersOfDomina.xml -->
+<!-- SistersPilgrimsAid.xml -->
+<!-- SistersSanctum.xml -->
+<!-- Stargates.xml -->
+<!-- Stars.xml -->
+<!-- StarsOfThePilgrim.xml -->
+<!-- StarSystems.xml -->
+<!-- StdArmor.xml -->
+<ItemType UNID="&itLightCeramicPlate;"
+			name=				"[segment(s) of ]light ceramic armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"1"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+			  
+			value=				"75"
+			mass=				"2000"
+			  
+			description=		"This is a lighter and weaker version of ceramic armor."
+			>
+
+		<Image imageID="&rsItems1;" imageX="192" imageY="672" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"25"
+				hpBonus=	"+100,  +0,  +0,  +0"
+
+				blindingImmune=			"false"
+				deviceDamageImmune=		"false"
+				disintegrationImmune=	"false"
+				radiationImmune=		"false"
+				shatterImmune=			"false"
+
+				chargeDecay=			"false"
+				decay=					"0.0"
+				distribute=				"0.0"
+				regen=					"0.0"
+				regenType=				"none"
+
+				idlePowerUse=			"0"
+				powerUse=				"0"
+
+				enhancementType=		""
+				deviceCriteria=			"s"
+				deviceHPBonus=			"0"
+
+				balanceAdj=				"0"
+				completeBonus=			"0"
+				hpBonusPerCharge=		"0"
+				installCost=			""
+				maxHPBonus=				"150"
+				maxSpeedInc=			"0"
+				maxSpeedLimit=			"-1"
+				photoRecharge=			"0"
+				reflective=				""
+				repairCost=				""
+				repairTech=				"1"
+				shieldInterference=		"false"
+				stealth=				"0"
+				/>
+	</ItemType>
+<ItemType UNID="&itLightReactiveArmor;"
+			name=				"[segment(s) of ]light reactive armor"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"1"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+			  
+			value=				"75"
+			mass=				"2000"
+			  
+			description=		"This is a lighter and less powerful version of reactive armor."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="672" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"25"
+				hpBonus=	"  +0,+100,  +0,  +0"
+				/>
+	</ItemType>
+<ItemType UNID="&itUltraLightTitaniumCasing;"
+			name=				"[segment(s) of ]ultra-light titanium casing"
+			attributes=			"commonwealth, minorItem, nami"
+			  
+			level=				"1"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"10"
+			mass=				"350"
+			  
+			description=		"A thin titanium case protects ships that cannot afford too much armor mass."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"5"
+				/>
+	</ItemType>
+<ItemType UNID="&itUltraLightTitaniumArmor;"
+			name=				"[segment(s) of ]ultra-light titanium armor"
+			attributes=			"commonwealth, minorItem, nami"
+
+			level=				"1"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"15"
+			mass=				"750"
+			  
+			description=		"Ultra-light titanium armor is used on small and fast gunships."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"10"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightTitaniumArmor;"
+			name=				"[segment(s) of ]light titanium armor"
+			attributes=			"commonwealth, minorItem, nami"
+			  
+			level=				"1"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"30"
+			mass=				"1500"
+			  
+			description=		"Titanium is one of the weakest materials used for ship armor. Nevertheless, for ships that require little protection or when cost or mass are a factor, light titanium armor is a good choice."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"20"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itCeramicPlate;"
+			name=				"[segment(s) of ]ceramic armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"120"
+			mass=				"3000"
+			  
+			description=		"This armor consists of heat-resistant ceramic plate backed by a fiber-reinforced composite. Ceramic armor is ideal for absorbing laser and particle beam damage."
+			>
+
+		<Image imageID="&rsItems2;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"35"
+				hpBonus=	"+100,  +0, +50,  +0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itReactiveArmor;"
+			name=				"[segment(s) of ]reactive armor"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"120"
+			mass=				"3000"
+			  
+			description=		"Reactive armor is laced with miniature explosive cells that mitigate against the impact of kinetic weapons and chemical explosives."
+			>
+
+		<Image imageID="&rsItems2;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"35"
+				hpBonus=	"  +0,+100,  +0, +50"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itTitaniumArmor;"
+			name=				"[segment(s) of ]titanium armor"
+			attributes=			"commonwealth, minorItem, nami"
+			  
+			level=				"2"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"100"
+			mass=				"3000"
+			  
+			description=		"Though not strong enough to be used in warships, this armor is more than twice as strong as light titanium armor. It is often used to protect freighters and scout ships."
+			>
+
+		<Image imageID="&rsItems2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"45"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightXMHArmor;"
+			name=				"[segment(s) of ]light XMH armor"
+			attributes=			"commonwealth, minorItem, solon"
+			  
+			level=				"2"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"200"
+			mass=				"2000"
+			  
+			description=		"Originally designed by Solon Industries, XMH armor uses an experimental metallic hydrogen alloy. Most stations do not have the technology to repair XMH armor."
+			>
+
+		<Image imageID="&rsItems2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"40"
+				hpBonus=	"+100,+100, +50, +50"
+
+				repairTech=	"9"
+				installCostAdj="150"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyCeramicPlate;"
+			name=				"[segment(s) of ]heavy ceramic armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"260"
+			mass=				"5000"
+			  
+			description=		"An improved version of ceramic armor, this armor is very effective against laser and particle damage."
+			>
+
+		<Image imageID="&rsItems3;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"75"
+				hpBonus=	"+100,  +0, +50,  +0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itPhotorepairArmor;"
+			name=				"[segment(s) of ]photo-organic armor"
+			attributes=			"commonwealth, minorItem, solon, specialty"
+			  
+			level=				"3"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"250"
+			mass=				"2000"
+			  
+			description=		"This living armor consists of a carbon filament web fed by photosynthetic repair cells. Photo-organic armor repairs itself when exposed to sunlight."
+			>
+
+		<Image imageID="&rsItems3;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"50"
+				hpBonus=	"+100, -25, +50, -25"
+
+				repairTech=	"6"
+
+				regen=		"2"
+				photoRepair="true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightPlasteelPlate;"
+			name=				"[segment(s) of ]light plasteel armor"
+			attributes=			"commonwealth, ei, minorItem"
+			  
+			level=				"3"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"200"
+			mass=				"2500"
+			  
+			description=		"This is a lighter and cheaper segment of plasteel than the standard armor."
+			>
+
+		<Image imageID="&rsItems3;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"60"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itPolymeshArmor;"
+			name=				"[segment(s) of ]polymesh armor"
+			attributes=			"commonwealth, minorItem, solon, specialty"
+			  
+			level=				"3"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"200"
+			mass=				"2000"
+			  
+			description=		"The incredible strength of the synthetic mesh resists kinetic and blast damage, but focused laser energy can burn through it."
+			>
+
+		<Image imageID="&rsItems3;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"50"
+				hpBonus=	" -50,+100, -25, +50"
+
+				repairCostAdj=	"200"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHardenedReactiveArmor;"
+			name=				"[segment(s) of ]hardened reactive armor"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"3"
+			frequency=			"rare"
+			numberAppearing=	"1d6"
+
+			value=				"350"
+			mass=				"3500"
+			  
+			description=		"This is a radiation-immune version of the popular reactive armor plate."
+			>
+
+		<Image imageID="&rsItems3;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"55"
+				hpBonus=	"  +0,+100,  +0, +50"
+				
+				blindingDamageAdj=	"0"
+				radiationImmune="true"
+
+				repairTech=	"4"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyReactiveArmor;"
+			name=				"[segment(s) of ]heavy reactive armor"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"260"
+			mass=				"5000"
+			  
+			description=		"This heavier version of reactive armor can withstand more than 60 units of kinetic damage."
+			>
+
+		<Image imageID="&rsItems3;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"75"
+				hpBonus=	"  +0,+100,  +0, +50"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itPlasteelPlate;"
+			name=				"[segment(s) of ]plasteel armor"
+			attributes=			"commonwealth, ei, minorItem"
+			  
+			level=				"4"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"400"
+			mass=				"3000"
+			  
+			description=		"Stronger than titanium yet almost as light, plasteel is a popular metal for use in all forms of space construction."
+			>
+
+		<Image imageID="&rsItems4;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"80"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itPolyceramicPlate;"
+			name=				"[segment(s) of ]polyceramic armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"4"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"600"
+			mass=				"3000"
+			  
+			description=		"Polyceramic armor is one of the most advanced forms of ceramic armor."
+			>
+
+		<Image imageID="&rsItems4;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"70"
+				hpBonus=	"+100,  +0, +50,  +0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itAdvancedReactiveArmor;"
+			name=				"[segment(s) of ]advanced reactive armor"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+
+			value=				"500"
+			mass=				"3500"
+			  
+			description=		"This is a more sophisticated version of reactive armor. Advanced reactive armor is very resistant to blast and kinetic damage."
+			>
+
+		<Image imageID="&rsItems4;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"70"
+				hpBonus=	"  +0,+100,  +0, +50"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightSolarArmor;"
+			name=				"[segment(s) of ]light solar armor"
+			attributes=			"commonwealth, minorItem, solon"
+			  
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"600"
+			mass=				"2000"
+			  
+			description=		"One segment of light solar armor will provide 3 MWs of power when near a sun."
+			>
+
+		<Image imageID="&rsItems4;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"70"
+				hpBonus=	"+100, -50, +25, -50, +25, -25"
+
+				repairTech=	"5"
+				repairCostAdj=	"200"
+				installCostAdj=	"200"
+
+				photoRecharge="30"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightTevlarArmor;"
+			name=				"[segment(s) of ]light Tevlar armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"500"
+			mass=				"2000"
+			  
+			description=		"This armor is composed of woven carbon fibers in a plasteel matrix. Though not as strong as plasteel, this material is far lighter."
+			>
+
+		<Image imageID="&rsItems4;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"70"
+				hpBonus=	" +0,  +50,  +0, +50"
+
+				repairCostAdj=	"250"
+				installCostAdj=	"150"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itV10PoweredArmor;"
+			name=				"[segment(s) of ]V10 powered armor"
+			attributes=			"commonwealth, minorItem, poweredArmor, rasiermesser, specialty"
+			  
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"500"
+			mass=				"3000"
+
+			description=		"Powered armor regenerates itself like an energy shield, though not nearly as quickly. The V10 consumes 0.5 MWs per segment."
+			>
+
+		<Image imageID="&rsItems4;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"80"
+
+				installCostAdj=	"200"
+
+				regen=		"6"
+				powerUse=	"5"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightBlastPlate;"
+			name=				"[segment(s) of ]light blast plate"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+
+			value=				"1100"
+			mass=				"2000"
+			  
+			description=		"Light blast plate is more effective against blast damage than advanced reactive armor."
+			>
+
+		<Image imageID="&rsItems5;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"80"
+				hpBonus=	"  +0,  +0,  +0,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itCeralloyArmor;"
+			name=				"[segment(s) of ]ceralloy armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"5"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"1000"
+			mass=				"3000"
+			  
+			description=		"This innovative ceramic-based alloy resists particle and ion damage."
+			>
+
+		<Image imageID="&rsItems5;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"85"
+				hpBonus=	"  +0,  +0,+100, -25, +50"
+				
+				blindingDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHardenedPlasteelPlate;"
+			name=				"[segment(s) of ]hardened plasteel armor"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"5"
+			frequency=			"rare"
+			numberAppearing=	"1d6"
+
+			value=				"1100"
+			mass=				"3500"
+			  
+			description=		"This segment of plasteel armor has been specially modified to resist radiation."
+			>
+
+		<Image imageID="&rsItems5;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"100"
+				hpBonus=	"  +0,  +0,  +0,  +0, +25, +25"
+
+				repairTech=	"6"
+				
+				blindingDamageAdj=	"0"
+				radiationImmune=	"true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyPlasteelPlate;"
+			name=				"[segment(s) of ]heavy plasteel armor"
+			attributes=			"commonwealth, ei, minorItem"
+			  
+			level=				"5"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"800"
+			mass=				"5000"
+			  
+			description=		"This is a stronger plate of the popular plasteel armor."
+			>
+
+		<Image imageID="&rsItems5;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"140"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMediumSolarArmor;"
+			name=				"[segment(s) of ]medium solar armor"
+			attributes=			"commonwealth, minorItem, solon"
+			  
+			level=				"5"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"1200"
+			mass=				"3000"
+			  
+			description=		"This armor combines honeycombed solar panels with a plasteel armor substrate. One segment of solar armor will provide 5 MWs of power when near a sun."
+			>
+
+		<Image imageID="&rsItems5;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"100"
+				hpBonus=	"+50, -50, +25, -50, +25, -25"
+
+				repairCostAdj=	"200"
+				installCostAdj=	"200"
+
+				photoRecharge="50"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itBlastPlate;"
+			name=				"[segment(s) of ]blast plate"
+			attributes=			"commonwealth, makayev, minorItem"
+			  
+			level=				"6"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"2200"
+			mass=				"3500"
+			  
+			description=		"This armor is made out of a plasteel alloy designed to resist missile damage."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"125"
+				hpBonus=	"  +0,  +0,  +0,+100,  +0, +25"
+				
+				radiationImmune=	"true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyCeralloyArmor;"
+			name=				"[segment(s) of ]heavy ceralloy armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"6"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"2000"
+			mass=				"5000"
+			  
+			description=		"This is a heavier version of the innovative ceramic-based alloy."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"135"
+				hpBonus=	"  +0,  +0,+100, -25, +50"
+				
+				EMPDamageAdj=		"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itDuralloyArmor;"
+			name=				"[segment(s) of ]Duralloy armor"
+			attributes=			"commonwealth, kabuto, minorItem, specialty"
+			  
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"1800"
+			mass=				"3000"
+			  
+			description=		"A blend of plasteel and duranium infused with active nanomachines. Duralloy armor repairs itself slowly over time."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"135"
+
+				repairTech=	"8"
+
+				regen=		"2"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightMarkIOmskArmor;"
+			name=				"[segment(s) of ]light mark I Omsk armor"
+			attributes=			"commonwealth, makayev, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"6"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"1500"
+			mass=				"2000"
+			  
+			description=		"When installed on a ship with an Omsk deflector, this segment adds 20 hp strength to the shields."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"110"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>20</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itMediumMarkIOmskArmor;"
+			name=				"[segment(s) of ]medium mark I Omsk armor"
+			attributes=			"commonwealth, makayev, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"6"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"2100"
+			mass=				"3000"
+			  
+			description=		"When installed on a ship with an Omsk deflector, this segment adds 25 hp strength to the shields."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"135"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>25</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itHeavyMarkIOmskArmor;"
+			name=				"[segment(s) of ]heavy mark I Omsk armor"
+			attributes=			"commonwealth, makayev, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"6"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"2700"
+			mass=				"5000"
+			  
+			description=		"When installed on a ship with an Omsk deflector, this segment adds 40 hp strength to the shields."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"180"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>40</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itAdvancedPlasteelPlate;"
+			name=				"[segment(s) of ]advanced plasteel armor"
+			attributes=			"commonwealth, ei, minorItem, specialty"
+			  
+			level=				"6"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+
+			value=				"1600"
+			mass=				"3000"
+			  
+			description=		"Advanced plasteel is stronger by weight than normal plasteel."
+			>
+
+		<Image imageID="&rsItems6;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"135"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavySolarArmor;"
+			name=				"[segment(s) of ]heavy solar armor"
+			attributes=			"commonwealth, minorItem, solon"
+			  
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"2400"
+			mass=				"5000"
+			  
+			description=		"Heavy solar armor is suitable for combat, while still providing free power. One segment will provide 8 MWs of power when near a sun."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"150"
+				hpBonus=	"+50, -50, +25, -50, +25, -25"
+
+				repairCostAdj=	"200"
+				installCostAdj=	"200"
+
+				photoRecharge="80"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itStealthPlate;"
+			name=				"[segment(s) of ]stealth armor"
+			attributes=			"commonwealth, military, minorItem, pacificDefense"
+			  
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"2500"
+			mass=				"3500"
+			  
+			description=		"The special geometry and coatings of this armor provide a ship with a greatly reduced signature in most standard scanners."
+			>
+
+		<Image imageID="&rsItems6;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"135"
+
+				repairTech=	"7"
+
+				stealth=	"9"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itV70PoweredArmor;"
+			name=				"[segment(s) of ]V70 powered armor"
+			attributes=			"commonwealth, minorItem, poweredArmor, rasiermesser, specialty"
+			  
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"2000"
+			mass=				"3000"
+
+			description=		"Powered armor regenerates itself like an energy shield, though not nearly as quickly. The V70 consumes 1 MWs per segment."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"135"
+
+				installCostAdj=	"200"
+
+				regen=		"8"
+				powerUse=	"10"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyBlastPlate;"
+			name=				"[segment(s) of ]heavy blast plate"
+			attributes=			"commonwealth, makayev, military, minorItem"
+			  
+			level=				"7"
+			frequency=			"common"
+			numberAppearing=	"1d6"
+
+			value=				"4500"
+			mass=				"5000"
+			  
+			description=		"This armor is made out of a plasteel alloy designed to resist missile damage."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"220"
+				hpBonus=	"  +0,  +0,  +0,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itSuperHeavyBlastPlate;"
+			name=				"[segment(s) of ]super-heavy blast plate"
+			attributes=			"commonwealth, makayev, military, minorItem"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+
+			value=				"5500"
+			mass=				"9000"
+			  
+			description=		"This armor is made out of a plasteel alloy designed to resist missile damage."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"400"
+				hpBonus=	"  +0,  +0,  +0,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itAdvancedCeralloyArmor;"
+			name=				"[segment(s) of ]advanced ceralloy armor"
+			attributes=			"commonwealth, minorItem, rasiermesser"
+			  
+			level=				"7"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"4000"
+			mass=				"3000"
+			  
+			description=		"Though almost as effective as P150-grade Hexphase armor, advanced ceralloy is easier to obtain."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"150"
+				hpBonus=	"  +0,  +0,+100, -25, +50,  +0"
+				
+				radiationImmune=	"false"
+				EMPDamageAdj=		"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightGusokuArmor;"
+			name=				"[segment(s) of ]light Gusoku armor"
+			attributes=			"bushido, commonwealth, military, minorItem, specialty"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"4000"
+			mass=				"2000"
+			  
+			description=		"Designed by the Bushido Corporation, Gusoku armor is light yet resistant to particle beam and blast damage."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"145"
+				hpBonus=	"  +0,  +0,+100,+100"
+
+				repairTech=	"8"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itP120HexphaseArmor;"
+			name=				"[segment(s) of ]P150 Hexphase armor"
+			attributes=			"commonwealth, hexphase, military, minorItem, pacificDefense"
+			  
+			level=				"7"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"3200"
+			mass=				"3000"
+			  
+			description=		"Hexphase armor is used extensively by ships of the Commonwealth Fleet. P150-grade armor can withstand 150 units of thermonuclear damage before collapsing."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"150"
+				hpBonus=	"  +0,  +0, +50,  +50, +25,  +0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightOrthoSteel;"
+			name=				"[segment(s) of ]light orthosteel armor"
+			attributes=			"commonwealth, ei, military, minorItem"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"3200"
+			mass=				"2000"
+			  
+			description=		"Orthosteel, a variant of plasteel, was used extensively by the Commonwealth Fleet until the creation of Hexphase armor."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"145"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itCarbideCarapace;"
+			name=				"[segment(s) of ]carbide carapace"
+			attributes=			"bushido, commonwealth, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"8000"
+			mass=				"3500"
+			  
+			description=		"Carbide is a strong and light material akin to diamond. It is a difficult material to work with, however, and combining it with other armor segments often results in weak seams."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"200"
+
+				completeBonus="100"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightMarkIIOmskArmor;"
+			name=				"[segment(s) of ]light mark II Omsk armor"
+			attributes=			"commonwealth, makayev, military, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d6"
+
+			value=				"6500"
+			mass=				"2000"
+			  
+			description=		"The embedded field projectors in this armor enhance the power of Omsk deflectors by 40 hp."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"190"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>40</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itMediumMarkIIOmskArmor;"
+			name=				"[segment(s) of ]medium mark II Omsk armor"
+			attributes=			"commonwealth, makayev, military, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d6"
+
+			value=				"8000"
+			mass=				"3000"
+			  
+			description=		"The embedded field projectors in this armor enhance the power of Omsk deflectors by 50 hp."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"225"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>50</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itHeavyMarkIIOmskArmor;"
+			name=				"[segment(s) of ]heavy mark II Omsk armor"
+			attributes=			"commonwealth, makayev, military, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d6"
+
+			value=				"11000"
+			mass=				"5000"
+			  
+			description=		"The embedded field projectors in this armor enhance the power of Omsk deflectors by 80 hp."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"300"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>80</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itP210HexphaseArmor;"
+			name=				"[segment(s) of ]P450 Hexphase armor"
+			attributes=			"commonwealth, hexphase, military, minorItem, pacificDefense"       
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"10000"      
+			mass=				"6000"
+			  
+			description=		"Hexphase armor is used extensively by capital ships of the Commonwealth Fleet. P450-grade armor can withstand 450 units of thermonuclear damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight   ="96"/>
+
+		<Armor
+				hitPoints=	"360"
+				hpBonus=	"  +0,  +0, +50, +50, +25,  +0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itLightIthaliumArmor;"
+			name=				"[segment(s) of ]light ithalium armor"
+			attributes=			"commonwealth, minorItem, military, nami"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"6500"
+			mass=				"2000"
+			  
+			description=		"Ithalium is a rare ore found on volcanic worlds. Alloys of ithalium are particularly resistant to thermonuclear damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"170"
+				hpBonus=	"  +0,  +0,  +0,  +0, -25,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMediumIthaliumArmor;"
+			name=				"[segment(s) of ]medium ithalium armor"
+			attributes=			"commonwealth, minorItem, military, nami"
+			  
+			level=				"8"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"8000"
+			mass=				"3500"
+			  
+			description=		"Ithalium is a rare ore found on volcanic worlds. Alloys of ithalium are particularly resistant to thermonuclear damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"240"
+				hpBonus=	"  +0,  +0,  +0,  +0, -25,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMassiveIthaliumArmor;"
+			name=				"[segment(s) of ]massive ithalium armor"
+			attributes=			"commonwealth, minorItem, military, nami"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"10000"
+			mass=				"10000"
+			  
+			description=		"Ithalium is a rare ore found on volcanic worlds. Alloys of ithalium are particularly resistant to thermonuclear damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"540"
+				hpBonus=	"  +0,  +0,  +0,  +0, -25,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itOrthoSteel;"
+			name=				"[segment(s) of ]orthosteel armor"
+			attributes=			"commonwealth, ei, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"6500"
+			mass=				"3000"
+			  
+			description=		"Orthosteel is a well-balanced armor, effective against both particle and blast damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"225"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itQuadroCarbideArmor;"
+			name=				"[segment(s) of ]quadrocarbide armor"
+			attributes=			"commonwealth, minorItem, military, taikon"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"7000"
+			mass=				"5000"
+			  
+			description=		"Manufactured by the secretive Taikon corporation, quadrocarbide armor resists ion and positron damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"180"
+				hpBonus=	"  +0,  +0,  +0,  +0,+100,  +0, +25,  +0"
+				
+				blindingDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMassiveQuadroCarbideArmor;"
+			name=				"[segment(s) of ]massive quadrocarbide armor"
+			attributes=			"commonwealth, minorItem, military, taikon"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"10500"
+			mass=				"10000"
+			  
+			description=		"Manufactured by the secretive Taikon corporation, quadrocarbide armor resists ion and positron damage."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"360"
+				hpBonus=	"  +0,  +0,  +0,  +0,+100,  +0, +25,  +0"
+				
+				blindingDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itTransuranicPlate;"
+			name=				"[segment(s) of ]transuranic armor"
+			attributes=			"commonwealth, makayev, military, minorItem"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"9000"
+			mass=				"12000"
+			  
+			description=		"The strength of the material is almost unparalleled, but its properties fade as the elements decay into baser forms."
+			>
+
+		<Image imageID="&rsItems8;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"500"
+				hpBonus=	"  +0,  +0, +50,+100, +25, +50"
+
+				repairTech=	"6"
+
+				decay=		"0.75"
+				disintegrationImmune="true"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itV300PoweredArmor;"
+			name=				"[segment(s) of ]V300 powered armor"
+			attributes=			"commonwealth, minorItem, military, poweredArmor, rasiermesser"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"8500"
+			mass=				"3000"
+			  
+			description=		"The V300 is a military version of Rasiermesser's powered armor. Each segment draws 2 MWs of power."
+			>
+
+		<Image imageID="&rsItems8;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"225"
+
+				installCostAdj="200"
+
+				regen=		"12"
+				powerUse=	"20"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHexaCarbideArmor;"
+			name=				"[segment(s) of ]hexacarbide armor"
+			attributes=			"commonwealth, minorItem, military, taikon"
+			  
+			level=				"9"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"14000"
+			mass=				"5000"
+			  
+			description=		"Stronger by weight than P450-grade Hexphase, the secret of hexacarbide is known only to the Taikon corporation."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"300"
+				hpBonus=	"  +0,  +0, +50,  +0, +50,  +0, +25,  +0"
+				
+				blindingDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMassiveHexaCarbideArmor;"
+			name=				"[segment(s) of ]massive hexacarbide armor"
+			attributes=			"commonwealth, minorItem, military, taikon"
+			  
+			level=				"9"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"21000"
+			mass=				"10000"
+			  
+			description=		"This massive segment of hexacarbide is used to protect large ships."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"600"
+				hpBonus=	"  +0,  +0, +50,  +0, +50,  +0, +25,  +0"
+				
+				blindingDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMassiveMarkIIOmskArmor;"
+			name=				"[segment(s) of ]massive mark II Omsk armor"
+			attributes=			"commonwealth, makayev, military, minorItem, omskArmor, omskDS, specialty"
+			  
+			level=				"9"
+			frequency=			"rare"
+			numberAppearing=	"1d6"
+
+			value=				"35000"
+			mass=				"12000"
+			  
+			description=		"The heaviest armor in the Omsk series, originally designed for Makayev's canceled cruiser project, adds 100 hp to Omsk shields."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"800"
+				balanceAdj=	"20"
+				/>
+				
+		<StaticData>
+			<bonusHP>100</bonusHP>
+		</StaticData>
+	</ItemType>
+<ItemType UNID="&itP1000HexphaseArmor;"
+			name=				"[segment(s) of ]P1000 Hexphase armor"
+			attributes=			"commonwealth, hexphase, military, minorItem, pacificDefense"
+			  
+			level=				"9"
+			frequency=			"veryrare"
+			numberAppearing=	"1d4"
+
+			value=				"40000"
+			mass=				"40000"
+			  
+			description=		"Hexphase armor is used by Commonwealth Star Carriers. P1000-grade armor can withstand 1000 units of thermonuclear damage before collapsing."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"600"
+				hpBonus=	"  +0,  +0,+100,+100, +50,  +0"
+
+				repairTech=	"8"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itAdvancedIthaliumArmor;"
+			name=				"[segment(s) of ]advanced ithalium armor"
+			attributes=			"commonwealth, minorItem, military, nami"
+			  
+			level=				"9"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"16000"
+			mass=				"3500"
+			  
+			description=		"Ithalium armor absorbs more than 800 units of thermonuclear damage."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"300"
+				hpBonus=	"  +0,  +0,  +0,  +0,  +0,+100,  +0, +25"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyOrthoSteel;"
+			name=				"[segment(s) of ]heavy orthosteel armor"
+			attributes=			"commonwealth, ei, minorItem, military"
+			  
+			level=				"9"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"13000"
+			mass=				"5000"
+			  
+			description=		"Heavy orthosteel is almost immune to particle and blast damage. Against ion damage, it is better than P150-grade Hexphase."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"400"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itDiamondLatticeArmor;"
+			name=				"[segment(s) of ]diamond lattice armor"
+			attributes=			"assemblerCorp, commonwealth, minorItem, military"
+			  
+			level=				"10"
+			frequency=			"common"
+			numberAppearing=	"1d4"
+
+			value=				"24000"
+			mass=				"3000"
+			  
+			description=		"The nanofacture towers of the Assembler Corporation can produce a pure diamond lattice in any configuration."
+			>
+
+		<Image imageID="&rsItems10;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"380"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itExperimentalIthaliumArmor;"
+			name=				"[segment(s) of ]experimental ithalium armor"
+			attributes=			"commonwealth, minorItem, military, nami"
+			  
+			level=				"10"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"25000"
+			mass=				"8000"
+			  
+			description=		"This super-heavy armor is denser and more damage resistant than earlier ithalium armors."
+			>
+
+		<Image imageID="&rsItems10;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"600"
+				hpBonus=	"  +0,  +0,  +0,  +0,  +0,+150,  +0, +50"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itOctoCarbideArmor;"
+			name=				"[segment(s) of ]octocarbide armor"
+			attributes=			"commonwealth, minorItem, military, taikon"
+			  
+			level=				"10"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+
+			value=				"35000"
+			mass=				"5000"
+			  
+			description=		"The most advanced armor produced by the Taikon corporation, octocarbide can absorb almost 1500 units of ion damage before collapsing."
+			>
+
+		<Image imageID="&rsItems10;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"450"
+				hpBonus=	"  +0,  +0,  +0,  +0,+100, -25, +25,  +0"
+				
+				blindingDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itMassiveOctoCarbideArmor;"
+			name=				"[segment(s) of ]massive octocarbide armor"
+			attributes=			"commonwealth, minorItem, military, taikon"
+			  
+			level=				"10"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"52500"
+			mass=				"10000"
+			  
+			description=		"A double layer of octocarbide armor, suitable for large ships."
+			>
+
+		<Image imageID="&rsItems10;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"900"
+				hpBonus=	"  +0,  +0,  +0,  +0,+100, -25, +25,  +0"
+				
+				blindingDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<!-- StdAutons.xml -->
+<!-- StdDevices.xml -->
+<!-- StdDockScreens.xml -->
+<!-- StdEffects.xml -->
+<!-- StdFuel.xml -->
+<!-- StdMiningEquipment.xml -->
+<!-- StdPlayerShips.xml -->
+<!-- StdShields.xml -->
+<!-- StdSovereigns.xml -->
+<!-- StdSystems.xml -->
+<!-- StdTypes.xml -->
+<!-- StdUnknownItems.xml -->
+<!-- StdWeapons.xml -->
+<!-- StKatharines.xml -->
+<!-- Stormhound.xml -->
+<!-- SungCitadel.xml -->
+<!-- SungFortress.xml -->
+<!-- SungSlaveCamp.xml -->
+<!-- SungSlavers.xml -->
+<ItemType UNID="&itDragonArmor;"
+			inherit=			"&baSungArmor;"
+			name=				"[segment(s) of ]Dragon armor"
+			level=				"7"
+			value=				"5000"
+			frequency=			"notRandom"
+			numberAppearing=	"1d4"
+			mass=				"6500"
+			attributes=			"Military; MinorItem; NotForSale; sungSlavers; TiledArmor"
+
+			description=		"This is a heavier version of the Sung's innovative armor, used on its Dragon slavers."
+
+			useScreen=			"&dsRPGUseItemOnArmor;"
+			useUninstalledOnly=	"true"
+
+			sortName=			"Sung armor.10"
+			>
+
+		<Properties>
+			<Constant id="rpg.repairTable">
+				'(
+					{	criteria:"a +tiledArmor;"	maxLevel:10		repairHP:125	}
+					{	criteria:"a"								descID:'descMustBeTiledArmor	}
+					)
+			</Constant>
+		</Properties>
+
+		<Image imageID="&rsItems2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"250"
+				hpBonus=	"  +0,  +0, +50,+100,  +0, +25"
+
+				repairTech=	"6"
+
+				blindingDamageAdj="0"
+				deviceDamageAdj="0"
+				EMPDamageAdj=	"0"
+				radiationImmune="true"
+				/>
+	</ItemType>
+<ItemType UNID="&itHeavySungArmor;"
+			inherit=			"&baSungArmor;"
+			name=				"[segment(s) of ]super-heavy Sung armor"
+			level=				"6"
+			value=				"2300"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			mass=				"7500"
+			attributes=			"MinorItem; NotForSale; sungSlavers; TiledArmor"
+
+			description=		"This is a heavier version of the Sung's innovative armor, generally used on its Earth slavers."
+
+			useScreen=			"&dsRPGUseItemOnArmor;"
+			useUninstalledOnly=	"true"
+
+			sortName=			"Sung armor.20"
+			>
+
+		<Properties>
+			<Constant id="rpg.repairTable">
+				'(
+					{	criteria:"a +tiledArmor;"	maxLevel:10		repairHP:90		}
+					{	criteria:"a"								descID:'descMustBeTiledArmor	}
+					)
+			</Constant>
+		</Properties>
+
+		<Image imageID="&rsItems2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"180"
+				hpBonus=	"  +0,  +0, -25, +50,  +0, +25"
+
+				blindingDamageAdj="0"
+				deviceDamageAdj="25"
+				EMPDamageAdj=	"10"
+				/>
+	</ItemType>
+<ItemType UNID="&itSungArmor;"
+			inherit=			"&baSungArmor;"
+			name=				"[segment(s) of ]Sung armor"
+			level=				"5"
+			value=				"600"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+			mass=				"3000"
+			attributes=			"MinorItem; NotForSale; sungSlavers; TiledArmor"
+
+			description=		"This blast-resistant tiled armor can be cannibalized to repair other Sung armor segments."
+
+			useScreen=			"&dsRPGUseItemOnArmor;"
+			useUninstalledOnly=	"true"
+
+			sortName=			"Sung armor.30"
+			>
+
+		<Properties>
+			<Constant id="rpg.repairTable">
+				'(
+					{	criteria:"a +tiledArmor;"	maxLevel:10		repairHP:35	}
+					{	criteria:"a"								descID:'descMustBeTiledArmor	}
+					)
+			</Constant>
+		</Properties>
+
+		<Image imageID="&rsItems2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"70"
+				hpBonus=	"  +0,  +0, -25, +50,  +0"
+
+				repairTech=	"6"
+
+				blindingDamageAdj="0"
+				deviceDamageAdj="50"
+				EMPDamageAdj=	"25"
+				/>
+	</ItemType>
+<ItemType UNID="&itLightSungArmor;"
+			inherit=			"&baSungArmor;"
+			name=				"[segment(s) of ]light Sung armor"
+			level=				"2"
+			value=				"60"
+			frequency=			"uncommon"
+			numberAppearing=	"1d4"
+			mass=				"1500"
+			attributes=			"MinorItem; NotForSale; sungSlavers; TiledArmor"
+
+			description=		"The Sung created this blast-resistant tiled armor for their Wind slavers. The tiles can be cannibalized to repair other Sung armor segments."
+
+			useScreen=			"&dsRPGUseItemOnArmor;"
+			useUninstalledOnly=	"true"
+
+			sortName=			"Sung armor.40"
+			>
+
+		<Properties>
+			<Constant id="rpg.repairTable">
+				'(
+					{	criteria:"a +tiledArmor;"	maxLevel:10		repairHP:12	}
+					{	criteria:"a"								descID:'descMustBeTiledArmor	}
+					)
+			</Constant>
+		</Properties>
+
+		<Image imageID="&rsItems2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"25"
+				hpBonus=	"  +0,  +0, -25, +50,  +0"
+
+				repairTech=	"6"
+
+				blindingDamageAdj="0"
+				EMPDamageAdj=	"25"
+				/>
+	</ItemType>
+<!-- Tenhove.xml -->
+<!-- TeratonResearch.xml -->
+<!-- Teratons.xml -->
+<!-- Tinkers.xml -->
+<!-- Transcendence.xml -->
+<!-- UndergroundCaverns.xml -->
+<!-- UndergroundStructures.xml -->
+<!-- UrakWarlords.xml -->
+<ItemType UNID="&itUrakArmorLight;"
+			name=				"[segment(s) of ]light Urak armor"
+			level=				"2"
+			value=				"100"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			mass=				"2000"
+			attributes=			"MinorItem; NotForSale; Urak"
+
+			description=		"The foundries of the Urak Warlords produce excellent armor, resistant to both laser and kinetic damage."
+
+			sortName=			"Urak.2.20"
+			>
+
+		<Image imageID="&rsItems2;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"20"
+				hpBonus=	"+150,+150,  +0,  +0"
+
+				repairTech=	"4"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itUrakArmorHeavy;"
+			name=				"[segment(s) of ]super-heavy Urak armor"
+			level=				"4"
+			value=				"700"
+			mass=				"7000"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+			attributes=			"MinorItem; NotForSale; Urak"
+
+			description=		"The capital ships of the Urak Warlords use a heavy armor that resists laser, kinetic, particle, and blast damage."
+
+			sortName=			"Urak.2.10"
+			>
+
+		<Image imageID="&rsItems2;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"80"
+				hpBonus=	"+100,+100,+100,+100"
+
+				repairTech=	"6"
+				/>
+
+	</ItemType>
+<!-- UsefulItems.xml -->
+<!-- Ventari.xml -->
+<!-- Volcanic.xml -->
+<!-- Volkov.xml -->
+<!-- WeaponEnhancementItems.xml -->
+<!-- Worlds.xml -->
+<!-- Xenophobes.xml -->
+<ItemType UNID="&itLightMeteorsteel;"
+			name=				"[segment(s) of ]light meteorsteel"
+			attributes=			"benninXenophobes, minorItem, notStandard, specialty"
+			  
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"600"
+			mass=				"2500"
+			  
+			description=		"A rare alloy invented by the Bennin Xenophobes, meteorsteel interferes with most shield generators."
+			>
+
+		<Image imageID="&rsItems4;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"100"
+				hpBonus=	" +50, +50,+100,+100"
+
+				repairTech=	"5"
+
+				shieldInterference=	"true"
+				blindingDamageAdj=	"0"
+				radiationImmune=	"true"
+				deviceDamageAdj=	"50"
+				EMPDamageAdj=		"50"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itHeavyMeteorsteel;"
+			name=				"[segment(s) of ]heavy meteorsteel"
+			attributes=			"benninXenophobes, minorItem, notStandard, specialty"
+			  
+			level=				"5"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"1300"
+			mass=				"5000"
+			  
+			description=		"A rare alloy invented by the Bennin Xenophobes, meteorsteel interferes with most shield generators."
+			>
+
+		<Image imageID="&rsItems4;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"150"
+				hpBonus=	" ***, ***,+200,+200"
+
+				shieldInterference=	"true"
+				blindingDamageAdj=	"0"
+				radiationImmune=	"true"
+				EMPDamageAdj=		"0"
+				deviceDamageAdj=	"0"
+				/>
+
+	</ItemType>
+<ItemType UNID="&itWorldshipArmorPlate;"
+			name=				"worldship armor plate"
+			attributes=			"benninXenophobes, military, minorItem, notForSale, notStandard"
+			  
+			level=				"8"
+			frequency=			"rare"
+			numberAppearing=	"1d4"
+
+			value=				"8000"
+			mass=				"15000"
+			  
+			description=		"Like other meteorsteel armors, this plate interferes with shield generators."
+			>
+
+		<Image imageID="&rsItems4;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Armor
+				hitPoints=	"250"
+				hpBonus=	" ***, ***, ***, ***,+400,+400,+100,+100"
+
+				shieldInterference=	"true"
+				blindingDamageAdj=	"0"
+				radiationImmune=	"true"
+				deviceDamageAdj=	"0"
+				EMPDamageAdj=		"0"
+				/>
+
+	</ItemType>
 </TranscendenceModule>

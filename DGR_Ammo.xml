@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+<!-- Abbasid.xml -->
+<!-- Achievements.xml -->
+<!-- AgriculturalMission01.xml -->
+<!-- Analyzers.xml -->
+<!-- Anarchists.xml -->
+<!-- Antarctica.xml -->
+<!-- Antarctica01.xml -->
+<!-- Antarctica02.xml -->
+<!-- AntarcticaD01.xml -->
+<!-- AresItems.xml -->
+<ItemType UNID="&itMicronuke;"
+			name=				"Ares micronuke"
+			level=				"8"
+			value=				"150"
+			mass=				"10"
+			attributes=			"Ares; Consumable; Military; Missile; NotForSale;"
+			frequency=			"common"
+			numberAppearing=	"20d20"
+
+			description=		"The compact warheads detonate into an expanding shockwave of thermonuclear damage. They require a launcher."
+
+			sortName=			"Ares.30"
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				lifetime=		"180"
+				missileSpeed=	"60"
+
+				fragmentCount=	"1"
+				failsafe=		"6"
+
+				hitEffect=		"&efThermoShockwaveExplosion;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Effect>
+				<ParticleJet
+						fixedPos=			"true"
+						emitRate=			"40"
+						tangentSpeed=		"3d2-3"
+						particleLifetime=	"10-30"
+						XformTime=			"20"
+								>
+					<ParticleEffect>
+						<Particle
+								style=			"plain"
+								minWidth=		"1"
+								maxWidth=		"4"
+								primaryColor=	"#f7ffc6"
+								secondaryColor=	"#b63718"
+										/>
+					</ParticleEffect>
+				</ParticleJet>
+
+				<Image imageID="&rsMissiles;" imageX="0" imageY="32" imageWidth="16" imageHeight="16" imageFrameCount="12" imageTicksPerFrame="3"/>
+			</Effect>
+
+			<Fragment
+					type=			"shockwave"
+
+					damage=			"thermo:1d10; WMD3"
+					expansionSpeed=	"35"
+					missileSpeed=	"0"
+					lifetime=		"24"
+					>
+
+				<Effect>
+					<Shockwave
+							fadeStart=	"70"
+							>
+						<Image imageID=				"&rsShockwave2;"
+								imageX=				"0"
+								imageY=				"0"
+								imageWidth=			"512"
+								imageHeight=		"128"/>
+					</Shockwave>
+				</Effect>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itWarhammerNuke;"
+			name=				"Ares Warhammer nuke"
+			level=				"9"
+			value=				"500"
+			mass=				"20"
+			attributes=			"Ares; Consumable; Military; Missile; NotForSale;"
+			frequency=			"rare"
+			numberAppearing=	"20d20"
+
+			description=		"These long-range thermonuclear missiles are fired by Ares launchers."
+
+			sortName=			"Ares.10"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				lifetime=		"480"
+				missileSpeed=	"30"
+
+				fragmentCount=	"1"
+				failsafe=		"15"
+
+				hitEffect=		"&efThermoShockwaveExplosion;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Effect>
+				<ParticleJet
+						fixedPos=			"true"
+						emitRate=			"60"
+						tangentSpeed=		"3d2-3"
+						particleLifetime=	"10-30"
+						XformTime=			"30"
+								>
+					<ParticleEffect>
+						<Particle
+								style=			"plain"
+								minWidth=		"1"
+								maxWidth=		"5"
+								primaryColor=	"#f7ffc6"
+								secondaryColor=	"#b63718"
+										/>
+					</ParticleEffect>
+				</ParticleJet>
+
+				<Image imageID="&rsMissiles;" imageX="0" imageY="32" imageWidth="16" imageHeight="16" imageFrameCount="12" imageTicksPerFrame="3"/>
+			</Effect>
+
+			<Fragment
+					type=			"shockwave"
+
+					damage=			"thermo:2d10; WMD7"
+					expansionSpeed=	"25"
+					missileSpeed=	"0"
+					lifetime=		"24"
+					>
+
+				<Effect>
+					<Shockwave
+							fadeStart=	"70"
+							>
+						<Image imageID=				"&rsShockwave2;"
+								imageX=				"0"
+								imageY=				"0"
+								imageWidth=			"512"
+								imageHeight=		"128"/>
+					</Shockwave>
+				</Effect>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<!-- AresOrthodoxy.xml -->
+<!-- AresShips.xml -->
+<!-- ArmorEnhancementItems.xml -->
+<!-- ArmorRepairItems.xml -->
+<!-- AsteroidFields.xml -->
+<!-- Barricades.xml -->
+<!-- BattleArena.xml -->
+<!-- BattleArenaChallenger.xml -->
+<!-- BattleArenaFight.xml -->
+<!-- BattleArenaGladiators.xml -->
+<!-- BattleArenaKidnapped.xml -->
+<!-- BattleArenaMelee.xml -->
+<!-- Benedict.xml -->
+<!-- Benedict00.xml -->
+<!-- Benedict01.xml -->
+<!-- Benedict02.xml -->
+<!-- Benedict04.xml -->
+<!-- Benedict05.xml -->
+<!-- Benedict05A.xml -->
+<!-- Benedict06.xml -->
+<!-- Benedict07.xml -->
+<!-- Benedict08.xml -->
+<!-- BenedictStoryArc.xml -->
+<!-- BlackMarket.xml -->
+<!-- BlackMarketMember.xml -->
+<!-- BlackMarketMission00.xml -->
+<!-- BlackMarketMission01.xml -->
+<!-- BlackMarketMission02.xml -->
+<!-- BlackMarketMissionSmuggle01.xml -->
+<!-- BlackMarketPlayerShips.xml -->
+<!-- CentauriWarlords.xml -->
+<!-- CharonFortress.xml -->
+<!-- CharonPirates.xml -->
+<!-- Code.xml -->
+<!-- Commonwealth.xml -->
+<!-- CommonwealthAgricultural.xml -->
+<!-- CommonwealthCenturions.xml -->
+<!-- CommonwealthCharacters.xml -->
+<!-- CommonwealthFleet.xml -->
+<!-- CommonwealthFleetMission01.xml -->
+<!-- CommonwealthFleetMission02.xml -->
+<!-- CommonwealthFleetMission03.xml -->
+<!-- CommonwealthFleetMission04.xml -->
+<!-- CommonwealthFleetMission05.xml -->
+<!-- CommonwealthFleetMission06.xml -->
+<!-- CommonwealthFleetMission07.xml -->
+<!-- CommonwealthFleetMission08.xml -->
+<!-- CommonwealthFleetMission09.xml -->
+<!-- CommonwealthFleetMission10.xml -->
+<!-- CommonwealthFleetMission11.xml -->
+<!-- CommonwealthFleetMissionLL01.xml -->
+<!-- CommonwealthFleetMissionLL02.xml -->
+<!-- CommonwealthFleetMissionLL03.xml -->
+<!-- CommonwealthFleetMissionLL04.xml -->
+<!-- CommonwealthFleetMissionPJ01.xml -->
+<!-- CommonwealthMetropolis.xml -->
+<!-- CommonwealthMilitia.xml -->
+<!-- CommonwealthMilitiaMission01.xml -->
+<!-- CommonwealthMilitiaMission02.xml -->
+<!-- CommonwealthMilitiaMission03.xml -->
+<!-- CommonwealthMilitiaMission04.xml -->
+<!-- CommonwealthMilitiaMissionSK01.xml -->
+<!-- CommonwealthMining.xml -->
+<!-- CommonwealthMiningMission01.xml -->
+<!-- CommonwealthMiningMission02.xml -->
+<!-- CommonwealthMiningMission03.xml -->
+<!-- CommonwealthMiningMission04.xml -->
+<!-- CommonwealthMiningMission05.xml -->
+<!-- CommonwealthMission01.xml -->
+<!-- CommonwealthMissionRevenge01.xml -->
+<!-- CommonwealthRonins.xml -->
+<!-- CommonwealthShips.xml -->
+<!-- CommonwealthStarCarrier.xml -->
+<!-- CommonwealthVolunteerMission01.xml -->
+<!-- CommonwealthVolunteerMission02.xml -->
+<!-- CommonwealthVolunteerMission03.xml -->
+<!-- Compatibility10.xml -->
+<!-- CompatibilityLibrary.xml -->
+<!-- ContainerHabitat.xml -->
+<!-- CoreCode.xml -->
+<!-- CoreDiagnostics.xml -->
+<!-- CoreEffects.xml -->
+<!-- CoreEngineText.xml -->
+<!-- CoreExplosions.xml -->
+<!-- CoreFireEffects.xml -->
+<!-- CoreHitEffects.xml -->
+<!-- CoreItems.xml -->
+<!-- CorePlaceholders.xml -->
+<!-- CoreProjectileEffects.xml -->
+<!-- CoreTypesLibrary.xml -->
+<!-- CorporateAutonDealer.xml -->
+<!-- CorporateHierarchy.xml -->
+<!-- CorporateInsurance.xml -->
+<!-- CorporateTradingPost.xml -->
+<!-- Cryovolcanic.xml -->
+<!-- CSCTerra.xml -->
+<!-- Dall01.xml -->
+<!-- Dantalion.xml -->
+<!-- DeathDrugsCartel.xml -->
+<!-- Debris.xml -->
+<!-- Domina.xml -->
+<!-- DwargRaiders.xml -->
+<ItemType UNID="&itDwargCnidocystNodule;"
+			name=				"Dwarg cnidocyst nodule"
+			level=				"5"
+			value=				"50"
+			mass=				"20"
+			attributes=			"Consumable; Dwarg; Missile; NotForSale; NotStandard"
+			frequency=			"uncommon"
+			numberAppearing=	"40-60"
+
+			description=		"Used by the Dwarg, cnidocyst nodules are guided missiles that paralyze their targets when they hit."
+
+			sortName=			"~.Dwarg cnidocyst"
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<!-- Elysium.xml -->
+<!-- EnricoGaul.xml -->
+<!-- Environments.xml -->
+<!-- Eridani.xml -->
+<!-- EridaniStations.xml -->
+<!-- EtaCeti.xml -->
+<!-- FerianMission01.xml -->
+<!-- Ferians.xml -->
+<!-- Fiona.xml -->
+<!-- FirstContactMonument.xml -->
+<!-- Gaians.xml -->
+<!-- GalaxyCompatibility.xml -->
+<!-- GalaxyEffects.xml -->
+<!-- GalaxyLibrary.xml -->
+<!-- GroupIAsteroids.xml -->
+<!-- Groups.xml -->
+<!-- HaloGems.xml -->
+<!-- HarperThompson.xml -->
+<!-- Heliotropes.xml -->
+<!-- Heretic.xml -->
+<!-- Heretic00.xml -->
+<!-- Heretic01.xml -->
+<!-- Heretic02.xml -->
+<!-- Heretic03.xml -->
+<!-- Heretic04.xml -->
+<!-- Heretic05.xml -->
+<!-- Heretic06.xml -->
+<!-- Heretic07.xml -->
+<!-- Heretic08.xml -->
+<!-- Himal.xml -->
+<!-- HSCompatibility.xml -->
+<!-- Huaramarca.xml -->
+<!-- HuaramarcaMission01.xml -->
+<!-- HuaramarcaMission02.xml -->
+<!-- HuaramarcaMission03.xml -->
+<!-- HuaramarcaMission04.xml -->
+<!-- HuaramarcaMission05.xml -->
+<!-- HuaramarcaMission06.xml -->
+<!-- HuaramarcaMission07.xml -->
+<!-- Huari.xml -->
+<!-- HuariMission01.xml -->
+<!-- HuariMission02.xml -->
+<!-- HuariMission03.xml -->
+<!-- HUD.xml -->
+<!-- HugoSandoval.xml -->
+<!-- HumanSpaceMap.xml -->
+<!-- HumanSpaceVol01.xml -->
+<!-- HumanTech.xml -->
+<!-- Ice.xml -->
+<!-- Iocrym.xml -->
+<ItemType UNID="&itQuantumsphereShell;"
+			name=				"Quantumsphere shell"
+			level=				"13"
+			value=				"2000"
+			mass=				"100"
+			frequency=			"rare"
+			numberAppearing=	"10d20"
+			attributes=			"Alien; Consumable; Iocrym; Missile"
+
+			description=		"This receptacle contains the fierce energies that power the quantumsphere disintegrator."
+
+			sortName=			"~.quantumsphere shell"
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<!-- Jenna.xml -->
+<!-- JiangsStar.xml -->
+<!-- KateMorgental.xml -->
+<!-- KobolWarlords.xml -->
+<!-- KorolovFreighters.xml -->
+<!-- KorolovShipping.xml -->
+<!-- Kronosaurus.xml -->
+<!-- KronosaurusMission01.xml -->
+<!-- KSMission01.xml -->
+<!-- KSMission02.xml -->
+<!-- KSMission03.xml -->
+<!-- KSMissionC01.xml -->
+<!-- KSMissionC02.xml -->
+<!-- LiaPereira.xml -->
+<!-- Luminous.xml -->
+<!-- Makayev.xml -->
+<!-- Marauders.xml -->
+<!-- Metallic.xml -->
+<!-- Mining.xml -->
+<!-- MiningPods.xml -->
+<!-- MiscItems.xml -->
+<!-- MRAD.xml -->
+<!-- MuhammadCondi.xml -->
+<!-- Neurohack.xml -->
+<!-- NewVictoria.xml -->
+<!-- NPCPilgrims.xml -->
+<!-- Ore.xml -->
+<!-- OreStone.xml -->
+<!-- OutlawMiners.xml -->
+<!-- Outlaws.xml -->
+<!-- Ovoids.xml -->
+<!-- OvoidsCompatibility.xml -->
+<!-- Part1Compatibility.xml -->
+<!-- Penitents.xml -->
+<ItemType UNID="&itPX3HexageneMAG;"
+			name=				"PX3 hexagene MAG"
+			attributes=			"consumable, MAGLauncher, missile, notStandard, penitents"
+			  
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"48-72"
+
+			value=				"30"
+			mass=				"30"
+			  
+			description=		"Penitents have modified a standard 400 hexagene MAG to track a target."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				damage=			"blast:6d6; WMD:6"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"30"
+				maneuverRate=	"18"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itPX19OblivionMAG;"
+			name=				"PX19 Oblivion MAG"
+			attributes=			"consumable, MAGLauncher, missile, notStandard, penitents"
+			  
+			level=				"6"
+			frequency=			"rare"
+			numberAppearing=	"72-120"
+
+			value=				"80"
+			mass=				"30"
+			  
+			description=		"Penitent engineers have recently miniaturized their dark matter weapons and mounted them on standard MAG grenades."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				fragmentCount=	"1"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"60"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+			<Fragment
+					type=			"shockwave"
+
+					damage=			"darkAcid:2d8; WMD1"
+					expansionSpeed=	"15"
+					missileSpeed=	"0"
+					lifetime=		"40"
+					>
+
+				<Effect>
+					<Shockwave>
+						<Image imageID=				"&rsShockwave1;"
+								imageX=				"0" 
+								imageY=				"128" 
+								imageWidth=			"512" 
+								imageHeight=		"64"/>
+					</Shockwave>
+				</Effect>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<!-- Pilgrim.xml -->
+<!-- PlayerShips.xml -->
+<!-- PointJuno.xml -->
+<!-- Primordial.xml -->
+<!-- Psych00.xml -->
+<!-- Psych01.xml -->
+<!-- Pteravores.xml -->
+<!-- QuantumCPU.xml -->
+<!-- RaisuMission01.xml -->
+<!-- RaisuMission02.xml -->
+<!-- RaisuMission03.xml -->
+<!-- RaisuStation.xml -->
+<!-- Rama.xml -->
+<!-- RanxEmpire.xml -->
+<ItemType UNID="&itKilotonCannonShell;"
+			name=				"kiloton cannon shell"
+			attributes=			"consumable, military, missile, ranx, specialty"
+			  
+			level=				"7"
+			frequency=			"common"
+			numberAppearing=	"72-120"
+
+			value=				"120"
+			mass=				"50"
+			  
+			description=		"This shell cartridge is used by the kiloton cannon."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<!-- Rasiermesser.xml -->
+<!-- RasiermesserMission01.xml -->
+<!-- RejuvTank.xml -->
+<!-- ResidentialsMission01.xml -->
+<!-- ResidentialsMission02.xml -->
+<!-- ResidentialsMission03.xml -->
+<!-- Ringers.xml -->
+<!-- Rocky.xml -->
+<!-- RogueFleet.xml -->
+<!-- RPGAnalyzers.xml -->
+<!-- RPGAutons.xml -->
+<!-- RPGAuxDevices.xml -->
+<!-- RPGBehaviors.xml -->
+<!-- RPGCharacterClasses.xml -->
+<!-- RPGCharacters.xml -->
+<!-- RPGCode.xml -->
+<!-- RPGCommoditiesExchange.xml -->
+<!-- RPGCommonText.xml -->
+<!-- RPGCompatibility.xml -->
+<!-- RPGComponents.xml -->
+<!-- RPGCrime.xml -->
+<!-- RPGDeviceDockScreens.xml -->
+<!-- RPGDialog.xml -->
+<!-- RPGDockManagement.xml -->
+<!-- RPGDockScreens.xml -->
+<!-- RPGDockServices.xml -->
+<!-- RPGLibrary.xml -->
+<!-- RPGMembership.xml -->
+<!-- RPGMining.xml -->
+<!-- RPGMissions.xml -->
+<!-- RPGMissionTemplate01.xml -->
+<!-- RPGMissionTemplate02.xml -->
+<!-- RPGMissionTemplate03.xml -->
+<!-- RPGMissionTemplate04.xml -->
+<!-- RPGMissionTemplate05.xml -->
+<!-- RPGMissionTemplate06.xml -->
+<!-- RPGMissionTemplate07.xml -->
+<!-- RPGPlayer.xml -->
+<!-- RPGRumors.xml -->
+<!-- RPGShipBroker.xml -->
+<!-- RPGShipScreens.xml -->
+<!-- RPGSlaves.xml -->
+<!-- RPGSquadronUI.xml -->
+<!-- RPGTradingComputer.xml -->
+<!-- RPGTypes.xml -->
+<!-- RPGUsefulItems.xml -->
+<!-- RPGViewers.xml -->
+<!-- RPGWingmen.xml -->
+<!-- Salvagers.xml -->
+<!-- Sanctuary.xml -->
+<!-- Sapiens.xml -->
+<!-- Scoria.xml -->
+<!-- ShieldEnhancementItems.xml -->
+<!-- Sisters01.xml -->
+<!-- Sisters02.xml -->
+<!-- Sisters03.xml -->
+<!-- SistersDonate.xml -->
+<!-- SistersOfDomina.xml -->
+<!-- SistersPilgrimsAid.xml -->
+<!-- SistersSanctum.xml -->
+<!-- Stargates.xml -->
+<!-- Stars.xml -->
+<!-- StarsOfThePilgrim.xml -->
+<!-- StarSystems.xml -->
+<!-- StdArmor.xml -->
+<!-- StdAutons.xml -->
+<!-- StdDevices.xml -->
+<!-- StdDockScreens.xml -->
+<!-- StdEffects.xml -->
+<!-- StdFuel.xml -->
+<!-- StdMiningEquipment.xml -->
+<!-- StdPlayerShips.xml -->
+<!-- StdShields.xml -->
+<!-- StdSovereigns.xml -->
+<!-- StdSystems.xml -->
+<!-- StdTypes.xml -->
+<!-- StdUnknownItems.xml -->
+<!-- StdWeapons.xml -->
+<ItemType UNID="&itKM100Missile;"
+			name=				"KM100 Longbow missile"
+			attributes=			"basicAmmo, commonwealth, consumable, missile, NAMI, NAMILauncher"
+			  
+			level=				"2"
+			frequency=			"common"
+			numberAppearing=	"48-72"
+
+			value=				"5"
+			mass=				"15"
+			  
+			description=		"This is a standard hexagene high-explosive missile; cheap and light, they are the weapon of choice for modern patrol fleets."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				lifetime=		"90"
+				damage=			"blast:4d6; momentum4; WMD5"
+				missileSpeed=	"60"
+				hitPoints=		"20"
+						 
+				effect=			"&efMissileNAMI;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itFragmentationMissile;"
+			name=				"KM110 Starburst missile"
+			attributes=			"basicAmmo, commonwealth, consumable, missile, NAMI, NAMILauncher"
+			  
+			level=				"3"
+			frequency=			"common"
+			numberAppearing=	"48-72"
+
+			value=				"10"
+			mass=				"15"
+			  
+			description=		"The warhead of this NAMI-compatible missile explodes into dozens of high-velocity shards."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				lifetime=		"90"
+				missileSpeed=	"60"
+				hitPoints=		"20"
+
+				effect=			"&efMissileNAMI;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"7d6"
+					type=			"missile"
+					lifetime=		"10"
+					damage=			"kinetic:2d6; WMD1"
+					missileSpeed=	"32-48"
+                    
+    				effect=			"&efKineticBoltDefault;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itKM120Missile;"
+			name=				"KM120 Brute missile"
+			attributes=			"commonwealth, consumable, missile, NAMI, NAMILauncher"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			numberAppearing=	"24-36"
+
+			value=				"20"
+			mass=				"40"
+			  
+			description=		"This is a heavier and more powerful version of the KM100."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+			type=			"missile"
+			lifetime=		"60"
+			damage=			"blast:9d6; momentum:4; WMD:7"
+			missileSpeed=	"60"
+			hitPoints=		"30"
+						 
+			effect=			"&efMissileNAMI;"
+			sound=			"&snMissileLauncher;"
+			>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itKM500Missile;"
+			name=				"KM500 Stiletto missile"
+			attributes=			"basicAmmo, commonwealth, consumable, missile, NAMI, NAMILauncher"
+			  
+			level=				"3"
+			frequency=			"common"
+			numberAppearing=	"24-36"
+
+			value=				"20"
+			mass=				"20"
+			  
+			description=		"A powerful optical and infrared tracking module allows this missile to home in on its target."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"120"
+				damage=			"blast:5d6; momentum4; WMD5"
+				missileSpeed=	"40"
+				hitPoints=		"20"
+				maneuverRate=	"9"
+						 
+				effect=			"&efMissileNAMI;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itXM300Missile;"
+			name=				":an XM300 Reaper missile"
+			attributes=			"commonwealth, consumable, illegal, missile, NAMI, NAMILauncher, premiumAmmo"
+			  
+			level=				"4"
+			frequency=			"rare"
+			numberAppearing=	"24-36"
+
+			value=				"30"
+			mass=				"20"
+			  
+			description=		"The XM300 warhead is jacketed with small amounts of plutonium&mdash;enough to fatally contaminate a target. This weapon is banned by treaty."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				lifetime=		"90"
+				damage=			"blast:6d6; radiation1; momentum4; WMD4"
+				missileSpeed=	"60"
+				hitPoints=		"20"
+						 
+				effect=			"&efMissileNAMI;"
+				hitEffect=		"&efRadioactiveHitEffect;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itKM550Missile;"
+			name=				"KM550 Broadsword missile"
+			attributes=			"commonwealth, consumable, missile, NAMI, NAMILauncher"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+			numberAppearing=	"24-36"
+
+			value=				"50"
+			mass=				"40"
+			  
+			description=		"The Broadsword missile is a heavier version of the tracking KM500 series."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"120"
+				damage=			"blast:9d6; momentum:4; WMD:7"
+				missileSpeed=	"40"
+				hitPoints=		"30"
+				maneuverRate=	"9"
+						 
+				sound=			"&snMissileLauncher;"
+				effect=			"&efMissileNAMI;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itKM170Missile;"
+			name=				"KM170 Maul missile"
+			attributes=			"commonwealth, consumable, missile, NAMI, NAMILauncher"
+			  
+			level=				"5"
+			frequency=			"rare"
+			numberAppearing=	"24-36"
+
+			value=				"70"
+			mass=				"40"
+			  
+			description=		"The KM170 is a non-nuclear siege weapon, with more than double the explosive power of the KM120s."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+			type=			"missile"
+			lifetime=		"60"
+			damage=			"blast:20d6; momentum:4; WMD:7"
+			missileSpeed=	"40"
+			hitPoints=		"50"
+						 
+			effect=			"&efMissileNAMI;"
+			sound=			"&snMissileLauncher;"
+			>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itXM900Missile;"
+			name=				":an XM900 Lucifer missile"
+			attributes=			"commonwealth, commonwealthFleet, consumable, military, missile, NAMI, NAMILauncher, premiumAmmo"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"48-72"
+
+			value=				"150"
+			mass=				"40"
+			  
+			description=		"An optical tracking missile carrying a 100-kiloton thermonuclear warhead. The XM900 is tightly controlled; only military vessels may carry them."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+
+				missileSpeed=	"40"
+				hitPoints=		"30"
+				lifetime=		"120"
+
+				maneuverRate=	"9"
+
+				effect=			"&efMissileNAMI;"
+				hitEffect=		"&efThermoFragmentExplosion;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:6d24; momentum:6; WMD:7"
+					minRadius=		"1"
+					maxRadius=		"4"
+					missileSpeed=	"0"
+					
+					hitEffect=		"&efThermoFragmentHit;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&it400HexageneMAG;"
+			name=				"400 hexagene MAG"
+			attributes=			"basicAmmo, commonwealth, consumable, MAGLauncher, missile, rasiermesser"
+			  
+			level=				"3"
+			frequency=			"common"
+			numberAppearing=	"48-72"
+
+			value=				"12"
+			mass=				"20"
+			  
+			description=		"This is a standard hexagene high-explosive grenade compatible with the MAG launcher."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				damage=			"blast:6d6; WMD:6"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"20"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&it600HexageneMAG;"
+			name=				"600 hexagene MAG"
+			attributes=			"commonwealth, consumable, MAGLauncher, missile, rasiermesser"
+			  
+			level=				"4"
+			frequency=			"common"
+			numberAppearing=	"48-72"
+
+			value=				"30"
+			mass=				"20"
+			  
+			description=		"This is a larger version of the 400 MAG grenade. It is compatible with the MAG launcher."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				damage=			"blast:9d6; WMD:6"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"20"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&it800HexageneMAG;"
+			name=				":an 800F hexagene MAG"
+			attributes=			"commonwealth, consumable, MAGLauncher, missile, rasiermesser"
+			  
+			level=				"5"
+			frequency=			"common"
+			numberAppearing=	"48-72"
+
+			value=				"45"
+			mass=				"30"
+			  
+			description=		"The largest MAG in common use, the 800 series packs twice as much hexagene as the 400 MAG and surrounds it with a fragmentation jacket."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"40"
+				failsafe=		"6"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"50-60"
+					type=			"missile"
+					lifetime=		"12"
+					damage=			"blast:2d6-1; WMD:1"
+					missileSpeed=	"40-60"
+                    
+                    effect=         "&efBlastShellDefault;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itJB2ShieldBusterMAG;"
+			name=				"JB2 shield buster MAG"
+			attributes=			"commonwealth, consumable, MAGLauncher, missile, rasiermesser"
+			  
+			level=				"6"
+			frequency=			"uncommon"
+			numberAppearing=	"48-72"
+
+			value=				"70"
+			mass=				"20"
+			  
+			description=		"This specialized MAG is designed to inflict enhanced damage to energy fields."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				damage=			"blast:12d12; shield:5;"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"40"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itZG24ClusterMAG;"
+			name=				"ZG24 cluster MAG"
+			attributes=			"commonwealth, consumable, MAGLauncher, missile, rasiermesser"
+			  
+			level=				"6"
+			frequency=			"uncommon"
+			numberAppearing=	"72-120"
+
+			value=				"90"
+			mass=				"30"
+			  
+			description=		"The ZG24 cluster MAG is a cluster grenade that explodes into dozens of smaller hexagene explosives."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+						
+				lifetime=		"80"
+				missileSpeed=	"30"
+						
+				hitPoints=		"60"
+				failsafe=		"6"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"28-38"
+					type=			"missile"
+					lifetime=		"36"
+					damage=			"blast:4d6; WMD:5"
+					missileSpeed=	"40-60"
+                    
+                    effect=         "&efBlastShellDefault;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&it3KSiegeMAG;"
+			name=				"3K siege MAG"
+			attributes=			"commonwealth, consumable, MAGLauncher, military, missile, rasiermesser"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"72-120"
+
+			value=				"120"
+			mass=				"30"
+			  
+			description=		"This heavy MAG grenade packs 25 kilos of hexagene\x97enough to blast through the heavy armor of fortresses and military installations."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				damage=			"blast:24d12; WMD:7"
+						
+				lifetime=		"160"
+				missileSpeed=	"15"
+						
+				hitPoints=		"60"
+						 
+				effect=			"&efMissileMAG;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itHighFluxMAG;"
+			name=				"98R high-flux MAG"
+			attributes=			"commonwealth, consumable, MAGLauncher, military, missile, premiumAmmo, rasiermesser"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+			numberAppearing=	"48-72"
+
+			value=				"300"
+			mass=				"30"
+			  
+			description=		"The only military variant of the popular MAG series is this thermonuclear variant."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+						
+				lifetime=		"120"
+				missileSpeed=	"30"
+						
+				hitPoints=		"100"
+						 
+				effect=			"&efMissileMAG;"
+				hitEffect=		"&efThermoFragmentExplosion;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:14d24; WMD:7"
+					minRadius=		"1"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+					
+					hitEffect=		"&efThermoFragmentHit;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itStrelkaWhite;"
+			name=				"White Strelka missile"
+			attributes=			"basicAmmo, commonwealth, consumable, missile, makayev, makayevLauncher"
+			  
+			level=				"5"
+			frequency=			"common"
+			numberAppearing=	"320-480"
+
+			value=				"6"
+			mass=				"10"
+			  
+			description=		"The Strelka series of light missiles is compatible with the Makayev launcher. The White Strelka is the cheapest and least powerful of the series."
+			>
+
+		<Image imageID="&rsItemsMakayev2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"60"
+				damage=			"blast:3d6; momentum:2; WMD:5"
+				missileSpeed=	"60"
+
+				effect=			"&efMissileStrelka;"
+				sound=			"&snRecoillessCannon;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itStrelkaGreen;"
+			name=				"Green Strelka missile"
+			attributes=			"commonwealth, consumable, missile, makayev, makayevLauncher"
+			  
+			level=				"6"
+			frequency=			"common"
+			numberAppearing=	"480-720"
+
+			value=				"9"
+			mass=				"10"
+			  
+			description=		"The Strelka series of light missiles is compatible with the Makayev launcher. The Green Strelka packs more punch than the White version."
+			>
+
+		<Image imageID="&rsItemsMakayev2;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"60"
+				damage=			"blast:5d6; momentum:2; WMD:5"
+				missileSpeed=	"60"
+
+				effect=			"&efMissileStrelka;"
+				sound=			"&snRecoillessCannon;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itStrelkaRed;"
+			name=				"Red Strelka missile"
+			attributes=			"commonwealth, consumable, military, missile, makayev, makayevLauncher"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"480-720"
+
+			value=				"15"
+			mass=				"12"
+			  
+			description=		"The Red Strelka is a thermonuclear version of the Makayev-compatible missile series."
+			>
+
+		<Image imageID="&rsItemsMakayev2;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"60"
+				damage=			"thermo:3d12; momentum:3; WMD:5"
+				missileSpeed=	"60"
+
+				effect=			"&efMissileStrelka;"
+				sound=			"&snRecoillessCannon;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itStrelkaBlack;"
+			name=				"Black Strelka missile"
+			attributes=			"commonwealth, consumable, military, missile, makayev, makayevLauncher, premiumAmmo"
+			  
+			level=				"9"
+			frequency=			"rare"
+			numberAppearing=	"320-480"
+
+			value=				"60"
+			mass=				"15"
+			  
+			description=		"The rare and powerful Black Strelka releases dozens of thermonuclear submunitions. It is compatible with the Makayev launcher."
+			>
+
+		<Image imageID="&rsItemsMakayev2;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+				lifetime=		"60"
+				missileSpeed=	"60"
+
+				effect=			"&efMissileStrelka;"
+				hitEffect=		"&efThermoFragmentExplosion;"
+				sound=			"&snRecoillessCannon;"
+				>
+
+			<Fragment
+					count=			"36-48"
+					type=			"missile"
+					lifetime=		"8"
+					damage=			"thermo:1d12; momentum:1; WMD:5"
+					missileSpeed=	"40-60"
+
+					effect=			"&efThermoShellDefault;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itStaticMine;"
+			name=				"CRM100 Fatboy mine"
+			attributes=			"commonwealth, commonwealthFleet, consumable, military, missile, NAMI, NAMIMineLauncher"
+			  
+			level=				"7"
+			frequency=			"common"
+			numberAppearing=	"96-144"
+
+			value=				"90"
+			mass=				"70"
+			  
+			description=		"The CRM100 is a thermonuclear static mine deployed by the NAMI mine launcher."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+
+				missileSpeed=	"10"
+				accelerationFactor="60"
+				lifetime=		"4800"
+				stealth=		"15"
+
+				failSafe=		"10"
+
+				hitEffect=		"&efBlastHitDefault;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Effect>
+				<Image imageID="&rsMissiles6;" imageX="0" imageY="0" imageWidth="24" imageHeight="24" imageFrameCount="12" imageTicksPerFrame="5"/>
+			</Effect>
+
+			<Fragment
+					count=			"6d12"
+					type=			"missile"
+					canHitSource=	"true"
+
+					damage=			"thermo:2d12; WMD6"
+					missileSpeed=	"40-60"
+					lifetime=		"8"
+
+					effect=			"&efThermoShellDefault;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itTrackingMine;"
+			name=				"CRM500 Running Man mine"
+			attributes=			"commonwealth, commonwealthFleet, consumable, military, missile, NAMI, NAMIMineLauncher"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+			numberAppearing=	"48-72"
+
+			value=				"240"
+			mass=				"70"
+			  
+			description=		"The CRM500 is a tracking thermonuclear mine deployed by the NAMI mine launcher."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Missile
+				type=			"missile"
+
+				missileSpeed=	"10"
+				maneuverRate=	"9"
+				lifetime=		"2400"
+				stealth=		"12"
+
+				failSafe=		"10"
+
+				sound=			"&snMissileLauncher;"
+				hitEffect=		"&efBlastHitDefault;"
+				>
+
+			<Effect>
+				<Image imageID="&rsMissiles6;" imageX="0" imageY="0" imageWidth="24" imageHeight="24" imageFrameCount="12" imageTicksPerFrame="5"/>
+			</Effect>
+
+			<Fragment
+					count=			"6d12"
+					type=			"missile"
+					canHitSource=	"true"
+
+					damage=			"thermo:2d12; WMD6"
+					missileSpeed=	"40-60"
+					lifetime=		"8"
+
+					effect=			"&efThermoShellDefault;"
+					>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itGotha10Missile;"
+			name=				"Gotha-10 missile"
+			attributes=			"commonwealth, consumable, military, missile, rasiermesser, rasiermesserLauncher"
+			  
+			level=				"8"
+			frequency=			"common"
+			numberAppearing=	"48-72"
+
+			value=				"300"
+			mass=				"30"
+			  
+			description=		"This hypervelocity missile is compatible with the Rasiermesser launcher."
+			>
+
+		<Image imageID="&rsItemsRasiermesser4;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"120"
+				damage=			"thermo:10d20; momentum3; WMD7"
+				missileSpeed=	"70"
+				hitPoints=		"40"
+
+				effect=			"&efMissileRasiermesser;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itGotha400Seeker;"
+			name=				"Gotha-400 seeker"
+			attributes=			"commonwealth, consumable, military, missile, rasiermesser, rasiermesserLauncher"
+			  
+			level=				"9"
+			frequency=			"common"
+			numberAppearing=	"72-120"
+
+			value=				"600"
+			mass=				"30"
+			  
+			description=		"This is a tracking missile with a kiloton-yield warhead. It is compatible with the Rasiermesser launcher."
+			>
+
+		<Image imageID="&rsItemsRasiermesser4;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"120"
+				damage=			"thermo:10d20; momentum3; WMD7"
+				missileSpeed=	"65"
+				hitPoints=		"40"
+				maneuverRate=	"9"
+						 
+				effect=			"&efMissileRasiermesser;"
+				sound=			"&snMissileLauncher;"
+				>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itM2Missile;"
+			name=				":an M2 Vulcan missile"
+			attributes=			"commonwealth, commonwealthFleet, consumable, military, missile, NAMI, NAMIHeavyLauncher, premiumAmmo"
+			  
+			level=				"9"
+			frequency=			"rare"
+			numberAppearing=	"72-120"
+
+			value=				"350"
+			mass=				"50"
+			  
+			description=		"The M2 is a heavy siege weapon launched by the NAMI heavy launcher. It is designed to attack capital ships and stations."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"120"
+				missileSpeed=	"55"
+				hitPoints=		"150"
+
+				effect=			"&efMissileNAMIHeavy;"
+				hitEffect=		"&efThermoFragmentExplosion;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:16d24; momentum3; WMD7"
+					minRadius=		"2"
+					maxRadius=		"6"
+					missileSpeed=	"0"
+					
+					hitEffect=		"&efThermoFragmentHit;"
+					>
+			</Fragment>
+
+			<Fragment
+					count=			"5d20"
+					type=			"missile"
+
+					lifetime=		"1d12+12"
+					damage=			"blast:2d6; WMD1"
+					missileSpeed=	"25-55"
+					>
+
+				<Effect>
+					<ImageAndTail
+							imageID=			"&rsMissiles4;"
+							imageX=				"0"
+							imageY=				"0"
+							imageWidth=			"16"
+							imageHeight=		"16"
+							imageFrameCount=	"4"
+							imageTicksPerFrame=	"1"
+
+							length=				"32"
+							width=				"1"
+							primaryColor=		"0xff, 0xff, 0xff"
+							secondaryColor=		"0xc0, 0xc2, 0x85"
+									/>
+				</Effect>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itS3Missile;"
+			name=				":an S3 Medusa missile"
+			attributes=			"commonwealth, commonwealthFleet, consumable, military, missile, NAMI, NAMIHeavyLauncher, premiumAmmo"
+			  
+			level=				"9"
+			frequency=			"uncommon"
+			numberAppearing=	"72-120"
+
+			value=				"500"
+			mass=				"120"
+			  
+			description=		"Soon after launch, the S3 Medusa explodes to reveal a dozen independently-tracking thermonuclear missiles. The S3 requires the NAMI heavy launcher."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+
+				missileSpeed=	"30"
+				lifetime=		"20"
+				hitPoints=		"150"
+
+				failsafe=		"5"
+
+				effect=			"&efMissileNAMIHeavy;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<HitEffect
+					sound=	"&snArmorHit1;"
+					>
+				<ParticleExplosion
+						particleCount=		"2d4"
+						particleSpeed=		"25"
+						particleLifetime=	"20"
+						>
+					<Image imageID="&rsDebris1;" imageX="0" imageY="0" imageWidth="4" imageHeight="4" imageFrameCount="8" imageTicksPerFrame="3"/>
+				</ParticleExplosion>
+			</HitEffect>
+
+			<Fragment
+					count=				"12"
+					type=				"missile"
+
+					damage=				"thermo:4d12; momentum:2; WMD:1"
+					missileSpeed=		"50"
+					lifetime=			"120"
+
+					multiTarget=		"true"
+					autoAcquireTarget=	"true"
+					maneuverRate=		"9"
+					>
+
+				<Effect>
+					<Image imageID="&rsMissileNAMI;" imageX="0" imageY="0" imageWidth="24" imageHeight="24" rotationCount="40"/>
+
+					<Group angleOffset="180" radiusOffset="10">
+						<ParticleSystem
+								style=				"jet"
+								fixedPos=			"true"
+								emitRate=			"30"
+								tangentSpeed=		"3d2-3"
+								particleLifetime=	"15-45"
+								XformTime=			"20"
+								>
+							<ParticleEffect>
+								<Particle
+										style=			"plain"
+										minWidth=		"1"
+										maxWidth=		"4"
+										primaryColor=	"#ffffc0"
+										secondaryColor=	"#7e7e74"
+										/>
+							</ParticleEffect>
+						</ParticleSystem>
+
+						<Ray
+								style=			"smooth"
+								shape=			"tapered"
+								length=			"50"
+								width=			"20"
+								intensity=		"40"
+								primaryColor=	"#ffffc0"
+								secondaryColor=	"#7e7e74"
+								/>
+					</Group>
+				</Effect>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itM5Missile;"
+			name=				":an M5 Nemesis missile"
+			attributes=			"commonwealth, commonwealthFleet, consumable, military, missile, NAMI, NAMIHeavyLauncher, premiumAmmo"
+			  
+			level=				"10"
+			frequency=			"rare"
+			numberAppearing=	"48-72"
+
+			value=				"600"
+			mass=				"50"
+			  
+			description=		"The M5 Nemesis missile is an upgraded version of the M2. It requires the NAMI heavy launcher."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"120"
+				missileSpeed=	"55"
+				hitPoints=		"150"
+
+				effect=			"&efMissileNAMIHeavy;"
+				hitEffect=		"&efThermoFragmentExplosion;"
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Fragment
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:24d24; momentum3; WMD7"
+					minRadius=		"3"
+					maxRadius=		"8"
+					missileSpeed=	"0"
+					
+					hitEffect=		"&efThermoFragmentHit;"
+					>
+			</Fragment>
+
+			<Fragment
+					count=			"8d20"
+					type=			"missile"
+
+					lifetime=		"1d12+12"
+					damage=			"blast:2d6; WMD1"
+					missileSpeed=	"25-55"
+							>
+
+				<Effect>
+					<ImageAndTail
+							imageID=			"&rsMissiles4;"
+							imageX=				"0"
+							imageY=				"0"
+							imageWidth=			"16"
+							imageHeight=		"16"
+							imageFrameCount=	"4"
+							imageTicksPerFrame=	"1"
+
+							length=				"32"
+							width=				"1"
+							primaryColor=		"0xff, 0xff, 0xff"
+							secondaryColor=		"0xc0, 0xc2, 0x85"
+									/>
+				</Effect>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<ItemType UNID="&itSmartCannonShell;"
+			name=				"SmartCannon round"
+			attributes=			"basicAmmo, commonwealth, consumable, missile, rasiermesser"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			numberAppearing=	"12d40"
+
+			value=				"2"
+			mass=				"10"
+			  
+			description=		"SmartCannons are recoilless weapons modified to shoot special tracking shells. A SmartCannon round can adjust its path to strike a designated target."
+			>
+
+		<Image imageID="&rsItemsRasiermesser1;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<ItemType UNID="&itAkan30CannonShell;"
+			name=				"Akan 30 cannon shell cartridge"
+			attributes=			"commonwealth, consumable, missile, rasiermesser"
+			  
+			level=				"5"
+			frequency=			"common"
+			numberAppearing=	"10d40"
+
+			value=				"20"
+			mass=				"10"
+			  
+			description=		"This shell cartridge is used by the Akan 30 cannon."
+			>
+
+		<Image imageID="&rsItemsRasiermesser3;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<ItemType UNID="&itDragonflyCartridge;"
+			name=				"Dragonfly missile cartridge"
+			attributes=			"commonwealth, consumable, EI, missile"
+			  
+			level=				"6"
+			frequency=			"common"
+			numberAppearing=	"12d20"
+
+			value=				"40"
+			mass=				"50"
+			  
+			description=		"This is a cartridge for the Dragonfly missile system. Each cartridge contains three micro-missiles."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<ItemType UNID="&itThermoCannonShell;"
+			name=				"thermo cannon shell cartridge"
+			attributes=			"bushido, commonwealth, consumable, missile, military"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+			numberAppearing=	"12d40"
+
+			value=				"70"
+			mass=				"20"
+			  
+			description=		"Fired by thermo cannons, these rounds pack the yield of a nuclear device in a small, mass-produced shell."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<ItemType UNID="&itTM7Warhead;"
+			name=				"TM7 warhead"
+			attributes=			"commonwealth, consumable, military, missile, taikon"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+			numberAppearing=	"12d12"
+
+			value=				"300"
+			mass=				"40"
+			  
+			description=		"These warheads are launched by Taikon's TM7 multitarget cannon."
+			>
+
+		<Image imageID="&rsItemsTaikon1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<!-- StKatharines.xml -->
+<!-- Stormhound.xml -->
+<!-- SungCitadel.xml -->
+<!-- SungFortress.xml -->
+<!-- SungSlaveCamp.xml -->
+<!-- SungSlavers.xml -->
+<ItemType UNID="&itParticleBoltCartridge;"
+			name=				"Nandao bolt cartridge"
+			level=				"6"
+			value=				"35"
+			mass=				"10"
+			frequency=			"common"
+			numberAppearing=	"10d40"
+			attributes=			"Consumable; Missile; NotForSale; sungSlavers"
+
+			description=		"This energy cartridge is used by the Nandao bolt cannon."
+
+			sortName=			"~.Nandao bolt cartridge"
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+	</ItemType>
+<!-- Tenhove.xml -->
+<!-- TeratonResearch.xml -->
+<!-- Teratons.xml -->
+<ItemType UNID="&itKytrynPlasmaSeed;"
+			name=				"Kytryn plasma pod"
+			level=				"10"
+			value=				"450"
+			mass=				"30"
+			attributes=			"Consumable; Alien; Missile; Teraton"
+			frequency=			"uncommon"
+			numberAppearing=	"1d6"
+
+			description=		"These alien warheads are launched by the Kytryn launcher."
+
+			sortName=			"Kytryn.10"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Missile
+				type=			"missile"
+				lifetime=		"480"
+				missileSpeed=	"30"
+
+				failsafe=		"6"
+
+				sound=			"&snMissileLauncher;"
+				>
+			
+			<Effect>
+				<Orb
+						style=				"flare"
+						radius=				"50"
+						intensity=			"50"
+						
+						blendMode=			"screen"
+						primaryColor=		"#feff00"
+						secondaryColor=		"#ffbf00"
+						/>
+			
+				<ParticleSystem
+						style=				"jet"
+						fixedPos=			"true"
+						emitRate=			"4-8"
+						tangentSpeed=		"-6-6"
+						particleLifetime=	"24"
+						XformTime=			"30"
+						>
+					<ParticleEffect>
+						<Orb
+								instance=			"owner"
+						
+								style=				"smooth"
+								animate=			"fade"
+								radius=				"10"
+								lifetime=			"24"
+								intensity=			"20"
+						
+								blendMode=			"screen"
+								primaryColor=		"#feff00"
+								secondaryColor=		"#ff7f00"
+								/>
+					</ParticleEffect>
+				</ParticleSystem>
+			</Effect>
+
+			<Fragment
+					type=				"particles"
+					damage=				"plasma:500; WMD:4"
+					hitPoints=			"10"
+					>
+			
+				<ParticleSystem
+						style=				"radiate"
+						emitLifetime=		"1"
+						emitRate=			"120"
+						emitSpeed=			"20"
+					
+						particleLifetime=	"30"
+						particleEffect=		"&efPlasmaParticleDefault;"
+						>
+				</ParticleSystem>
+			</Fragment>
+		</Missile>
+	</ItemType>
+<!-- Tinkers.xml -->
+<!-- Transcendence.xml -->
+<!-- UndergroundCaverns.xml -->
+<!-- UndergroundStructures.xml -->
+<!-- UrakWarlords.xml -->
+<!-- UsefulItems.xml -->
+<!-- Ventari.xml -->
+<!-- Volcanic.xml -->
+<!-- Volkov.xml -->
+<!-- WeaponEnhancementItems.xml -->
+<!-- Worlds.xml -->
+<!-- Xenophobes.xml -->
+</TranscendenceModule>

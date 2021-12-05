@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+<!-- Abbasid.xml -->
+<!-- Achievements.xml -->
+<!-- AgriculturalMission01.xml -->
+<!-- Analyzers.xml -->
+<!-- Anarchists.xml -->
+<!-- Antarctica.xml -->
+<!-- Antarctica01.xml -->
+<!-- Antarctica02.xml -->
+<!-- AntarcticaD01.xml -->
+<!-- AresItems.xml -->
+<!-- AresOrthodoxy.xml -->
+<!-- AresShips.xml -->
+<!-- ArmorEnhancementItems.xml -->
+<!-- ArmorRepairItems.xml -->
+<!-- AsteroidFields.xml -->
+<!-- Barricades.xml -->
+<!-- BattleArena.xml -->
+<!-- BattleArenaChallenger.xml -->
+<!-- BattleArenaFight.xml -->
+<!-- BattleArenaGladiators.xml -->
+<!-- BattleArenaKidnapped.xml -->
+<!-- BattleArenaMelee.xml -->
+<!-- Benedict.xml -->
+<!-- Benedict00.xml -->
+<!-- Benedict01.xml -->
+<!-- Benedict02.xml -->
+<!-- Benedict04.xml -->
+<!-- Benedict05.xml -->
+<!-- Benedict05A.xml -->
+<!-- Benedict06.xml -->
+<!-- Benedict07.xml -->
+<!-- Benedict08.xml -->
+<!-- BenedictStoryArc.xml -->
+<!-- BlackMarket.xml -->
+<!-- BlackMarketMember.xml -->
+<!-- BlackMarketMission00.xml -->
+<!-- BlackMarketMission01.xml -->
+<!-- BlackMarketMission02.xml -->
+<!-- BlackMarketMissionSmuggle01.xml -->
+<!-- BlackMarketPlayerShips.xml -->
+<!-- CentauriWarlords.xml -->
+<!-- CharonFortress.xml -->
+<!-- CharonPirates.xml -->
+<!-- Code.xml -->
+<!-- Commonwealth.xml -->
+<!-- CommonwealthAgricultural.xml -->
+<!-- CommonwealthCenturions.xml -->
+<!-- CommonwealthCharacters.xml -->
+<!-- CommonwealthFleet.xml -->
+<!-- CommonwealthFleetMission01.xml -->
+<!-- CommonwealthFleetMission02.xml -->
+<!-- CommonwealthFleetMission03.xml -->
+<!-- CommonwealthFleetMission04.xml -->
+<!-- CommonwealthFleetMission05.xml -->
+<!-- CommonwealthFleetMission06.xml -->
+<!-- CommonwealthFleetMission07.xml -->
+<!-- CommonwealthFleetMission08.xml -->
+<!-- CommonwealthFleetMission09.xml -->
+<!-- CommonwealthFleetMission10.xml -->
+<!-- CommonwealthFleetMission11.xml -->
+<!-- CommonwealthFleetMissionLL01.xml -->
+<!-- CommonwealthFleetMissionLL02.xml -->
+<!-- CommonwealthFleetMissionLL03.xml -->
+<!-- CommonwealthFleetMissionLL04.xml -->
+<!-- CommonwealthFleetMissionPJ01.xml -->
+<!-- CommonwealthMetropolis.xml -->
+<!-- CommonwealthMilitia.xml -->
+<!-- CommonwealthMilitiaMission01.xml -->
+<!-- CommonwealthMilitiaMission02.xml -->
+<!-- CommonwealthMilitiaMission03.xml -->
+<!-- CommonwealthMilitiaMission04.xml -->
+<!-- CommonwealthMilitiaMissionSK01.xml -->
+<!-- CommonwealthMining.xml -->
+<!-- CommonwealthMiningMission01.xml -->
+<!-- CommonwealthMiningMission02.xml -->
+<!-- CommonwealthMiningMission03.xml -->
+<!-- CommonwealthMiningMission04.xml -->
+<!-- CommonwealthMiningMission05.xml -->
+<!-- CommonwealthMission01.xml -->
+<!-- CommonwealthMissionRevenge01.xml -->
+<!-- CommonwealthRonins.xml -->
+<!-- CommonwealthShips.xml -->
+<!-- CommonwealthStarCarrier.xml -->
+<!-- CommonwealthVolunteerMission01.xml -->
+<!-- CommonwealthVolunteerMission02.xml -->
+<!-- CommonwealthVolunteerMission03.xml -->
+<!-- Compatibility10.xml -->
+<!-- CompatibilityLibrary.xml -->
+<!-- ContainerHabitat.xml -->
+<!-- CoreCode.xml -->
+<!-- CoreDiagnostics.xml -->
+<!-- CoreEffects.xml -->
+<!-- CoreEngineText.xml -->
+<!-- CoreExplosions.xml -->
+<!-- CoreFireEffects.xml -->
+<!-- CoreHitEffects.xml -->
+<!-- CoreItems.xml -->
+<!-- CorePlaceholders.xml -->
+<!-- CoreProjectileEffects.xml -->
+<!-- CoreTypesLibrary.xml -->
+<!-- CorporateAutonDealer.xml -->
+<!-- CorporateHierarchy.xml -->
+<!-- CorporateInsurance.xml -->
+<!-- CorporateTradingPost.xml -->
+<!-- Cryovolcanic.xml -->
+<!-- CSCTerra.xml -->
+<!-- Dall01.xml -->
+<!-- Dantalion.xml -->
+<!-- DeathDrugsCartel.xml -->
+<!-- Debris.xml -->
+<!-- Domina.xml -->
+<!-- DwargRaiders.xml -->
+<!-- Elysium.xml -->
+<!-- EnricoGaul.xml -->
+<!-- Environments.xml -->
+<!-- Eridani.xml -->
+<!-- EridaniStations.xml -->
+<!-- EtaCeti.xml -->
+<!-- FerianMission01.xml -->
+<!-- Ferians.xml -->
+<!-- Fiona.xml -->
+<!-- FirstContactMonument.xml -->
+<!-- Gaians.xml -->
+<!-- GalaxyCompatibility.xml -->
+<!-- GalaxyEffects.xml -->
+<!-- GalaxyLibrary.xml -->
+<!-- GroupIAsteroids.xml -->
+<!-- Groups.xml -->
+<!-- HaloGems.xml -->
+<!-- HarperThompson.xml -->
+<!-- Heliotropes.xml -->
+<!-- Heretic.xml -->
+<!-- Heretic00.xml -->
+<!-- Heretic01.xml -->
+<!-- Heretic02.xml -->
+<!-- Heretic03.xml -->
+<!-- Heretic04.xml -->
+<!-- Heretic05.xml -->
+<!-- Heretic06.xml -->
+<!-- Heretic07.xml -->
+<!-- Heretic08.xml -->
+<!-- Himal.xml -->
+<!-- HSCompatibility.xml -->
+<!-- Huaramarca.xml -->
+<!-- HuaramarcaMission01.xml -->
+<!-- HuaramarcaMission02.xml -->
+<!-- HuaramarcaMission03.xml -->
+<!-- HuaramarcaMission04.xml -->
+<!-- HuaramarcaMission05.xml -->
+<!-- HuaramarcaMission06.xml -->
+<!-- HuaramarcaMission07.xml -->
+<!-- Huari.xml -->
+<!-- HuariMission01.xml -->
+<!-- HuariMission02.xml -->
+<!-- HuariMission03.xml -->
+<!-- HUD.xml -->
+<!-- HugoSandoval.xml -->
+<!-- HumanSpaceMap.xml -->
+<!-- HumanSpaceVol01.xml -->
+<!-- HumanTech.xml -->
+<!-- Ice.xml -->
+<!-- Iocrym.xml -->
+<!-- Jenna.xml -->
+<!-- JiangsStar.xml -->
+<!-- KateMorgental.xml -->
+<!-- KobolWarlords.xml -->
+<!-- KorolovFreighters.xml -->
+<!-- KorolovShipping.xml -->
+<!-- Kronosaurus.xml -->
+<!-- KronosaurusMission01.xml -->
+<!-- KSMission01.xml -->
+<!-- KSMission02.xml -->
+<!-- KSMission03.xml -->
+<!-- KSMissionC01.xml -->
+<!-- KSMissionC02.xml -->
+<!-- LiaPereira.xml -->
+<!-- Luminous.xml -->
+<!-- Makayev.xml -->
+<!-- Marauders.xml -->
+<!-- Metallic.xml -->
+<!-- Mining.xml -->
+<!-- MiningPods.xml -->
+<!-- MiscItems.xml -->
+<!-- MRAD.xml -->
+<!-- MuhammadCondi.xml -->
+<!-- Neurohack.xml -->
+<!-- NewVictoria.xml -->
+<!-- NPCPilgrims.xml -->
+<!-- Ore.xml -->
+<!-- OreStone.xml -->
+<!-- OutlawMiners.xml -->
+<!-- Outlaws.xml -->
+<!-- Ovoids.xml -->
+<!-- OvoidsCompatibility.xml -->
+<!-- Part1Compatibility.xml -->
+<!-- Penitents.xml -->
+<!-- Pilgrim.xml -->
+<!-- PlayerShips.xml -->
+<!-- PointJuno.xml -->
+<!-- Primordial.xml -->
+<!-- Psych00.xml -->
+<!-- Psych01.xml -->
+<!-- Pteravores.xml -->
+<!-- QuantumCPU.xml -->
+<!-- RaisuMission01.xml -->
+<!-- RaisuMission02.xml -->
+<!-- RaisuMission03.xml -->
+<!-- RaisuStation.xml -->
+<!-- Rama.xml -->
+<!-- RanxEmpire.xml -->
+<!-- Rasiermesser.xml -->
+<!-- RasiermesserMission01.xml -->
+<!-- RejuvTank.xml -->
+<!-- ResidentialsMission01.xml -->
+<!-- ResidentialsMission02.xml -->
+<!-- ResidentialsMission03.xml -->
+<!-- Ringers.xml -->
+<!-- Rocky.xml -->
+<!-- RogueFleet.xml -->
+<!-- RPGAnalyzers.xml -->
+<!-- RPGAutons.xml -->
+<!-- RPGAuxDevices.xml -->
+<!-- RPGBehaviors.xml -->
+<!-- RPGCharacterClasses.xml -->
+<!-- RPGCharacters.xml -->
+<!-- RPGCode.xml -->
+<!-- RPGCommoditiesExchange.xml -->
+<!-- RPGCommonText.xml -->
+<!-- RPGCompatibility.xml -->
+<!-- RPGComponents.xml -->
+<!-- RPGCrime.xml -->
+<!-- RPGDeviceDockScreens.xml -->
+<!-- RPGDialog.xml -->
+<!-- RPGDockManagement.xml -->
+<!-- RPGDockScreens.xml -->
+<!-- RPGDockServices.xml -->
+<!-- RPGLibrary.xml -->
+<!-- RPGMembership.xml -->
+<!-- RPGMining.xml -->
+<!-- RPGMissions.xml -->
+<!-- RPGMissionTemplate01.xml -->
+<!-- RPGMissionTemplate02.xml -->
+<!-- RPGMissionTemplate03.xml -->
+<!-- RPGMissionTemplate04.xml -->
+<!-- RPGMissionTemplate05.xml -->
+<!-- RPGMissionTemplate06.xml -->
+<!-- RPGMissionTemplate07.xml -->
+<!-- RPGPlayer.xml -->
+<!-- RPGRumors.xml -->
+<!-- RPGShipBroker.xml -->
+<!-- RPGShipScreens.xml -->
+<!-- RPGSlaves.xml -->
+<!-- RPGSquadronUI.xml -->
+<!-- RPGTradingComputer.xml -->
+<!-- RPGTypes.xml -->
+<!-- RPGUsefulItems.xml -->
+<!-- RPGViewers.xml -->
+<!-- RPGWingmen.xml -->
+<!-- Salvagers.xml -->
+<!-- Sanctuary.xml -->
+<!-- Sapiens.xml -->
+<!-- Scoria.xml -->
+<!-- ShieldEnhancementItems.xml -->
+<!-- Sisters01.xml -->
+<!-- Sisters02.xml -->
+<!-- Sisters03.xml -->
+<!-- SistersDonate.xml -->
+<!-- SistersOfDomina.xml -->
+<!-- SistersPilgrimsAid.xml -->
+<!-- SistersSanctum.xml -->
+<!-- Stargates.xml -->
+<!-- Stars.xml -->
+<!-- StarsOfThePilgrim.xml -->
+<!-- StarSystems.xml -->
+<!-- StdArmor.xml -->
+<!-- StdAutons.xml -->
+<!-- StdDevices.xml -->
+<ItemType UNID="&it10MWReactor;"
+			name=				"Nova-10 reactor"
+			attributes=			"commonwealth, majorItem"
+			  
+			level=				"1"
+			frequency=			"notRandom"
+			  
+			value=				"750"
+			mass=				"1000"
+
+			description=		"This is the smallest of the Nova series, suitable for small ships."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"100"
+				fuelEfficiency=	"15"
+				maxFuel=		"25000"
+				fuelCriteria=	"f L:1-3;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it15MWReactor;"
+			name=				"Nova-15 reactor"
+			attributes=			"commonwealth, majorItem"
+			  
+			level=				"2"
+			frequency=			"notRandom"
+			  
+			value=				"1000"
+			mass=				"1000"
+
+			description=		"This fusion reactor is often used on high-performance civilian ships."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"150"
+				fuelEfficiency=	"15"
+				maxFuel=		"37500"
+				fuelCriteria=	"f L:1-3;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it25MWReactor;"
+			name=				"Nova-25 reactor"
+			attributes=			"commonwealth, MajorItem"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+			  
+			value=				"3000"
+			mass=				"3000"
+
+			description=		"The Nova-25 reactor is a popular upgrade for those ships that need to support advanced weaponry or greater thrust."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"250"
+				fuelEfficiency=	"15"
+				maxFuel=		"60000"
+				fuelCriteria=	"f L:1-3;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it50MWReactor;"
+			name=				"Nova-50 reactor"
+			attributes=			"commonwealth, majorItem"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+			  
+			value=				"5500"
+			mass=				"3500"
+
+			description=		"In its stock configuration this fusion reactor has a peak power output of 50MW."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"500"
+				fuelEfficiency=	"15"
+				maxFuel=		"120000"
+				fuelCriteria=	"f L:1-4;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it100MWReactor;"
+			name=				"Nova-100 reactor"
+			attributes=			"commonwealth, majorItem"
+			  
+			level=				"5"
+			frequency=			"rare"
+
+			value=				"10000"
+			mass=				"4000"
+			  
+			description=		"The top of the line Nova-100 reactor is popular for its fuel efficiency."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"1000"
+				fuelEfficiency=	"18"
+				maxFuel=		"275000"
+				fuelCriteria=	"f L:2-5;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it150MWReactor;"
+			name=				"150NX reactor"
+			attributes=			"commonwealth, majorItem"
+			  
+			level=				"6"
+			frequency=			"rare"
+			  
+			value=				"20000"
+			mass=				"5000"
+
+			description=		"Though older than the Nova series, the 150NX remains popular in the Commonwealth."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"1500"
+				fuelEfficiency=	"16"
+				maxFuel=		"450000"
+				fuelCriteria=	"f L:3-6;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it250MWReactor;"
+			name=				":an SN2500 reactor"
+			attributes=			"commonwealth, majorItem; military"
+			  
+			level=				"7"
+			frequency=			"rare"
+			  
+			value=				"60000"
+			mass=				"5000"
+
+			description=		"The SN2500 is a military reactor designed for the advanced Centurion/X heavy gunship."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"2500"
+				fuelEfficiency=	"15"
+				maxFuel=		"900000"
+				fuelCriteria=	"f L:4-7;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it500MWReactor;"
+			name=				"Koshiba-500 reactor"
+			attributes=			"commonwealth, majorItem, military"
+			  
+			level=				"8"
+			frequency=			"rare"
+			  
+			value=				"100000"
+			mass=				"7000"
+
+			description=		"The Koshiba-500 is an antimatter reactor used on large military ships."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"5000"
+				fuelEfficiency=	"16"
+				maxFuel=		"2100000"
+				fuelCriteria=	"f L:5-8;" 
+				/>
+
+	</ItemType>
+<ItemType UNID="&it1GWReactor;"
+			name=				"Hyperion reactor"
+			attributes=			"commonwealth, majorItem, military"
+			  
+			level=				"9"
+			frequency=			"veryrare"
+			  
+			value=				"200000"
+			mass=				"7000"
+
+			description=		"Based on a Ringer design, this is an exotic zero-point energy reactor."
+			>
+
+		<Image imageID="&rsItems1;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<ReactorDevice
+				maxPower=		"10000"
+				fuelEfficiency=	"15"
+				maxFuel=		"5000000"
+				fuelCriteria=	"f L:6-9;" 
+				/>
+
+	</ItemType>
+<!-- StdDockScreens.xml -->
+<!-- StdEffects.xml -->
+<!-- StdFuel.xml -->
+<!-- StdMiningEquipment.xml -->
+<!-- StdPlayerShips.xml -->
+<!-- StdShields.xml -->
+<!-- StdSovereigns.xml -->
+<!-- StdSystems.xml -->
+<!-- StdTypes.xml -->
+<!-- StdUnknownItems.xml -->
+<!-- StdWeapons.xml -->
+<!-- StKatharines.xml -->
+<!-- Stormhound.xml -->
+<!-- SungCitadel.xml -->
+<!-- SungFortress.xml -->
+<!-- SungSlaveCamp.xml -->
+<!-- SungSlavers.xml -->
+<!-- Tenhove.xml -->
+<!-- TeratonResearch.xml -->
+<!-- Teratons.xml -->
+<!-- Tinkers.xml -->
+<!-- Transcendence.xml -->
+<!-- UndergroundCaverns.xml -->
+<!-- UndergroundStructures.xml -->
+<!-- UrakWarlords.xml -->
+<!-- UsefulItems.xml -->
+<!-- Ventari.xml -->
+<!-- Volcanic.xml -->
+<!-- Volkov.xml -->
+<!-- WeaponEnhancementItems.xml -->
+<!-- Worlds.xml -->
+<!-- Xenophobes.xml -->
+</TranscendenceModule>

@@ -1,7 +1,1182 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TranscendenceModule>
-	
-	
-	
+<!-- Abbasid.xml -->
+<!-- Achievements.xml -->
+<!-- AgriculturalMission01.xml -->
+<!-- Analyzers.xml -->
+<!-- Anarchists.xml -->
+<!-- Antarctica.xml -->
+<!-- Antarctica01.xml -->
+<!-- Antarctica02.xml -->
+<!-- AntarcticaD01.xml -->
+<!-- AresItems.xml -->
+<!-- AresOrthodoxy.xml -->
+<!-- AresShips.xml -->
+<!-- ArmorEnhancementItems.xml -->
+<!-- ArmorRepairItems.xml -->
+<!-- AsteroidFields.xml -->
+<!-- Barricades.xml -->
+<!-- BattleArena.xml -->
+<!-- BattleArenaChallenger.xml -->
+<!-- BattleArenaFight.xml -->
+<!-- BattleArenaGladiators.xml -->
+<!-- BattleArenaKidnapped.xml -->
+<!-- BattleArenaMelee.xml -->
+<!-- Benedict.xml -->
+<!-- Benedict00.xml -->
+<!-- Benedict01.xml -->
+<!-- Benedict02.xml -->
+<!-- Benedict04.xml -->
+<!-- Benedict05.xml -->
+<!-- Benedict05A.xml -->
+<!-- Benedict06.xml -->
+<!-- Benedict07.xml -->
+<!-- Benedict08.xml -->
+<!-- BenedictStoryArc.xml -->
+<!-- BlackMarket.xml -->
+<!-- BlackMarketMember.xml -->
+<!-- BlackMarketMission00.xml -->
+<!-- BlackMarketMission01.xml -->
+<!-- BlackMarketMission02.xml -->
+<!-- BlackMarketMissionSmuggle01.xml -->
+<!-- BlackMarketPlayerShips.xml -->
+<!-- CentauriWarlords.xml -->
+<!-- CharonFortress.xml -->
+<!-- CharonPirates.xml -->
+<!-- Code.xml -->
+<!-- Commonwealth.xml -->
+<!-- CommonwealthAgricultural.xml -->
+<!-- CommonwealthCenturions.xml -->
+<!-- CommonwealthCharacters.xml -->
+<!-- CommonwealthFleet.xml -->
+<!-- CommonwealthFleetMission01.xml -->
+<!-- CommonwealthFleetMission02.xml -->
+<!-- CommonwealthFleetMission03.xml -->
+<!-- CommonwealthFleetMission04.xml -->
+<!-- CommonwealthFleetMission05.xml -->
+<!-- CommonwealthFleetMission06.xml -->
+<!-- CommonwealthFleetMission07.xml -->
+<!-- CommonwealthFleetMission08.xml -->
+<!-- CommonwealthFleetMission09.xml -->
+<!-- CommonwealthFleetMission10.xml -->
+<!-- CommonwealthFleetMission11.xml -->
+<!-- CommonwealthFleetMissionLL01.xml -->
+<!-- CommonwealthFleetMissionLL02.xml -->
+<!-- CommonwealthFleetMissionLL03.xml -->
+<!-- CommonwealthFleetMissionLL04.xml -->
+<!-- CommonwealthFleetMissionPJ01.xml -->
+<!-- CommonwealthMetropolis.xml -->
+<!-- CommonwealthMilitia.xml -->
+<!-- CommonwealthMilitiaMission01.xml -->
+<!-- CommonwealthMilitiaMission02.xml -->
+<!-- CommonwealthMilitiaMission03.xml -->
+<!-- CommonwealthMilitiaMission04.xml -->
+<!-- CommonwealthMilitiaMissionSK01.xml -->
+<!-- CommonwealthMining.xml -->
+<!-- CommonwealthMiningMission01.xml -->
+<!-- CommonwealthMiningMission02.xml -->
+<!-- CommonwealthMiningMission03.xml -->
+<!-- CommonwealthMiningMission04.xml -->
+<!-- CommonwealthMiningMission05.xml -->
+<!-- CommonwealthMission01.xml -->
+<!-- CommonwealthMissionRevenge01.xml -->
+<!-- CommonwealthRonins.xml -->
+<!-- CommonwealthShips.xml -->
+<!-- CommonwealthStarCarrier.xml -->
+<!-- CommonwealthVolunteerMission01.xml -->
+<!-- CommonwealthVolunteerMission02.xml -->
+<!-- CommonwealthVolunteerMission03.xml -->
+<!-- Compatibility10.xml -->
+<!-- CompatibilityLibrary.xml -->
+<!-- ContainerHabitat.xml -->
+<!-- CoreCode.xml -->
+<!-- CoreDiagnostics.xml -->
+<!-- CoreEffects.xml -->
+<!-- CoreEngineText.xml -->
+<!-- CoreExplosions.xml -->
+<!-- CoreFireEffects.xml -->
+<!-- CoreHitEffects.xml -->
+<!-- CoreItems.xml -->
+<!-- CorePlaceholders.xml -->
+<!-- CoreProjectileEffects.xml -->
+<!-- CoreTypesLibrary.xml -->
+<!-- CorporateAutonDealer.xml -->
+<!-- CorporateHierarchy.xml -->
+<!-- CorporateInsurance.xml -->
+<!-- CorporateTradingPost.xml -->
+<!-- Cryovolcanic.xml -->
+<!-- CSCTerra.xml -->
+<!-- Dall01.xml -->
+<!-- Dantalion.xml -->
+<!-- DeathDrugsCartel.xml -->
+<!-- Debris.xml -->
+<!-- Domina.xml -->
+<!-- DwargRaiders.xml -->
+<!-- Elysium.xml -->
+<!-- EnricoGaul.xml -->
+<!-- Environments.xml -->
+<!-- Eridani.xml -->
+<!-- EridaniStations.xml -->
+<!-- EtaCeti.xml -->
+<!-- FerianMission01.xml -->
+<!-- Ferians.xml -->
+<!-- Fiona.xml -->
+<!-- FirstContactMonument.xml -->
+<!-- Gaians.xml -->
+<!-- GalaxyCompatibility.xml -->
+<!-- GalaxyEffects.xml -->
+<!-- GalaxyLibrary.xml -->
+<!-- GroupIAsteroids.xml -->
+<!-- Groups.xml -->
+<!-- HaloGems.xml -->
+<!-- HarperThompson.xml -->
+<!-- Heliotropes.xml -->
+<!-- Heretic.xml -->
+<!-- Heretic00.xml -->
+<!-- Heretic01.xml -->
+<!-- Heretic02.xml -->
+<!-- Heretic03.xml -->
+<!-- Heretic04.xml -->
+<!-- Heretic05.xml -->
+<!-- Heretic06.xml -->
+<!-- Heretic07.xml -->
+<!-- Heretic08.xml -->
+<!-- Himal.xml -->
+<!-- HSCompatibility.xml -->
+<!-- Huaramarca.xml -->
+<!-- HuaramarcaMission01.xml -->
+<!-- HuaramarcaMission02.xml -->
+<!-- HuaramarcaMission03.xml -->
+<!-- HuaramarcaMission04.xml -->
+<!-- HuaramarcaMission05.xml -->
+<!-- HuaramarcaMission06.xml -->
+<!-- HuaramarcaMission07.xml -->
+<!-- Huari.xml -->
+<!-- HuariMission01.xml -->
+<!-- HuariMission02.xml -->
+<!-- HuariMission03.xml -->
+<!-- HUD.xml -->
+<!-- HugoSandoval.xml -->
+<!-- HumanSpaceMap.xml -->
+<!-- HumanSpaceVol01.xml -->
+<!-- HumanTech.xml -->
+<!-- Ice.xml -->
+<!-- Iocrym.xml -->
+<!-- Jenna.xml -->
+<!-- JiangsStar.xml -->
+<!-- KateMorgental.xml -->
+<!-- KobolWarlords.xml -->
+<!-- KorolovFreighters.xml -->
+<!-- KorolovShipping.xml -->
+<!-- Kronosaurus.xml -->
+<!-- KronosaurusMission01.xml -->
+<!-- KSMission01.xml -->
+<!-- KSMission02.xml -->
+<!-- KSMission03.xml -->
+<!-- KSMissionC01.xml -->
+<!-- KSMissionC02.xml -->
+<!-- LiaPereira.xml -->
+<!-- Luminous.xml -->
+<!-- Makayev.xml -->
+<!-- Marauders.xml -->
+<!-- Metallic.xml -->
+<!-- Mining.xml -->
+<!-- MiningPods.xml -->
+<!-- MiscItems.xml -->
+<!-- MRAD.xml -->
+<ItemType UNID="&itMRADExperiment;"
+			inherit=			"&unidCommonText;"
+			name=				"MRAD experiment"
+			level=				"5"
+			value=				"15000"
+			mass=				"2000"
+			frequency=			"notrandom"
+			attributes=			"majorItem, MRADExperiment, notForSale, questItem"
+
+			charges=			"6"
+
+			description=		"The MRAD device is designed to detect and study magnetic energy."
+
+			useScreen=			"Main"
+			useKey=				"X"
+			useEnabledOnly=		"true"
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"500"
+				deviceSlots=	"0"
+				/>
+
+		<Events>
+			<OnEnable>
+				;	When enabling or reinstalling, restore any probe markers
+				(if (eq (sysGetNode) 'G2) (mradShowProbes True))
+			</OnEnable>
+			
+			<OnDisable>
+				;	Remove any probe markers
+				(if (eq (sysGetNode) 'G2) (mradShowProbes Nil))
+			</OnDisable>
+			
+			<OnGlobalPlayerEnteredSystem>
+				(if (eq (sysGetNode) 'G2)
+					(mradShowProbes
+						;	Check for installed, enabled MRAD device
+						(obj@ gPlayerShip
+							(@ (objGetItems gPlayerShip "dI +UNID:&itMRADExperiment;;") 0)
+							'enabled
+							)
+						)
+					)
+			</OnGlobalPlayerEnteredSystem>
+		</Events>
+
+		<DockScreens>
+			<Main 
+				name=			"MRAD Experiment"
+				backgroundID=	"none"
+				>
+				<OnScreenInit>
+					(block ()
+						;	Find all probes belonging to this MRAD device
+						(enum (sysFindObject Nil "T +mradProbe;") probeObj
+							(if (= (objGetData probeObj 'mradID) (itmGetData gItem 'mradID))
+								(scrSetData gScreen (objGetData probeObj 'probeID) probeObj)
+								)
+							)
+						)
+				</OnScreenInit>
+
+				<Display>
+					<OnDisplayInit>
+					</OnDisplayInit>
+
+					<Group left="12" top="12" width="182" height="172">
+						<Image transparent="true">
+							(mradDisplay 1 'displayImage)
+						</Image>
+
+						<Text left="10" top="4" font="LargeBold" color="0,0,0">
+							(mradDisplay 1 'displayName)
+						</Text>
+
+						<Text left="12" top="50" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 1 'shipDistance)
+						</Text>
+
+						<Text left="12" top="84" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 1 'shipBearing)
+						</Text>
+
+						<Text right="-12" top="50" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 1 'anomalyDistance)
+						</Text>
+
+						<Text right="-12" top="84" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 1 'anomalyBearing)
+						</Text>
+
+						<Text right="-12" top="118" align="right" font="LargeBold" color="242,101,34">
+							(mradDisplay 1 'dataDownload)
+						</Text>
+					</Group>
+
+					<Group center="0" top="12" width="182" height="172">
+						<Image transparent="true">
+							(mradDisplay 2 'displayImage)
+						</Image>
+
+						<Text left="10" top="4" font="LargeBold" color="0,0,0">
+							(mradDisplay 2 'displayName)
+						</Text>
+
+						<Text left="12" top="50" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 2 'shipDistance)
+						</Text>
+
+						<Text left="12" top="84" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 2 'shipBearing)
+						</Text>
+
+						<Text right="-12" top="50" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 2 'anomalyDistance)
+						</Text>
+
+						<Text right="-12" top="84" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 2 'anomalyBearing)
+						</Text>
+
+						<Text right="-12" top="118" align="right" font="LargeBold" color="242,101,34">
+							(mradDisplay 2 'dataDownload)
+						</Text>
+					</Group>
+
+					<Group right="-12" top="12" width="182" height="172">
+						<Image transparent="true">
+							(mradDisplay 3 'displayImage)
+						</Image>
+
+						<Text left="10" top="4" font="LargeBold" color="0,0,0">
+							(mradDisplay 3 'displayName)
+						</Text>
+
+						<Text left="12" top="50" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 3 'shipDistance)
+						</Text>
+
+						<Text left="12" top="84" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 3 'shipBearing)
+						</Text>
+
+						<Text right="-12" top="50" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 3 'anomalyDistance)
+						</Text>
+
+						<Text right="-12" top="84" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 3 'anomalyBearing)
+						</Text>
+
+						<Text right="-12" top="118" align="right" font="LargeBold" color="242,101,34">
+							(mradDisplay 3 'dataDownload)
+						</Text>
+					</Group>
+
+					<Group left="12" top="200" width="182" height="172">
+						<Image transparent="true">
+							(mradDisplay 4 'displayImage)
+						</Image>
+
+						<Text left="10" top="4" font="LargeBold" color="0,0,0">
+							(mradDisplay 4 'displayName)
+						</Text>
+
+						<Text left="12" top="50" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 4 'shipDistance)
+						</Text>
+
+						<Text left="12" top="84" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 4 'shipBearing)
+						</Text>
+
+						<Text right="-12" top="50" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 4 'anomalyDistance)
+						</Text>
+
+						<Text right="-12" top="84" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 4 'anomalyBearing)
+						</Text>
+
+						<Text right="-12" top="118" align="right" font="LargeBold" color="242,101,34">
+							(mradDisplay 4 'dataDownload)
+						</Text>
+					</Group>
+
+					<Group center="0" top="200" width="182" height="172">
+						<Image transparent="true">
+							(mradDisplay 5 'displayImage)
+						</Image>
+
+						<Text left="10" top="4" font="LargeBold" color="0,0,0">
+							(mradDisplay 5 'displayName)
+						</Text>
+
+						<Text left="12" top="50" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 5 'shipDistance)
+						</Text>
+
+						<Text left="12" top="84" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 5 'shipBearing)
+						</Text>
+
+						<Text right="-12" top="50" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 5 'anomalyDistance)
+						</Text>
+
+						<Text right="-12" top="84" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 5 'anomalyBearing)
+						</Text>
+
+						<Text right="-12" top="118" align="right" font="LargeBold" color="242,101,34">
+							(mradDisplay 5 'dataDownload)
+						</Text>
+					</Group>
+
+					<Group right="-12" top="200" width="182" height="172">
+						<Image transparent="true">
+							(mradDisplay 6 'displayImage)
+						</Image>
+
+						<Text left="10" top="4" font="LargeBold" color="0,0,0">
+							(mradDisplay 6 'displayName)
+						</Text>
+
+						<Text left="12" top="50" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 6 'shipDistance)
+						</Text>
+
+						<Text left="12" top="84" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 6 'shipBearing)
+						</Text>
+
+						<Text right="-12" top="50" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 6 'anomalyDistance)
+						</Text>
+
+						<Text right="-12" top="84" align="right" font="MediumHeavyBold" color="255,255,255">
+							(mradDisplay 6 'anomalyBearing)
+						</Text>
+
+						<Text right="-12" top="118" align="right" font="LargeBold" color="242,101,34">
+							(mradDisplay 6 'dataDownload)
+						</Text>
+					</Group>
+				</Display>
+
+				<Panes>
+					<Default>
+						<OnPaneInit>
+							(block (
+								(charges (itmGetProperty gItem 'charges))
+								(status (itmGetData gItem 'anomalyID))
+								)
+								(switch
+									status
+										(scrSetDescTranslate gScreen 'descDefaultFound)
+
+									(= charges 0)
+										(scrSetDescTranslate gScreen 'descDefaultFailed)
+									
+									(!= (sysGetNode) 'G2)
+										(scrSetDescTranslate gScreen 'descHereticOnly)
+
+									(scrSetDesc gScreen (cat
+										(scrTranslate gScreen 'descDefault)
+										"\n\n"
+										(switch
+											(= charges 1)
+												(scrTranslate gScreen 'descLastProbe)
+											(= charges 6)
+												(scrTranslate gScreen 'descFirstProbe {number: charges})
+
+											(scrTranslate gScreen 'descProbesLeft {number: charges})
+											)
+										))
+									)
+
+								;	Deploy probe command only available if probes left and we're in Heretic
+								(scrEnableAction gScreen 'actionDeployProbe (and (not status) (gr charges 0) (= (sysGetNode) 'G2)))
+								)
+						</OnPaneInit>
+
+						<Actions>
+							<Action id="actionDeployProbe" default="1">
+								(block (
+									(probeNumber (- 7 (itmGetProperty gItem 'charges)))
+									(anomalyObj (sysFindObject gPlayerShip "kND:mradID;"))
+									theProbe probeDist
+									)
+
+									;	Deploy the probe
+									(setq theProbe (sysCreateStation &stMRADSensor; (sysVectorPolarOffset gSource (random 0 359) 1)))
+									(objSetData theProbe 'mradID (itmGetData gItem 'mradID))
+									(objSetData theProbe 'probeID (cat "MRADProbe" probeNumber))
+									(objSetName theProbe (cat "MRAD Probe " probeNumber) 0x40)
+									(objSetKnown theProbe)
+									(objSetShowAsDestination theProbe 'showDistance)
+
+									;	Remember the probe for the next pane
+									(scrSetData gScreen 'currentProbe (objGetID theProbe))
+									
+									;	Save probe object IDs
+									(typSetData &itMRADExperiment; 'probeIDs (append (typGetData &itMRADExperiment; 'probeIDs) (objGetID theProbe)))
+
+									;	Consume charges
+									(setq gItem (objSetItemProperty gPlayerShip gItem 'incCharges -1))
+
+									;	How far are we from the anomaly?
+									(setq probeDist (sysVectorDistance anomalyObj theProbe))
+
+									(scrRefreshScreen gScreen)
+
+									; Determine result
+									(switch
+										;	If we're close, then we found it
+										(leq probeDist 10)
+											(block (
+												(missionObj (objGetObjByID (itmGetData gItem 'mradID)))
+												)
+												;	Record which anomaly we've found
+												(setq gItem (objSetItemData gPlayerShip gItem 'anomalyID (objGetData anomalyObj 'mradID)))
+												;	Let the mission know 
+												(if missionObj (msnFireEvent missionObj 'OnAnomalyFound))
+												(scrShowPane gScreen "ProbeLaunchedFound")
+												)
+
+										;	If this was our last probe, then we fail
+										(= (itmGetProperty gItem 'charges) 0)
+											(block (
+												(missionObj (objGetObjByID (itmGetData gItem 'mradID)))
+												)
+												;	Let the mission know 
+												(if missionObj (msnFireEvent missionObj 'OnAllProbesUsed))
+												(scrShowPane gScreen "Default")
+												)
+
+										;	Otherwise keep looking
+										(scrShowPane gScreen "ProbeLaunched")
+										)
+									)
+							</Action>
+
+							<Action id="actionDoneSpecial" cancel="1">
+								(scrExitDock gScreen)
+							</Action>
+						</Actions>
+					</Default>
+
+					<ProbeLaunched>
+						<OnPaneInit>
+							(block (
+								(probeObj (objGetObjByID (scrGetData gScreen 'currentProbe)))
+								(anomalyObj (sysFindObject probeObj "kND:mradID;"))
+								(probeDist (sysVectorDistance anomalyObj probeObj))
+								(probeAngle (modulo (+ 90 (- 360 (sysVectorAngle (sysVectorSubtract anomalyObj probeObj)))) 360))
+								)
+								(scrSetDescTranslate gScreen
+									(switch
+										(not probeObj)		'descProbeLaunchedFailed
+										(leq probeDist 75)	'descProbeLaunchedClose 
+										(leq probeDist 500)	'descProbeLaunchedDistance
+															'descProbeLaunchedNoAnomaly
+										)
+									{
+										distance: probeDist
+										bearing: probeAngle
+										}
+									)
+								)
+						</OnPaneInit>
+
+						<Actions>
+							<Action id="actionContinue" default="1" cancel="1">
+								(scrShowPane gScreen "Default")
+							</Action>
+						</Actions>
+					</ProbeLaunched>
+
+					<ProbeLaunchedFound>
+						<OnPaneInit>
+							(scrSetDescTranslate gScreen 'descProbeLaunchedFound)
+						</OnPaneInit>
+
+						<Actions>
+							<Action id="actionContinue" default="1" cancel="1">
+								(scrShowPane gScreen "Default")
+							</Action>
+						</Actions>
+					</ProbeLaunchedFound>
+				</Panes>
+			</Main>
+		</DockScreens>
+
+		<Language>
+			<Text id="actionDeployProbe">[D]eploy Probe</Text>
+			<Text id="actionDoneSpecial">[Esc] Done</Text>
+
+			<Text id="descDefaultFound">
+				Anomaly located.\n
+				MRAD probe data download complete.\n
+				MRAD experiment complete.
+
+				Return to base station for data analysis.
+			</Text>
+			<Text id="descDefaultFailed">
+				All MRAD probes launched.\n
+				Anomaly not located.\n
+				MRAD experiment failed.
+			</Text>
+			<Text id="descDefault">
+				MRAD experiment online.
+
+				You must deploy a probe within 10 light-seconds of the anomaly to gather data 
+				and to successfully complete the experiment.
+			</Text>
+			<Text id="descHereticOnly">
+				MRAD experiment online.
+				
+				Error: Incorrect star system. Return to the Heretic system to proceed.
+			</Text>
+			<Text id="descLastProbe">You have 1 probe left.</Text>
+			<Text id="descProbesLeft">You have %number% probes left. Deploy a probe to continue the experiment.</Text>
+			<Text id="descFirstProbe">You have %number% probes left. Deploy a probe to begin the experiment.</Text>
+
+			<Text id="descProbeLaunchedFailed">
+				Probe destroyed.
+			</Text>
+			<Text id="descProbeLaunchedFound">
+				Probe launched.
+
+				Graviton anomaly detected within 10 light-seconds.\n
+				Downloading data from probe...
+			</Text>
+			<Text id="descProbeLaunchedClose">
+				Probe launched.
+
+				Anomaly detected %distance% light-seconds away. Bearing to
+				anomaly established at %bearing% degrees from probe.
+
+				Move ship to proper position relative to probe and drop another probe.
+			</Text>
+			<Text id="descProbeLaunchedDistance">
+				Probe launched.
+
+				Anomaly detected %distance% light-seconds away from probe.\n
+				Move ship to new position at given distance and drop another probe.
+			</Text>
+			<Text id="descProbeLaunchedNoAnomaly">
+				Probe launched.
+
+				No anomaly detected within 500 light-seconds of probe.\n
+				Move ship to a new position and drop another probe.
+			</Text>
+
+			<Text id="textProbe">Probe %number%</Text>
+		</Language>
+	</ItemType>
+<!-- MuhammadCondi.xml -->
+<!-- Neurohack.xml -->
+<!-- NewVictoria.xml -->
+<!-- NPCPilgrims.xml -->
+<!-- Ore.xml -->
+<!-- OreStone.xml -->
+<!-- OutlawMiners.xml -->
+<!-- Outlaws.xml -->
+<!-- Ovoids.xml -->
+<!-- OvoidsCompatibility.xml -->
+<!-- Part1Compatibility.xml -->
+<!-- Penitents.xml -->
+<!-- Pilgrim.xml -->
+<!-- PlayerShips.xml -->
+<!-- PointJuno.xml -->
+<!-- Primordial.xml -->
+<!-- Psych00.xml -->
+<!-- Psych01.xml -->
+<!-- Pteravores.xml -->
+<!-- QuantumCPU.xml -->
+<ItemType UNID="&itMnemonicProcessor;"
+			name=				"Heisenmachines quantum CPU"
+			attributes=			"commonwealth, heisenmachines, majorItem, quantumCPU"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+
+			value=				"7500"
+			mass=				"1000"
+			  
+			description=		"The Heisenmachines Corporation was the first commercial producer of quantum CPUs. Quantum CPUs are necessary for processing the instructions in a mnemonic memory cube."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"20"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"quantumCPU"
+						 criteria=		"ws"
+						 enhancement=	"+cyberDefense:4;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Events>
+			<OnGlobalRunDiagnostics>
+				(block (
+					)
+					;	Set up a player ship
+
+					(setq gPlayerShip (sysCreateShip &scSapphirePlayer; Nil &svPlayer;))
+					(if (not gPlayerShip)
+						(error "Unable to create player ship.")
+						)
+					(shpOrder gPlayerShip 'hold)
+					(objAddItem gPlayerShip (itmCreate &itMnemonicProcessor; 1))
+					(shpInstallDevice gPlayerShip (itmCreate &itMnemonicProcessor; 1))
+
+					;	Unit Tests for Quantum CPU
+
+					(diagEval (list
+
+						{	test:'(itm@ (@ (objGetItems gPlayerShip "s") 0) 'cyberDefenseLevel)
+																							result:5	}
+
+						{	test:'(objAddItem gPlayerShip 
+								(itmSet@ (itmCreate &itPlasmaShieldGenerator; 1) 'damaged True)
+								)
+																							result:'ignore	}
+						{	test:'(objAddItem gPlayerShip (itmCreate &itShieldOptimizer; 1))
+																							result:'ignore	}
+
+						{	test:'(objCanEnhanceItem gPlayerShip
+								(@ (objGetItems gPlayerShip "sUD") 0)
+								(itmCreate &itShieldOptimizer; 1)
+								)
+																							result:{ enhancement:"0x00001b00" resultCode:'repaired }	}
+						))
+
+					;	Done
+
+					(objDestroy gPlayerShip)
+					(setq gPlayerShip Nil)
+					)
+			</OnGlobalRunDiagnostics>
+		</Events>
+	</ItemType>
+<!-- RaisuMission01.xml -->
+<!-- RaisuMission02.xml -->
+<!-- RaisuMission03.xml -->
+<!-- RaisuStation.xml -->
+<!-- Rama.xml -->
+<!-- RanxEmpire.xml -->
+<!-- Rasiermesser.xml -->
+<!-- RasiermesserMission01.xml -->
+<!-- RejuvTank.xml -->
+<!-- ResidentialsMission01.xml -->
+<!-- ResidentialsMission02.xml -->
+<!-- ResidentialsMission03.xml -->
+<!-- Ringers.xml -->
+<!-- Rocky.xml -->
+<!-- RogueFleet.xml -->
+<!-- RPGAnalyzers.xml -->
+<!-- RPGAutons.xml -->
+<!-- RPGAuxDevices.xml -->
+<!-- RPGBehaviors.xml -->
+<!-- RPGCharacterClasses.xml -->
+<!-- RPGCharacters.xml -->
+<!-- RPGCode.xml -->
+<!-- RPGCommoditiesExchange.xml -->
+<!-- RPGCommonText.xml -->
+<!-- RPGCompatibility.xml -->
+<!-- RPGComponents.xml -->
+<!-- RPGCrime.xml -->
+<!-- RPGDeviceDockScreens.xml -->
+<!-- RPGDialog.xml -->
+<!-- RPGDockManagement.xml -->
+<!-- RPGDockScreens.xml -->
+<!-- RPGDockServices.xml -->
+<!-- RPGLibrary.xml -->
+<!-- RPGMembership.xml -->
+<!-- RPGMining.xml -->
+<!-- RPGMissions.xml -->
+<!-- RPGMissionTemplate01.xml -->
+<!-- RPGMissionTemplate02.xml -->
+<!-- RPGMissionTemplate03.xml -->
+<!-- RPGMissionTemplate04.xml -->
+<!-- RPGMissionTemplate05.xml -->
+<!-- RPGMissionTemplate06.xml -->
+<!-- RPGMissionTemplate07.xml -->
+<!-- RPGPlayer.xml -->
+<!-- RPGRumors.xml -->
+<!-- RPGShipBroker.xml -->
+<!-- RPGShipScreens.xml -->
+<!-- RPGSlaves.xml -->
+<!-- RPGSquadronUI.xml -->
+<!-- RPGTradingComputer.xml -->
+<!-- RPGTypes.xml -->
+<!-- RPGUsefulItems.xml -->
+<!-- RPGViewers.xml -->
+<!-- RPGWingmen.xml -->
+<!-- Salvagers.xml -->
+<!-- Sanctuary.xml -->
+<!-- Sapiens.xml -->
+<!-- Scoria.xml -->
+<!-- ShieldEnhancementItems.xml -->
+<!-- Sisters01.xml -->
+<!-- Sisters02.xml -->
+<!-- Sisters03.xml -->
+<!-- SistersDonate.xml -->
+<!-- SistersOfDomina.xml -->
+<!-- SistersPilgrimsAid.xml -->
+<!-- SistersSanctum.xml -->
+<!-- Stargates.xml -->
+<!-- Stars.xml -->
+<!-- StarsOfThePilgrim.xml -->
+<!-- StarSystems.xml -->
+<!-- StdArmor.xml -->
+<!-- StdAutons.xml -->
+<!-- StdDevices.xml -->
+<ItemType UNID="&itLaserEnhancer;"
+			name=				"laser collimator"
+			attributes=			"commonwealth, majorItem, weaponEnhance, weaponEnhancer"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+			unknownType=		"&itUnknownEnhancer2;"
+
+			value=				"1000"
+			mass=				"500"
+			  
+			description=		"A laser collimator is an after-market device that sharpens the focus of your laser cannons thereby increasing their damage."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"10"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"laser"
+						 criteria=		"w~l +damageType:laser;"
+						 enhancement=	"+hpBonus:50;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+50% damage from laser weapons
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itKineticEnhancer;"
+			name=				"cannon accelerator"
+			attributes=			"commonwealth, majorItem, weaponEnhance, weaponEnhancer"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+			unknownType=		"&itUnknownEnhancer2;"
+
+			value=				"1100"
+			mass=				"500"
+			  
+			description=		"This device increases the velocity of mass drivers and recoilless cannons. When installed, a ship's kinetic weapons will inflict 50% more damage."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"7"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"kinetic"
+						 criteria=		"w~l +damageType:kinetic;"
+						 enhancement=	"+hpBonus:50;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+50% damage from kinetic weapons
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itParticleEnhancer;"
+			name=				"particle accelerator"
+			attributes=			"commonwealth, majorItem, weaponEnhance, weaponEnhancer"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"9000"
+			mass=				"1500"
+			  
+			description=		"This compact particle accelerator boosts the damage of any installed particle energy weapon."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"70"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"particleAccelerator"
+						 criteria=		"w~l +energyWeapon; +damageType:particle;"
+						 enhancement=	"+hpBonus:50;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+50% damage from particle energy weapons
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itMakayevBlastEnhancer;"
+			name=				"Makayev weapon enhancer"
+			attributes=			"commonwealth, majorItem, makayev, weaponEnhance, weaponEnhancer"
+			  
+			level=				"5"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"9000"
+			mass=				"2000"
+			  
+			description=		"This enhancer increases the damage potential of installed Makayev blast weapons."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"makayevEnhancer"
+						 criteria=		"w~l +Makayev; +damageType:blast;"
+						 enhancement=	"+hpBonus:75;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+75% damage from Makayev blast weapons
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itHowitzerHighSpeedLoader;"
+			name=				"high-speed howitzer loader"
+			attributes=			"commonwealth, majorItem, weaponEnhance, weaponEnhancer"
+			  
+			level=				"6"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"18000"
+			mass=				"2000"
+			  
+			description=		"This high-speed shell loader increases the fire rate of any installed howitzer."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"150"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"howitzerLoader"
+						 criteria=		"w~l +Howitzer;"
+						 enhancement=	"+speed:70;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+40% fire rate for howitzers
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itRasiermesserEnhancer;"
+			name=				"Rasiermesser weapon enhancer"
+			attributes=			"commonwealth, majorItem, rasiermesser, weaponEnhance, weaponEnhancer"
+			  
+			level=				"5"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer5;"
+
+			value=				"10000"
+			mass=				"1500"
+			  
+			description=		"This enhancer increases the damage potential of installed Rasiermesser kinetic, blast, and thermonuclear weapons."
+			>
+
+		<Image imageID="&rsItemsRasiermesser3;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"100"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"rasiermesserEnhancer"
+						 criteria=		"w~l +rasiermesser; +damageType:kinetic; | w~l +rasiermesser; +damageType:blast; | w~l +rasiermesser; +damageType:thermo;"
+						 enhancement=	"+hpBonus:75;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+75% damage bonus to Rasiermesser kinetic, blast, and thermonuclear weapons
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itBushidoEnhancer;"
+			name=				"Bushido weapon enhancer"
+			attributes=			"bushido, commonwealth, majorItem, weaponEnhance, weaponEnhancer"
+			  
+			level=				"7"
+			frequency=			"rare"
+			unknownType=		"&itUnknownEnhancer8;"
+
+			value=				"40000"
+			mass=				"2500"
+			  
+			description=		"This enhancer increases the damage potential of installed Bushido energy weapons."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=		"250"
+				>
+			<EnhancementAbilities>
+				<Enhance type=			"bushidoEnhancer"
+						 criteria=		"w~l +bushido; +energyWeapon;"
+						 enhancement=	"+hpBonus:75;"
+						 />
+			</EnhancementAbilities>
+		</MiscellaneousDevice>
+
+		<Language>
+			<Text id="core.reference">
+				
+				+75% damage from Bushido energy weapons
+
+			</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itTranspaceJumpdrive;"
+			name=				"transpace jumpdrive"
+			attributes=			"alien, commonwealth, majorItem"
+			  
+			level=				"7"
+			frequency=			"rare"
+			unknownType=		"&itUnknownAlienDevice;"
+
+			value=				"40000"
+			mass=				"5000"
+			  
+			description=		"This arcane alien device can open a portal through transpace to teleport a ship to another location, much as stargates do."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<MiscellaneousDevice
+				powerUse=			"100"
+				capacitorPowerUse=	"900"
+				powerToActivate=	"1000000"
+				/>
+
+		<Invoke key="J" installedOnly="true">
+			(block Nil
+				(switch
+					; If we're affected by EMP, then strange things happen
+					(objIsParalyzed gSource)
+						(block (newPos theCrate)
+							; Jump
+							(setq newPos (sysVectorPolarOffset gSource (shpGetDirection gSource) 500))
+							(objJumpTo gSource newPos)
+							
+							; Scatter cargo
+							;
+							; For all items in cargo hold
+							(enum (objGetItems gPlayerShip "*U") theItem
+								(block Nil
+									; Make a crate
+									(if (not theCrate)
+										(setq theCrate (sysCreateStation &stGenericCargoCrate; (sysVectorPolarOffset newPos (random 0 359) (random 1 75))))
+										)
+								
+									; Remove from cargo hold
+									(objRemoveItem gPlayerShip theItem)
+									
+									(if (geq (itmGetMass theItem) 1000)
+									
+										; Add heavy items, one at a time, to crate
+										(for i 1 (itmGetCount theItem)
+											(block Nil
+												(objAddItem theCrate theItem 1)
+												
+												(if (leq (random 1 100) 15)
+													(setq theCrate (sysCreateStation &stGenericCargoCrate; (sysVectorPolarOffset gPlayerShip (random 0 359) (random 1 75))))
+													)
+												)
+											)
+											
+										; Lighter items go in groups to crate
+										(block Nil
+											(objAddItem theCrate theItem)
+											
+											(if (leq (random 1 100) 15)
+												(setq theCrate (sysCreateStation &stGenericCargoCrate; (sysVectorPolarOffset gPlayerShip (random 0 359) (random 1 75))))
+												)
+											)
+										)
+									)
+								)
+
+							(if theCrate
+								(objSendMessage gSource Nil "Jumpdrive failure!")
+								)
+							)
+					
+					; If we are on top of a stargate, then jump to Elysium
+					(leq (objGetDistance gSource (sysFindObject gSource "GN")) 6)
+						(if (find (sysGetNodes) "Elysium")
+							(objGateTo gSource "Elysium" "Start" &efStargateOut;)
+							(objSendMessage gSource Nil "Transpace unstable in this area!")
+							)
+						
+					; Otherwise, we jump
+					(block (newPos)
+						(setq newPos (sysVectorPolarOffset gSource (shpGetDirection gSource) 500))
+						(objJumpTo gSource newPos)
+						)
+					)
+					
+				; Item identified
+				(itmSetKnown gItem)
+				)
+		</Invoke>
+	</ItemType>
+<!-- StdDockScreens.xml -->
+<!-- StdEffects.xml -->
+<!-- StdFuel.xml -->
+<!-- StdMiningEquipment.xml -->
+<!-- StdPlayerShips.xml -->
+<!-- StdShields.xml -->
+<!-- StdSovereigns.xml -->
+<!-- StdSystems.xml -->
+<!-- StdTypes.xml -->
+<!-- StdUnknownItems.xml -->
+<!-- StdWeapons.xml -->
+<!-- StKatharines.xml -->
+<!-- Stormhound.xml -->
+<!-- SungCitadel.xml -->
+<!-- SungFortress.xml -->
+<!-- SungSlaveCamp.xml -->
+<!-- SungSlavers.xml -->
+<!-- Tenhove.xml -->
+<!-- TeratonResearch.xml -->
+<!-- Teratons.xml -->
+<!-- Tinkers.xml -->
+<!-- Transcendence.xml -->
+<!-- UndergroundCaverns.xml -->
+<!-- UndergroundStructures.xml -->
+<!-- UrakWarlords.xml -->
+<!-- UsefulItems.xml -->
+<!-- Ventari.xml -->
+<!-- Volcanic.xml -->
+<!-- Volkov.xml -->
+<!-- WeaponEnhancementItems.xml -->
+<!-- Worlds.xml -->
+<!-- Xenophobes.xml -->
 </TranscendenceModule>

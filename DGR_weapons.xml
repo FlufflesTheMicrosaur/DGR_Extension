@@ -1,7 +1,4789 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TranscendenceModule>
-	
-	
-	
+<!-- Abbasid.xml -->
+<!-- Achievements.xml -->
+<!-- AgriculturalMission01.xml -->
+<!-- Analyzers.xml -->
+<!-- Anarchists.xml -->
+<!-- Antarctica.xml -->
+<!-- Antarctica01.xml -->
+<!-- Antarctica02.xml -->
+<!-- AntarcticaD01.xml -->
+<!-- AresItems.xml -->
+<ItemType UNID="&itLightningCannon;"
+			name=				"Ares lightning cannon"
+			level=				"7"
+			value=				"24000"
+			mass=				"3000"
+			frequency=			"uncommon"
+			attributes=			"Ares; EnergyWeapon; Military; MajorItem; NotForSale;"
+
+			description=		"During the Syrtis War the lightning cannons of the Orthodoxy were devastating to the Earth Fleet."
+			>
+
+		<Image imageID="&rsItems7;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:4d6+2"
+				fireRate=			"15"
+				lifetime=			"30"
+				powerUse=			"350"
+
+				effect=				"&efIonBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itAresLauncher;"
+			name=				"Ares launcher"
+			level=				"8"
+			value=				"75000"
+			mass=				"4000"
+			frequency=			"rare"
+			attributes=			"Ares; MajorItem; Military; NotForSale;"
+
+			description=		"These launchers can fire both a standard micronuke or the heavier and deadlier Warhammer nuke."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="480" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"40"
+				powerUse=			"200"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itWarhammerNuke;"/>
+				<Missile ammoID="&itMicronuke;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itLightningTurret;"
+			name=				"Ares lightning turret"
+			level=				"8"
+			value=				"75000"
+			mass=				"6000"
+			frequency=			"veryrare"
+			attributes=			"Ares; EnergyWeapon; Military; MajorItem; NotForSale;"
+
+			description=		"This omnidirectional turret fires rapid bursts of ion energy, but requires periods of rest."
+			>
+
+		<Image imageID="&rsItems8;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"ion:4d6+2"
+				fireRate=			"4"
+				lifetime=			"40"
+				powerUse=			"1000"
+
+				counter=			"capacitor"
+				counterActivate=	"-5"
+				counterUpdate=		"2"
+				counterUpdateRate=	"6"
+
+				effect=				"&efIonBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMicronukeCannon;"
+			name=				"Ares micronuke cannon"
+			level=				"8"
+			value=				"66000"
+			mass=				"4000"
+			frequency=			"uncommon"
+			attributes=			"Ares; MajorItem; Military; NotForSale;"
+
+			description=		"These cannons can launch a micronuke warhead at 60% of lightspeed."
+			>
+
+		<Image imageID="&rsItems8;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"40"
+				powerUse=			"100"
+				reportAmmo=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itMicronuke;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itHecatesCannon;"
+			name=				"Hecates cannon"
+			level=				"8"
+			value=				"94000"
+			mass=				"6000"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"Ares; Howitzer; MajorItem; Military; NotForSale;"
+
+			description=		"The Hecates cannon is a fusion howitzer used by Ares destroyers."
+			>
+
+		<Image imageID="&rsItems8;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:11d12; momentum:3; WMD:7"
+				fireRate=			"50"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"1200"
+				recoil=				"2"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itAresArchcannon;"
+			name=				"Ares positron cannon"
+			level=				"9"
+			value=				"150000"
+			mass=				"1500"
+			frequency=			"uncommon"
+			attributes=			"Ares; EnergyWeapon; Military; MajorItem; NotForSale;"
+
+			description=		"Ares engineers created this weapon after the Commonwealth developed defenses against their lightning cannon."
+			>
+
+		<Image imageID="&rsItems9;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"positron:6d8; shield:8"
+				fireRate=			"15"
+				missileSpeed=		"80"
+				interaction=		"0"
+				lifetime=			"60"
+				powerUse=			"2000"
+
+				effect=				"&efPositronBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itAresPlasmaCannon;"
+			name=				"Ares plasma archcannon"
+			level=				"10"
+			value=				"500000"
+			mass=				"10000"
+			frequency=			"veryrare"
+			attributes=			"Ares; Howitzer; MajorItem; Military; NotForSale"
+
+			description=		"The most powerful weapon in the Ares fleet. The plasma archcannon can destroy anything that's not protected by massive shields and armor."
+			>
+
+		<Image imageID="&rsItems10;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"plasma:300; WMD:7"
+				
+				fireRate=			"80"
+
+				deviceSlots=		"2"
+				powerUse=			"3000"
+				sound=				"&snRecoillessCannon;"
+				>
+			
+			<ParticleSystem
+					style=				"comet"
+					emitLifetime=		"1"
+					emitRate=			"150"
+					emitSpeed=			"50-70"
+					emitWidth=			"50"
+					
+					particleLifetime=	"120"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+			
+			<Effect>
+				<ParticleSystem
+						style=				"jet"
+						fixedPos=			"true"
+						emitRate=			"2-4"
+						tangentSpeed=		"-8-8"
+						particleLifetime=	"10"
+						XformTime=			"30"
+						>
+					<ParticleEffect>
+						<Orb
+								instance=			"owner"
+						
+								style=				"smooth"
+								animate=			"fade"
+								radius=				"20"
+								lifetime=			"10"
+								intensity=			"20"
+						
+								blendMode=			"screen"
+								primaryColor=		"#feff00"
+								secondaryColor=		"#ff7f00"
+								/>
+					</ParticleEffect>
+				</ParticleSystem>
+			</Effect>
+		</Weapon>
+	</ItemType>
+<!-- AresOrthodoxy.xml -->
+<!-- AresShips.xml -->
+<!-- ArmorEnhancementItems.xml -->
+<!-- ArmorRepairItems.xml -->
+<!-- AsteroidFields.xml -->
+<!-- Barricades.xml -->
+<!-- BattleArena.xml -->
+<!-- BattleArenaChallenger.xml -->
+<!-- BattleArenaFight.xml -->
+<!-- BattleArenaGladiators.xml -->
+<ItemType UNID="&itSlicerCannon;"
+			name=				"PM6 Slicer cannon"
+			level=				"6"
+			value=				"30000"
+			mass=				"4000"
+			frequency=			"notrandom"
+			attributes=			"cannotOrder, EI; EnergyWeapon; MajorItem"
+
+			description=		"A modified particle cannon firing crisscrossing beams."
+
+			sortName=			"slicer cannon, PM6"
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"particle:2d8+1"
+				fireRate=			"6"
+				lifetime=			"30"
+				powerUse=			"300"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+
+			<Configuration aimTolerance="5" alternating="true">
+				<Shot posAngle="90" posRadius="20" angle="-3"/>
+				<Shot posAngle="270" posRadius="20" angle="3"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<!-- BattleArenaKidnapped.xml -->
+<!-- BattleArenaMelee.xml -->
+<!-- Benedict.xml -->
+<!-- Benedict00.xml -->
+<!-- Benedict01.xml -->
+<!-- Benedict02.xml -->
+<!-- Benedict04.xml -->
+<!-- Benedict05.xml -->
+<!-- Benedict05A.xml -->
+<!-- Benedict06.xml -->
+<!-- Benedict07.xml -->
+<!-- Benedict08.xml -->
+<!-- BenedictStoryArc.xml -->
+<!-- BlackMarket.xml -->
+<!-- BlackMarketMember.xml -->
+<!-- BlackMarketMission00.xml -->
+<!-- BlackMarketMission01.xml -->
+<!-- BlackMarketMission02.xml -->
+<!-- BlackMarketMissionSmuggle01.xml -->
+<!-- BlackMarketPlayerShips.xml -->
+<!-- CentauriWarlords.xml -->
+<ItemType UNID="&itCentauriRecoilless;"
+			name=				"Centauri recoilless| Centauri recoilless cannons"
+			level=				"1"
+			value=				"150"
+			mass=				"2500"
+			frequency=			"uncommon"
+			attributes=			"centauriWarlords, majorItem, notStandard"
+			showReference=		"true"
+
+			description=		"Centauri raiders use twin recoilless cannons, firing light rounds."
+
+			sortName=			"recoilless cannon, Centauri"
+			>
+
+		<Image imageID="&rsItems1;" imageX="192" imageY="768" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:1d3; momentum1"
+				fireRate=			"15"
+				missileSpeed=		"30"
+				lifetime=			"30"
+				powerUse=			"10"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90" posRadius="13" />
+				<Shot posAngle="270" posRadius="13" />
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itCentauriCLAW;"
+			name=				"CLAW cannon"
+			level=				"3"
+			value=				"1700"
+			mass=				"6000"
+			frequency=			"rare"
+			attributes=			"centauriWarlords, majorItem, notStandard"
+			showReference=		"true"
+
+			description=		"Centauri warlords create these weapons by linking together two DK10 Arbalest cannons. The CLAW cannon requires two device slots to install."
+
+			sortName=			"CLAW cannon, Centauri"
+			>
+
+		<Image imageID="&rsItems3;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				deviceSlots=		"2"
+
+				repeating=			"3"
+				repeatingDelay=		"1"
+				damage=				"kinetic:1d6+1; momentum:1"
+				fireRate=			"24"
+				missileSpeed=		"40"
+				lifetime=			"30"
+				powerUse=			"100"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90" posRadius="13" />
+				<Shot posAngle="270" posRadius="13" />
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itCentauriHeavyCLAW;"
+			name=				"heavy CLAW cannon"
+			level=				"3"
+			value=				"1800"
+			mass=				"6000"
+			frequency=			"rare"
+			attributes=			"centauriWarlords, majorItem, notStandard"
+			showReference=		"true"
+
+			description=		"The Centauri warlord's favorite weapon is a massive dual kinetic-cannon. The heavy CLAW cannon requires two device slots to install."
+
+			sortName=			"CLAW cannon, Centauri heavy"
+			>
+
+		<Image imageID="&rsItems3;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				deviceSlots=		"2"
+
+				damage=				"kinetic:2d8+1; momentum:1; WMD:5"
+				fireRate=			"16"
+				missileSpeed=		"50"
+				lifetime=			"20"
+				powerUse=			"100"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90" posRadius="13" />
+				<Shot posAngle="270" posRadius="13" />
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<!-- CharonFortress.xml -->
+<!-- CharonPirates.xml -->
+<!-- Code.xml -->
+<!-- Commonwealth.xml -->
+<!-- CommonwealthAgricultural.xml -->
+<!-- CommonwealthCenturions.xml -->
+<!-- CommonwealthCharacters.xml -->
+<!-- CommonwealthFleet.xml -->
+<ItemType UNID="&itNM900MissilePod;"
+			name=				"NM900 external missile pod"
+			level=				"7"
+			value=				"4200"
+			mass=				"1000"
+			frequency=			"rare"
+			attributes=			"Disposable; MajorItem; Military; NAMI; Specialty"
+
+			charges=			"36"
+			massBonusPerCharge=	"40" 
+			valueBonusPerCharge="150"
+
+			description=		"This external pod is loaded with thirty-six XM900 nuclear missiles and can be installed without the aid of a station."
+
+			showChargesInUseMenu="true"
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+				fireRate=			"30"
+				powerUse=			"50"
+				charges=			"true"
+
+				deviceSlots=		"0"
+				external=			"true"
+				
+				missileSpeed=		"40"
+				hitPoints=			"30"
+				lifetime=			"120"
+				maneuverRate=		"9"
+
+				effect=				"&efMissileNAMI;"
+				hitEffect=			"&efThermoFragmentExplosion;"
+				sound=				"&snMissileLauncher;"
+				>
+
+			<Fragment 
+					count=			"1"
+					type=			"radius"
+
+					damage=			"thermo:6d24; momentum:6; WMD:7"
+					minRadius=		"1"
+					maxRadius=		"4"
+					missileSpeed=	"0"
+					
+					hitEffect=		"&efThermoFragmentHit;"
+					>
+			</Fragment>
+		</Weapon>
+		
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+
+		<Events>
+			<Reload>
+				; Reloads the pod with missiles
+				(objSetItemCharges gSource gItem 36)
+			</Reload>
+		</Events>
+
+		<Language>
+			<Text id="core.charges">missile(s)</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itLamplighter;"
+			name=				"Lamplighter archcannon"
+			level=				"10"
+			value=				"950000"
+			mass=				"5500"
+			frequency=			"notrandom"
+			attributes=			"MajorItem; Military"
+
+			description=		"Commissioned by Admiral Decker, this Commonwealth secret weapon is arguably the most powerful weapon created by humans."
+			>
+
+		<Image imageID="&rsItems10;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"antimatter:10d12; WMD:5"
+				fireRate=			"16"
+				missileSpeed=		"50"
+				lifetime=			"60"
+				powerUse=			"2000"
+
+				effect=				"&efLamplighterProjectile;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itLamplighterPrototype;"
+			name=				"Project Lamplighter prototype"
+			level=				"10"
+			value=				"400000"
+			mass=				"5500"
+			frequency=			"notrandom"
+			unknownType=		"&itUnknownLamplighterPrototype;"
+			attributes=			"lamplighterPrototype, majorItem, military, questItem"
+
+			description=		"This prototype is designed to test the antimatter blast chamber of the Project Lamplighter weapon."
+			>
+
+		<Image imageID="&rsItems10;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				failureChance=		"10"
+
+				damage=				"antimatter:6d12; WMD:5"
+				fireRate=			"15"
+				missileSpeed=		"60"
+				lifetime=			"40"
+				powerUse=			"3000"
+
+				effect=				"&efLamplighterProjectile;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<!-- CommonwealthFleetMission01.xml -->
+<!-- CommonwealthFleetMission02.xml -->
+<!-- CommonwealthFleetMission03.xml -->
+<!-- CommonwealthFleetMission04.xml -->
+<!-- CommonwealthFleetMission05.xml -->
+<!-- CommonwealthFleetMission06.xml -->
+<!-- CommonwealthFleetMission07.xml -->
+<!-- CommonwealthFleetMission08.xml -->
+<!-- CommonwealthFleetMission09.xml -->
+<!-- CommonwealthFleetMission10.xml -->
+<!-- CommonwealthFleetMission11.xml -->
+<!-- CommonwealthFleetMissionLL01.xml -->
+<!-- CommonwealthFleetMissionLL02.xml -->
+<!-- CommonwealthFleetMissionLL03.xml -->
+<!-- CommonwealthFleetMissionLL04.xml -->
+<!-- CommonwealthFleetMissionPJ01.xml -->
+<!-- CommonwealthMetropolis.xml -->
+<!-- CommonwealthMilitia.xml -->
+<!-- CommonwealthMilitiaMission01.xml -->
+<!-- CommonwealthMilitiaMission02.xml -->
+<!-- CommonwealthMilitiaMission03.xml -->
+<!-- CommonwealthMilitiaMission04.xml -->
+<!-- CommonwealthMilitiaMissionSK01.xml -->
+<!-- CommonwealthMining.xml -->
+<!-- CommonwealthMiningMission01.xml -->
+<!-- CommonwealthMiningMission02.xml -->
+<!-- CommonwealthMiningMission03.xml -->
+<!-- CommonwealthMiningMission04.xml -->
+<!-- CommonwealthMiningMission05.xml -->
+<!-- CommonwealthMission01.xml -->
+<!-- CommonwealthMissionRevenge01.xml -->
+<!-- CommonwealthRonins.xml -->
+<!-- CommonwealthShips.xml -->
+<!-- CommonwealthStarCarrier.xml -->
+<!-- CommonwealthVolunteerMission01.xml -->
+<!-- CommonwealthVolunteerMission02.xml -->
+<!-- CommonwealthVolunteerMission03.xml -->
+<!-- Compatibility10.xml -->
+<!-- CompatibilityLibrary.xml -->
+<!-- ContainerHabitat.xml -->
+<!-- CoreCode.xml -->
+<!-- CoreDiagnostics.xml -->
+<!-- CoreEffects.xml -->
+<!-- CoreEngineText.xml -->
+<!-- CoreExplosions.xml -->
+<!-- CoreFireEffects.xml -->
+<!-- CoreHitEffects.xml -->
+<!-- CoreItems.xml -->
+<!-- CorePlaceholders.xml -->
+<ItemType UNID="&itLaserCannon;"
+			name=				"laser cannon"
+			level=				"1"
+			value=				"250"
+			mass=				"1000"
+			frequency=			"notRandom"
+			attributes=			"notStandard"
+
+			description=		"A popular weapon for light freighters and fast gunships. This weapon is manufactured by the Earth Industries Conglomerate."
+			>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"laser:1d4"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"10"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itBallistaCannon;"
+			name=				"AK505 Ballista cannon"
+			level=				"4"
+			value=				"3500"
+			mass=				"6000"
+			frequency=			"notRandom"
+			attributes=			"notStandard"
+
+			description=		"The largest kinetic mass driver created by NAMI, the Ballista cannon can pummel a medium-sized station."
+			>
+
+		<Image imageID="&rsItems1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:14d8; momentum5; WMD5"
+				fireRate=			"45"
+				missileSpeed=		"45"
+				hitPoints=			"5"
+				lifetime=			"67"
+				powerUse=			"160"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<!-- CoreProjectileEffects.xml -->
+<!-- CoreTypesLibrary.xml -->
+<!-- CorporateAutonDealer.xml -->
+<!-- CorporateHierarchy.xml -->
+<!-- CorporateInsurance.xml -->
+<!-- CorporateTradingPost.xml -->
+<!-- Cryovolcanic.xml -->
+<!-- CSCTerra.xml -->
+<!-- Dall01.xml -->
+<!-- Dantalion.xml -->
+<!-- DeathDrugsCartel.xml -->
+<!-- Debris.xml -->
+<!-- Domina.xml -->
+<ItemType UNID="&itCircleOfWrathPower;"
+			name=				"Circle of Wrath"
+			virtual=			"true"
+			level=				"6"
+			>
+
+		<Weapon
+				type=				"shockwave"
+
+				damage=				"darkLightning:6d6"
+				fireRate=			"30"
+				expansionSpeed=		"20"
+				missileSpeed=		"0"
+				lifetime=			"40"
+				powerUse=			"200"
+				>
+
+			<Effect>
+				<Shockwave
+						style=			"glowRing"
+						width=			"2"
+						glowSize=		"12"
+						primaryColor=	"0xff, 0xff, 0xff"
+						secondaryColor=	"0xff, 0x00, 0xff"
+						/>
+			</Effect>
+
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itShatterPower;"
+			name=				"Shatter"
+			virtual=			"true"
+			level=				"8"
+			>
+
+		<Weapon
+				type=				"shockwave"
+
+				damage=				"darkSteel:8d12; shatter5"
+				fireRate=			"30"
+				expansionSpeed=		"80"
+				missileSpeed=		"0"
+				lifetime=			"20"
+				powerUse=			"500"
+				>
+
+			<Effect>
+				<Shockwave
+						style=			"image"
+						>
+					<Image imageID=				"&rsShatterShockwave;"
+							imageX=				"0" 
+							imageY=				"0" 
+							imageWidth=			"512" 
+							imageHeight=		"128"
+							/>
+				</Shockwave>
+			</Effect>
+
+		</Weapon>
+
+	</ItemType>
+<!-- DwargRaiders.xml -->
+<ItemType UNID="&itDwargXiphonCannon;"
+			name=				"Dwarg xiphon cannon"
+			level=				"4"
+			value=				"3000"
+			mass=				"3000"
+			frequency=			"rare"
+			numberAppearing=	"1"
+			attributes=			"Dwarg; MajorItem; NotForSale;"
+
+			description=		"This blast weapon is mounted on a small swivelling platform, enabling it to fire in a 20 degree arc."
+			sortName=			"Dwarg.1.30"
+			>
+
+		<Image imageID="&rsItems4;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				minFireArc=			"350"
+				maxFireArc=			"10"
+				damage=				"blast:3d4; momentum:1; WMD:2"
+				fireRate=			"20"
+				missileSpeed=		"50"
+				lifetime=			"50"
+				powerUse=			"80"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itDwargCnidocystCannon;"
+			name=				"Dwarg cnidocyst cannon"
+			level=				"5"
+			value=				"8000"
+			mass=				"3000"
+			attributes=			"Dwarg; MajorItem; NotForSale; NotStandard"
+			frequency=			"rare"
+
+			description=		"Dwarg masters use this cannon to paralyze their targets."
+			>
+
+		<Image imageID="&rsItems5;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"16"
+				powerUse=			"20"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itDwargCnidocystNodule;"
+						type=			"missile"
+
+						damage=			"ion:4d6; EMP:4"
+						missileSpeed=	"50"
+						lifetime=		"180"
+						maneuverRate=	"18"
+
+						sound=			"&snRecoillessCannon;"
+						>
+
+					<Effect>
+						<Ray
+								style=			"lightning"
+								shape=			"tapered"
+								length=			"60"
+								width=			"10"
+								intensity=		"50"
+								
+								primaryColor=	"#a0f0ff"
+								secondaryColor=	"#f0f0ff"
+								>
+						</Ray>
+						
+						<Starburst
+								style=			"morningStar"
+								spikeCount=		"2d6+2"
+								spikeLength=	"2d10"
+								primaryColor=	"#a0f0ff"
+								secondaryColor=	"#f0f0ff"
+								/>
+					</Effect>
+
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDwargBehemothCannon;"
+			name=				"Dwarg behemoth cannon"
+			level=				"6"
+			value=				"25000"
+			mass=				"6000"
+			frequency=			"rare"
+			numberAppearing=	"1"
+			attributes=			"Dwarg; MajorItem; Military; NotForSale; NotStandard"
+
+			description=		"Dwarg behemoths use this thermonuclear cannon."
+			sortName=			"Dwarg.1.20"
+			>
+
+		<Image imageID="&rsItems6;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:2d12+4; momentum:2; WMD:5"
+				fireRate=			"20"
+				missileSpeed=		"50"
+				lifetime=			"60"
+				powerUse=			"300"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<!-- Elysium.xml -->
+<!-- EnricoGaul.xml -->
+<!-- Environments.xml -->
+<!-- Eridani.xml -->
+<!-- EridaniStations.xml -->
+<!-- EtaCeti.xml -->
+<!-- FerianMission01.xml -->
+<!-- Ferians.xml -->
+<ItemType UNID="&itFerianCannon;"
+			name=				"Ferian plasma cannon"
+			attributes=			"Ferian; MajorItem; Military; NotForSale; NotStandard"
+			  
+			level=				"9"
+			frequency=			"notrandom"
+			  
+			value=				"150000"
+			mass=				"5000"
+
+			description=		"Ferians have adapted their plasma torches for combat."
+			>
+
+		<Image imageID="&rsItems9;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"plasma:60; mining:3; WMD:4"
+				
+				fireRate=			"30"
+
+				powerUse=			"2000"
+				sound=				"&snRecoillessCannon;"
+				>
+			
+			<ParticleSystem
+					style=				"spray"
+					emitLifetime=		"1"
+					emitRate=			"100"
+					emitSpeed=			"60"
+					spreadAngle=		"1"
+					splashChance=		"50"
+					
+					particleLifetime=	"40"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+		</Weapon>
+	</ItemType>
+<!-- Fiona.xml -->
+<!-- FirstContactMonument.xml -->
+<!-- Gaians.xml -->
+<ItemType UNID="&itGaianDemolitionCannon;"
+			name=				"Gaian demolition cannon"
+			level=				"9"
+			value=				"150000"
+			mass=				"20000"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"EnergyWeapon; Military; MajorItem; NotForSale; NotStandard;"
+
+			description=		"Gaians use these cannons for their vast engineering projects. The technology to power the cannon is known only to the Gaians."
+
+			charges=			"8"
+			>
+
+		<Image imageID="&rsItems9;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+				deviceSlots=		"2"
+
+				damage=				"thermo:24d20; WMD:7"
+				fireRate=			"60"
+				lifetime=			"30"
+                missileSpeed=       "50"
+				powerUse=			"200"
+				charges=			"true"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<!-- GalaxyCompatibility.xml -->
+<!-- GalaxyEffects.xml -->
+<!-- GalaxyLibrary.xml -->
+<!-- GroupIAsteroids.xml -->
+<!-- Groups.xml -->
+<!-- HaloGems.xml -->
+<!-- HarperThompson.xml -->
+<!-- Heliotropes.xml -->
+<ItemType UNID="&itBlinderCannon;"
+			name=				"blinder cannon"
+			level=				"3"
+			value=				"1350"
+			mass=				"2000"
+			frequency=			"rare"
+			numberAppearing=	"1"
+			attributes=			"EnergyWeapon; Heliotropes; MajorItem; NotForSale; NotStandard;"
+
+			description=		"A blinder cannon shoots out a thin stream of ionized particles that disrupts a ship's sensors."
+			>
+
+		<Image imageID="&rsItems3;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:2d8+2; blinding:3"
+				fireRate=			"15"
+				lifetime=			"30"
+				powerUse=			"50"
+
+				effect=				"&efIonizingBeam;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itSunflareCannon;"
+			name=				"sunflare cannon"
+			level=				"5"
+			value=				"14000"
+			mass=				"6000"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"EnergyWeapon; Heliotropes; MajorItem; NotForSale; NotStandard;"
+
+			description=		"Heliotropes developed this heavy ion particle cannon. Its blast is almost as destructive as a solar eruption."
+			>
+
+		<Image imageID="&rsItems5;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"particle:7d8; WMD:4"
+				fireRate=			"30"
+				lifetime=			"40"
+				powerUse=			"300"
+
+				effect=				"&efSunflareCannonEffect;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<!-- Heretic.xml -->
+<ItemType UNID="&itIocrymManipulator;"
+			name=				"Iocrym manipulator"
+			virtual=			"true"
+			>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"graviton:6d12; WMD7"
+				fireRate=			"15"
+				missileSpeed=		"50"
+				lifetime=			"60"
+				powerUse=			"2000"
+
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Effect>
+				<SmokeTrail
+						spread=			"0"
+						emitDuration=	"100"
+						emitRate=		"0-3"
+						emitSpeed=		"12"
+						particleLifetime="15"
+						>
+					<ParticleEffect>
+						<Particle
+								style=			"plain"
+								minWidth=		"2"
+								maxWidth=		"4"
+								primaryColor=	"0xff, 0xc0, 0xff"
+								secondaryColor=	"0xff, 0x80, 0xff"
+								/>
+					</ParticleEffect>
+				</SmokeTrail>
+
+				<Starburst
+						style=			"flare"
+						spikeCount=		"8"
+						spikeLength=	"8-15"
+						primaryColor=	"0xff, 0xc0, 0xff"
+						secondaryColor=	"0xff, 0x80, 0xff"
+						/>
+			</Effect>
+
+			<HitEffect>
+				<Null/>
+			</HitEffect>
+		</Weapon>
+	</ItemType>
+<!-- Heretic00.xml -->
+<!-- Heretic01.xml -->
+<!-- Heretic02.xml -->
+<!-- Heretic03.xml -->
+<!-- Heretic04.xml -->
+<!-- Heretic05.xml -->
+<!-- Heretic06.xml -->
+<!-- Heretic07.xml -->
+<!-- Heretic08.xml -->
+<!-- Himal.xml -->
+<!-- HSCompatibility.xml -->
+<!-- Huaramarca.xml -->
+<!-- HuaramarcaMission01.xml -->
+<!-- HuaramarcaMission02.xml -->
+<!-- HuaramarcaMission03.xml -->
+<!-- HuaramarcaMission04.xml -->
+<!-- HuaramarcaMission05.xml -->
+<!-- HuaramarcaMission06.xml -->
+<!-- HuaramarcaMission07.xml -->
+<!-- Huari.xml -->
+<!-- HuariMission01.xml -->
+<!-- HuariMission02.xml -->
+<!-- HuariMission03.xml -->
+<!-- HUD.xml -->
+<!-- HugoSandoval.xml -->
+<!-- HumanSpaceMap.xml -->
+<!-- HumanSpaceVol01.xml -->
+<!-- HumanTech.xml -->
+<!-- Ice.xml -->
+<!-- Iocrym.xml -->
+<ItemType UNID="&itQuantumsphereDisintegrator;"
+			name=				"Quantumsphere disintegrator"
+			level=				"13"
+			value=				"3000000"
+			mass=				"15000"
+			frequency=			"veryrare"
+			attributes=			"Alien; Iocrym; MajorItem"
+
+			description=		"As the Iocrym abhor chaos, their weapons are designed to reduce their targets to plasma clouds of uniform density."
+			>
+
+		<Image imageID="&rsItems10;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"50"
+				powerUse=			"1000"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itQuantumsphereShell;"
+						type=			"missile"
+
+						damage=			"antimatter:16d20; disintegration:7; WMD:7"
+						missileSpeed=	"12"
+						hitPoints=		"10"
+						accelerationFactor="125"
+						maxMissileSpeed="35"
+						maneuverRate=	"1"
+						lifetime=		"600"
+						
+						interaction=	"always"
+						noFriendlyFire=	"true"
+
+						effect=			"&efQuantumsphereShot;"
+						hitEffect=		"&efQuantumsphereHit;"
+						sound=			"&snRecoillessCannon;"
+						>
+
+					<FireEffect>
+						<Null/>
+					</FireEffect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itPlasmaThrower;"
+			name=				"Iocrym Avalanche cannon"
+			level=				"12"
+			value=				"1500000"
+			mass=				"50000"
+			attributes=			"Alien; Iocrym; MajorItem"
+			frequency=			"rare"
+			unknownType=		"&itUnknownAlienDevice10;"
+
+			description=		"This weapon is used on Iocrym capital ships."
+			>
+
+		<Image imageID="&rsItems10;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+		
+		<Weapon
+				type=			"particles"
+				count=			"1d4+4"
+
+				configuration=	"wall"
+				damage=			"plasma:50; WMD5"
+				fireRate=		"20"
+				powerUse=		"6000"
+
+				sound=			"&snMissileLauncher;"
+				>
+			
+			<ParticleSystem
+					style=				"spray"
+					emitLifetime=		"5-12"
+					emitRate=			"5d6"
+					emitSpeed=			"20-40"
+					emitWidth=			"25"
+					
+					particleLifetime=	"26-32"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itIocrymFractureCannon;"
+			name=				"Iocrym Fracture cannon"
+			level=				"10"
+			value=				"400000"
+			mass=				"5000"
+			frequency=			"veryrare"
+			attributes=			"Alien; Iocrym; Military; MajorItem; NotForSale"
+			unknownType=		"&itUnknownAlienDevice10;"
+
+			description=		"This is a plasma weapon used by the Iocrym gunships."
+			>
+
+		<Image imageID="&rsItems10;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=			"particles"
+				count=			"1d4+4"
+
+				damage=			"plasma:50; WMD2"
+				fireRate=		"15"
+				powerUse=		"3000"
+
+				sound=			"&snMissileLauncher;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90"  posRadius="10" angle="0"/>
+				<Shot posAngle="270" posRadius="10" angle="0"/>
+			</Configuration>
+			
+			<ParticleSystem
+					style=				"spray"
+					emitLifetime=		"8"
+					emitRate=			"5d6"
+					emitSpeed=			"30"
+					emitWidth=			"25"
+					
+					particleLifetime=	"26-32"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itIocrymRepeller;"
+			name=				"Iocrym repeller"
+			level=				"10"
+			value=				"150000"
+			mass=				"5000"
+			frequency=			"veryrare"
+			attributes=			"Alien; Iocrym; Military; MajorItem; NotForSale"
+			unknownType=		"&itUnknownAlienDevice10;"
+
+			description=		"This is a short-range weapon used by Iocrym command ships to defend their perimeter."
+			>
+
+		<Image imageID="&rsItems10;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"plasma:4d12; momentum6; WMD3"
+				fireRate=			"10"
+				missileSpeed=		"65"
+				lifetime=			"10"
+				powerUse=			"3000"
+
+				sound=				"&snRecoillessCannon;"
+				vaporTrailLength=	"50"
+				vaporTrailWidth=	"110"
+				vaporTrailWidthInc=	"1"
+				vaporTrailColor=	"0xff, 0x65, 0x21"
+				>
+
+			<Effect>
+				<MoltenBolt
+						width=				"3"
+						length=				"16"
+						growth=				"3"
+						primaryColor=		"0xff, 0xfd, 0xad"
+						secondaryColor=		"0xff, 0x65, 0x21"
+						/>
+			</Effect>
+		</Weapon>
+	</ItemType>
+<!-- Jenna.xml -->
+<!-- JiangsStar.xml -->
+<!-- KateMorgental.xml -->
+<!-- KobolWarlords.xml -->
+<!-- KorolovFreighters.xml -->
+<!-- KorolovShipping.xml -->
+<!-- Kronosaurus.xml -->
+<!-- KronosaurusMission01.xml -->
+<!-- KSMission01.xml -->
+<!-- KSMission02.xml -->
+<!-- KSMission03.xml -->
+<!-- KSMissionC01.xml -->
+<!-- KSMissionC02.xml -->
+<!-- LiaPereira.xml -->
+<!-- Luminous.xml -->
+<ItemType UNID="&itLuminousIonBlaster;"
+			name=				"Luminous blaster"
+			attributes=			"energyWeapon, luminous, military, majorItem, notForSale, notStandard"
+			  
+			level=				"8"
+			frequency=			"rare"
+			  
+			value=				"83000"
+			mass=				"4000"
+
+			description=		"This ion blaster is used by Luminous for its drones."
+			>
+
+		<Image imageID="&rsItems8;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:5d6; WMD1"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"1000"
+
+				effect=				"&efEIBlasterBeam;"
+				fireEffect=			"&efEIBlasterFire;"
+				hitEffect=			"&efEIBlasterHit;" 
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<!-- Makayev.xml -->
+<!-- Marauders.xml -->
+<!-- Metallic.xml -->
+<!-- Mining.xml -->
+<!-- MiningPods.xml -->
+<!-- MiscItems.xml -->
+<!-- MRAD.xml -->
+<!-- MuhammadCondi.xml -->
+<!-- Neurohack.xml -->
+<!-- NewVictoria.xml -->
+<!-- NPCPilgrims.xml -->
+<!-- Ore.xml -->
+<!-- OreStone.xml -->
+<!-- OutlawMiners.xml -->
+<!-- Outlaws.xml -->
+<ItemType UNID="&itBallistaTurret;"
+			name=				"Ballista turret"
+			attributes=			"majorItem, outlaws, NAMI"
+			  
+			level=				"5"
+			frequency=			"veryrare"
+
+			value=				"13000"
+			mass=				"8000"
+			  
+			description=		"Outlaw engineers have mounted a Ballista cannon on an RK15 mount."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				damage=				"kinetic:14d8; momentum:5; WMD:5"
+				fireRate=			"50"
+				missileSpeed=		"45"
+				lifetime=			"67"
+				powerUse=			"200"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMarkIHowitzerTurret;"
+			name=				"mark I howitzer turret"
+			attributes=			"howitzer, majorItem, makayev, outlaws"
+			  
+			level=				"6"
+			frequency=			"veryrare"
+
+			value=				"24000"
+			mass=				"6500"
+			  
+			description=		"This is a mark I howitzer on an omnidirectional turret."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				damage=				"blast:5d12; momentum:3; WMD:4"
+				fireRate=			"50"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"280"
+				recoil=				"2"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<!-- Ovoids.xml -->
+<!-- OvoidsCompatibility.xml -->
+<!-- Part1Compatibility.xml -->
+<!-- Penitents.xml -->
+<ItemType UNID="&itAbsolutionCannon;"
+			name=				"Penitent cannon"
+			level=				"4"
+			value=				"2800"
+			mass=				"2000"
+			frequency=			"rare"
+			attributes=			"alien, energyWeapon, penitents, majorItem, notForSale, notStandard"
+
+			description=		"Very little is known about these exotic, dark-matter weapons. The Order of Penitence uses these weapons in their ships."
+			>
+
+		<Image imageID="&rsItems4;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"darkAcid:2d8; WMD1"
+				fireRate=			"30"
+				missileSpeed=		"45"
+				lifetime=			"40"
+				powerUse=			"200"
+
+				effect=				"&efDarkAcidBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				/>
+	</ItemType>
+<ItemType UNID="&itOracusHarassPower;"
+			name=				"Oracus HARASS power"
+			virtual=			"true"
+			level=				"5"
+			>
+
+		<Weapon
+				type=				"shockwave"
+
+				damage=				"darkAcid:2d8; WMD1"
+				fireRate=			"30"
+				expansionSpeed=		"15"
+				missileSpeed=		"0"
+				lifetime=			"40"
+				powerUse=			"200"
+				>
+
+			<Effect>
+				<Shockwave>
+					<Image imageID=				"&rsShockwave1;"
+							imageX=				"0" 
+							imageY=				"128" 
+							imageWidth=			"512" 
+							imageHeight=		"64"/>
+				</Shockwave>
+			</Effect>
+		</Weapon>
+	</ItemType>
+<!-- Pilgrim.xml -->
+<!-- PlayerShips.xml -->
+<!-- PointJuno.xml -->
+<!-- Primordial.xml -->
+<!-- Psych00.xml -->
+<!-- Psych01.xml -->
+<!-- Pteravores.xml -->
+<!-- QuantumCPU.xml -->
+<!-- RaisuMission01.xml -->
+<!-- RaisuMission02.xml -->
+<!-- RaisuMission03.xml -->
+<!-- RaisuStation.xml -->
+<!-- Rama.xml -->
+<!-- RanxEmpire.xml -->
+<ItemType UNID="&itKilotonCannon;"
+			name=				"kiloton cannon"
+			attributes=			"majorItem, military, ranx, specialty"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+
+			value=				"45000"
+			mass=				"4000"
+			  
+			description=		"This heavy nuclear cannon requires kiloton cannon shells."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"20"
+				powerUse=			"50"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itKilotonCannonShell;"
+						type=			"missile"
+
+						missileSpeed=	"50"
+						lifetime=		"120"
+
+						failsafe=		"10"
+
+						hitEffect=		"&efThermoFragmentExplosion;"
+						sound=			"&snMissileLauncher;"
+						>
+
+					<Effect>
+						<ParticleJet
+								emitRate=			"20"
+								emitSpeed=			"40-50"
+								particleLifetime=	"10-30"
+								spreadAngle=		"2"
+								>
+							<ParticleEffect>
+								<Particle
+										style=			"plain"
+										minWidth=		"1"
+										maxWidth=		"3"
+										primaryColor=	"#effeff"
+										secondaryColor=	"#5b777a"
+										/>
+							</ParticleEffect>
+						</ParticleJet>
+						
+						<Image imageID="&rsMissiles;" imageX="0" imageY="48" imageWidth="16" imageHeight="16" imageFrameCount="12" imageTicksPerFrame="3"/>
+					</Effect>
+
+					<Fragment 
+							count=				"50-70"
+							type=				"missile"
+
+							damage=				"thermo:1d12+2; WMD:4"
+							missileSpeed=		"70-90"
+							lifetime=			"5"
+							
+							effect=				"&efThermoShellDefault;"
+							hitEffect=			"&efThermoFragmentHit;"
+							>
+					</Fragment>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<!-- Rasiermesser.xml -->
+<ItemType UNID="&itDvalinIon9Cannon;"
+			name=				"Dvalin Ion9 cannon"
+			level=				"9"
+			value=				"200000"
+			mass=				"4000"
+			frequency=			"notrandom"
+			attributes=			"energyWeapon, majorItem, military, rasiermesser, notStandard"
+
+			description=		"This is an experimental ion cannon created by Rasiermesser's chief scientist."
+			>
+
+		<Image imageID="&rsItemsRasiermesser4;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+
+				damage=				"ion:90; shield:9;"
+				fireRate=			"22"
+				missileSpeed=		"100"
+				lifetime=			"30"
+				powerUse=			"2000"
+
+				particleCount=		"1d11+44"
+				particleSpreadAngle="5"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Effect>
+				<Ray
+						style=			"grainy"
+						shape=			"tapered"
+						primaryColor=	"#80eaff"
+						secondaryColor=	"#006b80"
+						width=			"8"
+						length=			"80"
+						intensity=		"50"
+						/>
+			</Effect>
+		</Weapon>
+	</ItemType>
+<!-- RasiermesserMission01.xml -->
+<!-- RejuvTank.xml -->
+<!-- ResidentialsMission01.xml -->
+<!-- ResidentialsMission02.xml -->
+<!-- ResidentialsMission03.xml -->
+<!-- Ringers.xml -->
+<ItemType UNID="&itPositronLancer;"
+			name=				"positron lancer"
+			level=				"10"
+			value=				"260000"
+			mass=				"2500"
+			frequency=			"rare"
+			attributes=			"EnergyWeapon; Military; MajorItem; Ringers"
+
+			description=		"This Ringer weapon fires a steady stream of high-energy positrons."
+			>
+
+		<Image imageID="&rsItems10;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				repeating=			"4"
+				damage=				"positron:2d8"
+				fireRate=			"20"
+				lifetime=			"60"
+				powerUse=			"3000"
+
+				sound=				"&snLaserCannon;"
+				>
+
+			<Effect>
+				<ParticlePattern
+						style=			"comet"
+						length=			"80"
+						jitterLength=	"80-150"
+						
+						primaryColor=	"#f9ffb3"
+						>
+					<Events>
+						<GetParameters>
+							(block (
+								(damageHP (@ gData 'damageHP))
+								)
+
+								{
+									particleCount: (mathScale damageHP 20 300 100 300 50)
+									width: (mathScale damageHP 20 300 10 20 50)
+									}
+								)
+						</GetParameters>
+					</Events>
+				</ParticlePattern>
+				<Ray
+						style=			"smooth"
+						shape=			"oval"
+						length=			"70"
+						intensity=		"60"
+						
+						primaryColor=	"#f9ffb3"
+						secondaryColor=	"#806a00"
+						>
+					<Events>
+						<GetParameters>
+							(block (
+								(damageHP (@ gData 'damageHP))
+								)
+								{
+									width: (mathScale damageHP 20 300 15 30 50)
+									}
+								)
+						</GetParameters>
+					</Events>
+				</Ray>
+			</Effect>
+		</Weapon>
+
+	</ItemType>
+<!-- Rocky.xml -->
+<!-- RogueFleet.xml -->
+<!-- RPGAnalyzers.xml -->
+<!-- RPGAutons.xml -->
+<!-- RPGAuxDevices.xml -->
+<!-- RPGBehaviors.xml -->
+<!-- RPGCharacterClasses.xml -->
+<!-- RPGCharacters.xml -->
+<!-- RPGCode.xml -->
+<!-- RPGCommoditiesExchange.xml -->
+<!-- RPGCommonText.xml -->
+<!-- RPGCompatibility.xml -->
+<!-- RPGComponents.xml -->
+<!-- RPGCrime.xml -->
+<!-- RPGDeviceDockScreens.xml -->
+<!-- RPGDialog.xml -->
+<!-- RPGDockManagement.xml -->
+<!-- RPGDockScreens.xml -->
+<!-- RPGDockServices.xml -->
+<!-- RPGLibrary.xml -->
+<!-- RPGMembership.xml -->
+<!-- RPGMining.xml -->
+<!-- RPGMissions.xml -->
+<!-- RPGMissionTemplate01.xml -->
+<!-- RPGMissionTemplate02.xml -->
+<!-- RPGMissionTemplate03.xml -->
+<!-- RPGMissionTemplate04.xml -->
+<!-- RPGMissionTemplate05.xml -->
+<!-- RPGMissionTemplate06.xml -->
+<!-- RPGMissionTemplate07.xml -->
+<!-- RPGPlayer.xml -->
+<!-- RPGRumors.xml -->
+<!-- RPGShipBroker.xml -->
+<!-- RPGShipScreens.xml -->
+<!-- RPGSlaves.xml -->
+<!-- RPGSquadronUI.xml -->
+<!-- RPGTradingComputer.xml -->
+<!-- RPGTypes.xml -->
+<!-- RPGUsefulItems.xml -->
+<!-- RPGViewers.xml -->
+<!-- RPGWingmen.xml -->
+<!-- Salvagers.xml -->
+<!-- Sanctuary.xml -->
+<!-- Sapiens.xml -->
+<ItemType UNID="&itWasteCannon;"
+			name=				"actinide waste cannon"
+			attributes=			"illegal, majorItem, sapiens, notStandard;"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"6200"
+			mass=				"6000"
+			  
+			description=		"The actinide waste cannon is a dirty weapon that shoots out a cloud of radioactive debris."
+			>
+
+		<Image imageID="&rsItems4;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"30"
+
+				type=				"missile"
+				repeating=			"3"
+
+				lifetime=			"60"
+				damage=				"blast:1d8; radiation1; WMD1"
+				powerUse=			"60"
+
+				missileSpeed=		"20"
+				
+				hitEffect=			"&efRadioactiveHitEffect;"
+				sound=				"&snLaserCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot angle="3d5-9"/>
+			</Configuration>
+			
+			<Effect>
+				<Orb	style=			"fireblast"
+						animate=		"explode"
+						lifetime=		"60"
+
+						blendMode=		"screen"
+						primaryColor=	"#00ff2b"
+						secondaryColor=	"#008015"
+						>
+					<Events>
+						<GetParameters>
+							(block (
+								(damageHP (@ gData 'damageHP))
+								(weaponUNID (@ gData 'weaponUNID))
+								)
+							
+								{
+									radius: (if (= damageHP 0) 10 (mathScale damageHP 5 64 20 45 50))
+									;lifetime: (if (= damageHP 0) 4 (mathScale damageHP 5 64 12 48 50))
+								
+									intensity: (seededRandom weaponUNID 50 70)
+									distortion: (mathScale damageHP 5 64 50 0 100)
+									detail: (seededRandom weaponUNID 20 25)
+									}
+								)
+						</GetParameters>
+					</Events>
+				</Orb>
+			</Effect>
+		</Weapon>
+	</ItemType>
+<!-- Scoria.xml -->
+<!-- ShieldEnhancementItems.xml -->
+<!-- Sisters01.xml -->
+<!-- Sisters02.xml -->
+<!-- Sisters03.xml -->
+<!-- SistersDonate.xml -->
+<!-- SistersOfDomina.xml -->
+<!-- SistersPilgrimsAid.xml -->
+<!-- SistersSanctum.xml -->
+<!-- Stargates.xml -->
+<!-- Stars.xml -->
+<!-- StarsOfThePilgrim.xml -->
+<!-- StarSystems.xml -->
+<!-- StdArmor.xml -->
+<!-- StdAutons.xml -->
+<!-- StdDevices.xml -->
+<!-- StdDockScreens.xml -->
+<!-- StdEffects.xml -->
+<!-- StdFuel.xml -->
+<!-- StdMiningEquipment.xml -->
+<ItemType UNID="&itMiningLaser;"
+			name=				"mining laser"
+			attributes=			"commonwealth, EI, energyWeapon, essentialMiningEquipment, majorItem, miningEquipment, specialty"
+			  
+			level=				"2"
+			frequency=			"rare"
+
+			value=				"1150"
+			mass=				"2000"
+			  
+			description=		"This powerful laser is generally used for asteroid mining. Mining lasers are particularly effective on icy and primordial asteroids."
+			>
+
+		<Image imageID="&rsItems2;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				repeating=			"4"
+				damage=				"laser:1d4+1; mining:5;"
+				fireRate=			"30"
+				lifetime=			"15"
+				powerUse=			"30"
+
+				fireEffect=			"&efGreenLaserFireEffect;"
+				hitEffect=			"&efGreenLaserHitEffect;"
+				sound=				"&snLaserCannon;"
+				>
+			<Effect>
+				<Beam
+						beamType=			"laser"
+						primaryColor=		"0x5f, 0xf1, 0x2a"
+						secondaryColor=		"0x00, 0xff, 0x00"
+						/>
+			</Effect>			
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMagmaCutter;"
+			name=				"magma cutter(s)"
+			attributes=			"commonwealth, essentialMiningEquipment, majorItem, miningEquipment, NAMI, specialty"
+			  
+			level=				"3"
+			frequency=			"rare"
+
+			value=				"2400"
+			mass=				"3000"
+			  
+			description=		"22nd century miners relied on magma cutters to carve up iron-rich asteroids. Magma cutters are particularly effective on metallic and icy asteroids."
+			>
+
+		<Image imageID="&rsItems3;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"blast:16; mining:5; WMD:4"
+				
+				fireRate=			"30"
+
+				powerUse=			"50"
+				sound=				"&snRecoillessCannon;"
+				>
+			
+			<ParticleSystem
+					style=				"spray"
+					emitLifetime=		"1"
+					emitRate=			"60-75"
+					emitSpeed=			"40"
+					spreadAngle=		"1"
+					
+					particleLifetime=	"30"
+					>
+				<ParticleEffect>
+					<Particle
+							style=			"flame"
+							minWidth=       "1"
+							maxWidth=		"5-10"
+							/>
+				</ParticleEffect>
+			</ParticleSystem>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itProtonDrill;"
+			name=				"proton drill"
+			attributes=			"commonwealth, EI, energyWeapon, essentialMiningEquipment, majorItem, miningEquipment, specialty"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"5000"
+			mass=				"3500"
+			  
+			description=		"This proton beam weapon is primarily used for mining. It is particularly effective on icy and primordial asteroids."
+			>
+
+		<Image imageID="&rsItems4;" imageX="288" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"particle:3d8+1; mining:6;"
+				fireRate=			"20"
+				lifetime=			"15"
+				powerUse=			"100"
+
+				effect=				"&efParticleBeamDefault;"
+				fireEffect=			"&efParticleFireDefault;"
+				hitEffect=			"&efParticleHitDefault;"
+				sound=				"&snLaserCannon;"
+				/>
+	</ItemType>
+<ItemType UNID="&itPlasmaTorch;"
+			name=				"plasma torch(es)"
+			attributes=			"commonwealth, essentialMiningEquipment, majorItem, miningEquipment, NAMI, specialty"
+			  
+			level=				"6"
+			frequency=			"rare"
+
+			value=				"12000"
+			mass=				"4000"
+			  
+			description=		"Plasma torches are used for large-scale asteroid mining. They are effective on icy and metallic asteroids."
+			>
+
+		<Image imageID="&rsItems6;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"plasma:30; mining:5; WMD:2"
+				
+				fireRate=			"30"
+
+				powerUse=			"300"
+				sound=				"&snRecoillessCannon;"
+				>
+			
+			<ParticleSystem
+					style=				"spray"
+					emitLifetime=		"1"
+					emitRate=			"60-75"
+					emitSpeed=			"40"
+					spreadAngle=		"1"
+					
+					particleLifetime=	"30"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+		</Weapon>
+	</ItemType>
+<!-- StdPlayerShips.xml -->
+<!-- StdShields.xml -->
+<!-- StdSovereigns.xml -->
+<!-- StdSystems.xml -->
+<!-- StdTypes.xml -->
+<!-- StdUnknownItems.xml -->
+<!-- StdWeapons.xml -->
+<ItemType UNID="&itDisposableLauncher;"
+			name=				"DM600 disposable missile rack"
+			attributes=			"commonwealth, disposable, majorItem, NAMI"
+			  
+			level=				"1"
+			frequency=			"uncommon"
+
+			value=				"40"
+			mass=				"200"
+			  
+			charges=			"32"
+			massBonusPerCharge=	"20" 
+			valueBonusPerCharge="5"
+
+			description=		"This disposable weapon system is loaded with thirty-two KM100 missiles. The weapon can be installed and uninstalled without the aid of a station."
+
+			showChargesInUseMenu="true"
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				damage=				"blast:4d6; momentum4; WMD5"
+				fireRate=			"30"
+				hitPoints=			"20"
+				lifetime=			"90"
+				powerUse=			"1"
+				charges=			"true"
+
+				missileSpeed=		"60"
+				sound=				"&snMissileLauncher;"
+
+				effect=				"&efMissileNAMI;"
+				>
+		</Weapon>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+
+		<Language>
+			<Text id="core.charges">missile(s)</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itLaserCannon;"
+			name=				"laser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"1"
+			frequency=			"common"
+
+			value=				"380"
+			mass=				"1000"
+			  
+			description=		"A popular weapon for light freighters and fast gunships. This weapon is manufactured by the Earth Industries Conglomerate."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"laser:1d4"
+				fireRate=			"10"
+				range=				"60"
+				powerUse=			"10"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itRecoillessCannon;"
+			name=				"recoilless cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"1"
+			frequency=			"uncommon"
+
+			value=				"340"
+			mass=				"2500"
+			  
+			description=		"Recoilless cannons are slower than the ubiquitous laser cannon but pack a bigger punch."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:1d6+1; momentum1"
+				fireRate=			"15"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"10"
+				
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itLightRecoillessCannon;"
+			name=				"light recoilless cannon"
+			attributes=			"commonwealth, majorItem, NAMI, notForSale"
+			  
+			level=				"1"
+			frequency=			"rare"
+
+			value=				"270"
+			mass=				"2000"
+			  
+			description=		"This specialized version of the recoilless cannon shoots lighter projectiles but has a higher fire rate."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:1d3+1; momentum1"
+				fireRate=			"10"
+				missileSpeed=		"40"
+				lifetime=			"40"
+				powerUse=			"11"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itBlaster;"
+			name=				"Bolide laser blaster"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem, notForSale;"
+			  
+			level=				"2"
+			frequency=			"common"
+			showReference=		"true"
+
+			value=				"820"
+			mass=				"1500"
+			  
+			description=		"Soon after release, the Bolide was obsoleted by EI's turbolaser cannon, though some insist the Bolide is a better weapon for the price."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"laser:1d6"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"20"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDM1500MissileRack;"
+			name=				"DM1500 disposable missile rack"
+			attributes=			"commonwealth, disposable, majorItem, NAMI"
+			  
+			level=				"2"
+			frequency=			"rare"
+
+			value=				"40"
+			mass=				"200"
+			  
+			charges=			"32"
+			massBonusPerCharge=	"20" 
+			valueBonusPerCharge="15"
+
+			description=		"The DM1500 is loaded with thirty-two KM500 tracking missiles. This weapon can be installed and uninstalled without the aid of a station."
+
+			showChargesInUseMenu="true"
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				launcher=			"true"
+
+				damage=				"blast:5d6; momentum4; WMD5"
+				fireRate=			"30"
+				hitPoints=			"20"
+				lifetime=			"120"
+				powerUse=			"2"
+				charges=			"true"
+
+				missileSpeed=		"40"
+				maneuverRate=		"9"
+				sound=				"&snMissileLauncher;"
+
+				effect=				"&efMissileNAMI;"
+				>
+		</Weapon>
+
+		<Invoke>
+			(intAutoInstall gSource gItem)
+		</Invoke>
+
+		<Language>
+			<Text id="core.charges">missile(s)</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itDualLaserCannon;"
+			name=				"dual laser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+
+			value=				"1200"
+			mass=				"2000"
+			  
+			description=		"Twin laser cannons manufactured by Earth Industries."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"dual"
+				damage=				"laser:1d4"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"30"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itFastFireLaserCannon;"
+			name=				"fast-fire laser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+
+			value=				"820"
+			mass=				"1250"
+			  
+			description=		"The fast-fire laser cannon uses enhanced capacitors and has a fire rate almost double that of a standard laser."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"laser:1d4"
+				fireRate=			"6"
+				lifetime=			"30"
+				powerUse=			"30"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itHeavyRecoillessCannon;"
+			name=				"heavy recoilless cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"2"
+			frequency=			"common"
+
+			value=				"1100"
+			mass=				"3000"
+			  
+			description=		"This is a heavier version of the common recoilless cannon."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:2d6-1; momentum:1; WMD:4"
+				fireRate=			"15"
+				missileSpeed=		"40"
+				lifetime=			"80"
+				powerUse=			"22"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itTridentCannon;"
+			name=				"TK10 Trident cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+
+			value=				"1300"
+			mass=				"3500"
+			  
+			description=		"The TK10 Trident cannon is another in the popular series of NAMI kinetic weapons. The TK10 fires three small high-velocity projectiles."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:1d3+1; momentum1"
+				fireRate=			"15"
+				missileSpeed=		"40"
+				lifetime=			"40"
+				powerUse=			"20"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="0" posRadius="0" angle="-4"/>
+				<Shot posAngle="0" posRadius="0" angle="0"/>
+				<Shot posAngle="0" posRadius="0" angle="4"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itArbalestCannon;"
+			name=				"DK10 Arbalest cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"3"
+			frequency=			"common"
+
+			value=				"1500"
+			mass=				"2000"
+			  
+			description=		"The Arbalest cannon is an automatic minigun that fires in bursts of four shells."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"3"
+				repeatingDelay=		"1"
+				damage=				"kinetic:1d6+1; momentum1"
+				fireRate=			"24"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"70"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itLaserArray;"
+			name=				"laser cannon array"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"3"
+			frequency=			"rare"
+
+			value=				"2700"
+			mass=				"3000"
+			  
+			description=		"The laser cannon array consists of three laser cannons joined in a forward spread pattern."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"laser:1d4"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"60"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+			<Configuration aimTolerance="6">
+				<Shot angle="-3"/>
+				<Shot angle="0"/>
+				<Shot angle="3"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMoskvaLightTurret;"
+			name=				"Moskva 11 light turret"
+			attributes=			"commonwealth, majorItem, makayev"
+			  
+			level=				"3"
+			frequency=			"rare"
+
+			value=				"2000"
+			mass=				"3000"
+			  
+			description=		"This omnidirectional turret fires powerful high-explosive shells, but its range is very limited."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				damage=				"blast:1d6+1; momentum:1; WMD:3"
+				fireRate=			"16"
+				missileSpeed=		"40"
+				lifetime=			"24"
+				powerUse=			"50"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniLaserCannon;"
+			name=				"omnidirectional laser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"2"
+			frequency=			"rare"
+
+			value=				"1200"
+			mass=				"1000"
+			  
+			description=		"A single laser cannon with an automated targeting system."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"laser:1d4"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"30"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itNAMIMissileLauncher;"
+			name=				"NAMI missile launcher"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"3"
+			frequency=			"common"
+
+			value=				"1500"
+			mass=				"1000"
+			  
+			description=		"This launcher is compatible with a full range of popular missiles including the KM100 Longbows and the XM900 Lucifers."
+			>
+
+		<Image imageID="&rsItemsNAMI2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"30"
+				powerUse=			"5"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itKM100Missile;"/>
+				<Missile ammoID="&itFragmentationMissile;"/>
+				<Missile ammoID="&itKM120Missile;"/>
+				<Missile ammoID="&itKM500Missile;"/>
+				<Missile ammoID="&itKM550Missile;"/>
+				<Missile ammoID="&itXM300Missile;"/>
+				<Missile ammoID="&itKM170Missile;"/>
+				<Missile ammoID="&itXM900Missile;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itPartisanCannon;"
+			name=				"AK15 Partisan cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+
+			value=				"2300"
+			mass=				"3000"
+			  
+			description=		"This recoilless kinetic cannon, manufactured by NAMI, is more powerful than the heavy recoilless cannon."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:2d8+2; momentum:1; WMD:4"
+				fireRate=			"16"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"60"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itSmartCannon;"
+			name=				"Rasiermesser SmartCannon"
+			attributes=			"commonwealth, majorItem, specialty, rasiermesser"
+			  
+			level=				"3"
+			frequency=			"uncommon"
+
+			value=				"1300"
+			mass=				"3000"
+			  
+			description=		"Rasiermesser brought the SmartCannon to market despite opposition from law enforcement."
+			>
+
+		<Image imageID="&rsItemsRasiermesser1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"15"
+				powerUse=			"5"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itSmartCannonShell;"
+						type=			"missile"
+
+						damage=			"kinetic:2d8+1; WMD1"
+						missileSpeed=	"50"
+						lifetime=		"60"
+						interaction=	"50"
+						maneuverRate=	"18"
+
+						sound=			"&snRecoillessCannon;"
+						>
+					
+					<Effect>
+						<ParticleSystem
+								style=				"jet"
+								fixedPos=			"true"
+								emitRate=			"40"
+								tangentSpeed=		"-3-3"
+								particleLifetime=	"10-30"
+								XformTime=			"15"
+								>
+							<ParticleEffect>
+								<Particle
+										style=			"plain"
+										minWidth=		"1"
+										maxWidth=		"3"
+										primaryColor=	"#f1f6ff"
+										secondaryColor=	"#73767d"
+										/>
+							</ParticleEffect>
+						</ParticleSystem>
+						
+						<Ray
+								style=			"smooth"
+								shape=			"diamond"
+								intensity=		"40"
+								primaryColor=	"#CCF7FF"
+								secondaryColor=	"#667B80"
+								>
+							<Events>
+								<GetParameters>
+									(block (
+										(damageHP (@ gData 'damageHP))
+										(speed (@ gData 'speed))
+										)
+										{
+											length:	(mathScale damageHP	2 30 speed (@ speed 2) 50)
+											width: (mathScale damageHP 2 30 12 28 50)
+											}
+										)
+								</GetParameters>
+							</Events>
+						</Ray>
+					</Effect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDualRecoillessCannon;"
+			name=				"dual recoilless cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"2"
+			frequency=			"uncommon"
+
+			value=				"1100"
+			mass=				"5000"
+			  
+			description=		"Twin recoilless cannons manufactured by NAMI."
+			>
+
+		<Image imageID="&rsItemsNAMI1;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				configuration=		"dual"
+				damage=				"kinetic:1d6+1; momentum1"
+				fireRate=			"15"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"30"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itTurbolaserCannon;"
+			name=				"turbolaser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"3"
+			frequency=			"common"
+
+			value=				"1700"
+			mass=				"1500"
+			  
+			description=		"One of the most popular designs by the Earth Industries Conglomerate, the turbolaser cannon is a cheap, powerful, and reliable weapon."
+			>
+
+		<Image imageID="&rsItemsEI1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"laser:3d4"
+				fireRate=			"12"
+				lifetime=			"30"
+				powerUse=			"60"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itBallistaCannon;"
+			name=				"AK505 Ballista cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"6300"
+			mass=				"6000"
+			  
+			description=		"The largest kinetic mass driver created by NAMI, the Ballista cannon can pummel a medium-sized station."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:14d8; momentum:5; WMD:5"
+				fireRate=			"46"
+				missileSpeed=		"45"
+				lifetime=			"67"
+				powerUse=			"160"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itFlenserCannon;"
+			name=				"Flenser relativistic cannon"
+			attributes=			"commonwealth, majorItem, rasiermesser"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"5500"
+			mass=				"3000"
+			  
+			description=		"The Flenser relativistic cannon fires small masses at nearly the speed of light."
+			>
+
+		<Image imageID="&rsItemsRasiermesser3;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:4d8; momentum:2; WMD:3"
+				fireRate=			"15"
+				missileSpeed=		"90"
+				lifetime=			"50"
+				powerUse=			"130"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMAGLauncher;"
+			name=				"MAG launcher"
+			attributes=			"commonwealth, majorItem, rasiermesser"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+
+			value=				"3000"
+			mass=				"1000"
+			  
+			description=		"The MAG launcher is a flexible and sophisticated grenade launcher that is compatible with a large range of MAG munitions."
+			>
+
+		<Image imageID="&rsItemsRasiermesser2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"20"
+				powerUse=			"10"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&it400HexageneMAG;"/>
+				<Missile ammoID="&it600HexageneMAG;"/>
+				<Missile ammoID="&it800HexageneMAG;"/>
+				<Missile ammoID="&itJB2ShieldBusterMAG;"/>
+				<Missile ammoID="&itZG24ClusterMAG;"/>
+				<Missile ammoID="&it3KSiegeMAG;"/>
+				<Missile ammoID="&itHighFluxMAG;"/>
+				
+				<Missile ammoID="&itPX3HexageneMAG;"/>
+				<Missile ammoID="&itPX19OblivionMAG;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itParticleBeamWeapon;"
+			name=				"particle beam weapon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"4"
+			frequency=			"common"
+
+			value=				"4700"
+			mass=				"1500"
+			  
+			description=		"A modified linear accelerator fires energetic particles at its target."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"particle:1d8+1"
+				fireRate=			"10"
+				lifetime=			"40"
+				powerUse=			"100"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMorningStarCannon;"
+			name=				"PK25 Morning Star cannon"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+
+			value=				"5200"
+			mass=				"4000"
+			  
+			description=		"NAMI's Morning Star cannon shoots a high-velocity cloud of dense particles that can severely damage light to medium armor."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"kinetic:25; WMD:1"
+
+				fireRate=			"16"
+
+				powerUse=			"150"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<ParticleSystem
+					style=				"spray"
+					emitLifetime=		"1"
+					emitRate=			"1d11+44"
+					emitSpeed=			"40"
+					spreadAngle=		"15"
+
+					particleLifetime=	"60"
+					>
+
+				<ParticleEffect>
+					<Particle
+							style=			"line"
+							primaryColor=	"#ccf7ff"
+							secondaryColor=	"#2e3233"
+							/>
+				</ParticleEffect>
+			</ParticleSystem>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMoskvaDualCannon;"
+			name=				"Moskva 21 dual cannon"
+			attributes=			"commonwealth, majorItem, Makayev; Specialty"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"2800"
+			mass=				"4000"
+			  
+			description=		"This dual cannon shoots high-explosive shells in a scattered pattern."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:1d6+1; momentum1; WMD3"
+				fireRate=			"15"
+				missileSpeed=		"40"
+				lifetime=			"40"
+				powerUse=			"100"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90" posRadius="12" angle="3d5-9"/>
+				<Shot posAngle="270" posRadius="12" angle="3d5-9"/>
+			</Configuration>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itOmniPartisanCannon;"
+			name=				":an RK15 Partisan turret"
+			attributes=			"commonwealth, majorItem, NAMI"
+			  
+			level=				"4"
+			frequency=			"rare"
+
+			value=				"6800"
+			mass=				"4000"
+			  
+			description=		"An omnidirectional version of the Partisan cannon."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				omnidirectional=	"true"
+				damage=				"kinetic:2d8+2; momentum:1; WMD:4"
+				fireRate=			"16"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"100"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itSlamCannon;"
+			name=				"slam cannon"
+			attributes=			"commonwealth, majorItem, makayev"
+			  
+			level=				"4"
+			frequency=			"common"
+
+			value=				"4400"
+			mass=				"3000"
+			  
+			description=		"The slam cannon fires high-explosive shells."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:2d6+2; momentum:2; WMD:5"
+				fireRate=			"20"
+				missileSpeed=		"50"
+				lifetime=			"60"
+				powerUse=			"100"
+
+				effect=				"&efSlamCannonShell;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itDualTurbolaserCannon;"
+			name=				"dual turbolaser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+
+			value=				"4000"
+			mass=				"3000"
+			  
+			description=		"Turbolasers in a twin configuration have became popular with pirates and marauders."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"dual"
+				damage=				"laser:3d4"
+				fireRate=			"12"
+				lifetime=			"30"
+				powerUse=			"120"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniTurbolaserCannon;"
+			name=				"omnidirectional turbolaser cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"4"
+			frequency=			"uncommon"
+
+			value=				"3500"
+			mass=				"2000"
+			  
+			description=		"A single turbolaser mounted on an automated turret."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"laser:3d4"
+				fireRate=			"16"
+				lifetime=			"30"
+				powerUse=			"70"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itAkan30Cannon;"
+			name=				"Akan 30 cannon"
+			attributes=			"commonwealth, majorItem, specialty, rasiermesser"
+			  
+			level=				"5"
+			frequency=			"common"
+
+			value=				"10000"
+			mass=				"3000"
+			  
+			description=		"The Akan 30 is a powerful cannon designed by the Rasiermesser Corporation."
+			>
+
+		<Image imageID="&rsItemsRasiermesser3;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"10"
+				powerUse=			"20"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itAkan30CannonShell;"
+						type=			"missile"
+
+						damage=			"blast:3d12; momentum:2; WMD:5"
+						missileSpeed=	"50"
+						lifetime=		"120"
+
+						effect=			"&efAkanCannonShell;"
+						sound=			"&snRecoillessCannon;"
+						>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDualFlenserCannon;"
+			name=				"dual Flenser cannon"
+			attributes=			"commonwealth, majorItem, rasiermesser"
+			  
+			level=				"5"
+			frequency=			"rare"
+
+			value=				"7500"
+			mass=				"6000"
+			  
+			description=		"The ultimate kinetic weapon, 60% more powerful than the AK505 Ballista."
+			>
+
+		<Image imageID="&rsItemsRasiermesser3;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				configuration=		"dual"
+				damage=				"kinetic:4d8; momentum:2; WMD:3"
+				fireRate=			"16"
+				missileSpeed=		"90"
+				lifetime=			"50"
+				powerUse=			"300"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itIonCannon;"
+			name=				"EMP cannon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"5"
+			frequency=			"rare"
+
+			value=				"8200"
+			mass=				"2000"
+			  
+			description=		"This cannon shoots out a stream of ionized particles that disrupts the control systems on most starships."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:4d6; EMP:3"
+				fireRate=			"20"
+				lifetime=			"30"
+				powerUse=			"200"
+
+				effect=				"&efIonizingBeam;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itLancerCannon;"
+			name=				"lancer cannon"
+			attributes=			"bushido, commonwealth, energyWeapon, majorItem"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+
+			value=				"12000"
+			mass=				"3000"
+			  
+			description=		"The lancer cannon is a high-powered beam weapon."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				repeating=			"4"
+				damage=				"particle:1d4+1"
+				fireRate=			"18"
+				lifetime=			"60"
+				powerUse=			"300"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMakayevLauncher;"
+			name=				"Makayev launcher"
+			attributes=			"commonwealth, majorItem, makayev"
+			  
+			level=				"5"
+			frequency=			"common"
+
+			value=				"6000"
+			mass=				"1000"
+			  
+			description=		"The Makayev consists of fast launch tubes compatible with the Strelka series of light missiles."
+			>
+
+		<Image imageID="&rsItemsMakayev2;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				configuration=		"alternating"
+				fireRate=			"6"
+				powerUse=			"20"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itStrelkaWhite;"/>
+				<Missile ammoID="&itStrelkaGreen;"/>
+				<Missile ammoID="&itStrelkaRed;"/>
+				<Missile ammoID="&itStrelkaBlack;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMarkIHowitzer;"
+			name=				"mark I howitzer"
+			attributes=			"commonwealth, howitzer, majorItem, makayev"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+
+			value=				"12000"
+			mass=				"4500"
+			  
+			description=		"The mark I howitzer fires heavy, high-explosive shells."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:5d12; momentum:3; WMD:4"
+				fireRate=			"40"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"240"
+				recoil=				"2"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itDualParticleBeamWeapon;"
+			name=				"dual particle beam weapon"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"5"
+			frequency=			"common"
+
+			value=				"12000"
+			mass=				"3500"
+			  
+			description=		"A modified linear accelerator fires energetic particles at its target."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"dual"
+				damage=				"particle:1d8+1"
+				fireRate=			"10"
+				lifetime=			"40"
+				powerUse=			"300"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniParticleCannon;"
+			name=				"particle beam turret"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem"
+			  
+			level=				"5"
+			frequency=			"rare"
+
+			value=				"12000"
+			mass=				"2000"
+			  
+			description=		"A single particle beam weapon mounted on an automated turret."
+			>
+
+		<Image imageID="&rsItemsBushido1;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"particle:1d8+1"
+				fireRate=			"12"
+				lifetime=			"40"
+				powerUse=			"200"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itNeutronBlaster;"
+			name=				"Shuriken neutron blaster"
+			attributes=			"bushido, commonwealth, energyWeapon, majorItem, specialty"
+			  
+			level=				"5"
+			frequency=			"common"
+
+			value=				"8500"
+			mass=				"2000"
+			  
+			description=		"The fastest weapon in its price range, this Bushido Corp design uses a double chamber to fire high-energy neutrons."
+			>
+
+		<Image imageID="&rsItemsBushido1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"alternating"
+				damage=				"particle:2d4"
+				fireRate=			"5"
+				lifetime=			"30"
+				powerUse=			"200"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itShtormRepeater;"
+			name=				"Moskva 33 repeater"
+			attributes=			"commonwealth, majorItem, makayev, specialty"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+
+			value=				"10000"
+			mass=				"4000"
+			  
+			description=		"One of the most successful Makayev designs, the Moskva repeater fires a cluster of high-explosive shells."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				repeating=			"3"
+				repeatingDelay=		"1"
+				damage=				"blast:1d6+1; momentum1; WMD3"
+				fireRate=			"15"
+				missileSpeed=		"40"
+				lifetime=			"40"
+				powerUse=			"250"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot angle="3d5-9"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itHeavySlamCannon;"
+			name=				"heavy slam cannon"
+			attributes=			"commonwealth, majorItem, makayev"
+			  
+			level=				"5"
+			frequency=			"uncommon"
+
+			value=				"9600"
+			mass=				"4500"
+			  
+			description=		"This is a heavier and more powerful version of the slam cannon."
+			>
+
+		<Image imageID="&rsItemsMakayev1;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:4d6; momentum:2; WMD:5"
+				fireRate=			"20"
+				missileSpeed=		"50"
+				lifetime=			"60"
+				powerUse=			"240"
+
+				effect=				"&efSlamCannonShell;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itXRayLaserCannon;"
+			name=				"dual x-ray laser cannon"
+			attributes=			"bushido, commonwealth, energyWeapon, majorItem, specialty"
+			  
+			level=				"5"
+			frequency=			"rare"
+
+			value=				"10000"
+			mass=				"1500"
+			  
+			description=		"A nuclear-powered laser source is the core of this weapon system."
+			>
+
+		<Image imageID="&rsItemsBushido1;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"dual"
+				damage=				"laser:8d4"
+				fireRate=			"16"
+				lifetime=			"30"
+				powerUse=			"200"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itAkan600Turret;"
+			name=				"Akan 600 turret"
+			attributes=			"commonwealth, majorItem, military, specialty, rasiermesser"
+			  
+			level=				"6"
+			frequency=			"uncommon"
+
+			value=				"25000"
+			mass=				"5000"
+			  
+			description=		"This weapons places an Akan 30 cannon on a computer-controlled, omnidirectional turret."
+			>
+
+		<Image imageID="&rsItemsRasiermesser3;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				omnidirectional=	"true"
+
+				fireRate=			"16"
+				powerUse=			"30"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itAkan30CannonShell;"
+						type=			"missile"
+
+						damage=			"blast:3d12; momentum:2; WMD:5"
+						missileSpeed=	"50"
+						lifetime=		"120"
+						hitPoints=		"10"
+
+						effect=			"&efAkanCannonShell;"
+						sound=			"&snRecoillessCannon;"
+						>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDragonflyMissileSystem;"
+			name=				"Dragonfly missile system"
+			attributes=			"commonwealth, EI, majorItem, military, specialty"
+			  
+			level=				"6"
+			frequency=			"uncommon"
+
+			value=				"22000"
+			mass=				"1200"
+			  
+			description=		"This cheap cartridge missile launcher fires three tracking micro-missiles."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="96" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				configuration=		"spread3"
+				fireRate=			"40"
+				powerUse=			"30"
+				multiTarget=		"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itDragonflyCartridge;"
+						type=			"missile"
+						lifetime=		"120"
+						damage=			"blast:5d6; momentum:2; WMD:6"
+						missileSpeed=	"50"
+						maneuverRate=	"18"
+						 
+						effect=			"&efBlastShellDefault;"
+						sound=			"&snRecoillessCannon;"
+						>
+
+					<Effect>
+						<ParticleSystem
+								style=				"jet"
+								fixedPos=			"true"
+								emitRate=			"40"
+								tangentSpeed=		"-3-3"
+								particleLifetime=	"10-30"
+								XformTime=			"10"
+								>
+							<ParticleEffect>
+								<Particle
+										style=			"plain"
+										minWidth=		"1"
+										maxWidth=		"3"
+										primaryColor=	"#ffffc0"
+										secondaryColor=	"#7e7e74"
+										/>
+							</ParticleEffect>
+						</ParticleSystem>
+						
+						<Ray
+								style=			"smooth"
+								shape=			"diamond"
+								intensity=		"40"
+								primaryColor=	"#feffa1"
+								secondaryColor=	"#f76e24"
+								>
+							<Events>
+								<GetParameters>
+									(block (damageHP)
+										(setq damageHP (@ gData 'damageHP))
+					
+										{
+											length:	(mathScale damageHP	2 30 (divide (@ gData 'speed) 2) (@ gData 'speed) 50)
+											width: (mathScale damageHP 2 30 12 36 50)
+											}
+										)
+								</GetParameters>
+							</Events>
+						</Ray>
+					</Effect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMarkIIIHowitzer;"
+			name=				"mark III howitzer"
+			attributes=			"commonwealth, howitzer, majorItem, makayev"
+			  
+			level=				"6"
+			frequency=			"common"
+
+			value=				"25000"
+			mass=				"5000"
+			  
+			description=		"This is an improved version of the mark I howitzer."
+			>
+
+		<Image imageID="&rsItemsMakayev3;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:8d12; momentum3; WMD4"
+				fireRate=			"40"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"360"
+				recoil=				"2"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itSAR10Cannon;"
+			name=				"SAR/10 cannon"
+			attributes=			"commonwealth, majorItem, military, pacificDefense"
+			  
+			level=				"6"
+			frequency=			"rare"
+
+			value=				"20000"
+			mass=				"3000"
+			  
+			description=		"The SAR/10 was developed in the 2360s as an alternative to the TeV 9."
+			>
+
+		<Image imageID="&rsItems6;" imageX="96" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:2d8; momentum:1; WMD:1"
+				fireRate=			"10"
+				missileSpeed=		"70"
+				lifetime=			"60"
+				powerUse=			"300"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itTeV9Blaster;"
+			name=				"TeV 9 blaster"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem, military"
+			  
+			level=				"6"
+			frequency=			"common"
+
+			value=				"23000"
+			mass=				"4000"
+			  
+			description=		"This versatile weapon, developed by Earth Industries, was used in early Centurion heavy gunship designs."
+			>
+
+		<Image imageID="&rsItemsEI2;" imageX="0" imageY="288" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"particle:5d8"
+				fireRate=			"15"
+				lifetime=			"40"
+				powerUse=			"300"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itHanzoBlaster;"
+			name=				"Hanzo blaster"
+			attributes=			"bushido, commonwealth, energyWeapon, majorItem, military, specialty"
+			  
+			level=				"7"
+			frequency=			"rare"
+			  
+			value=				"40000"
+			mass=				"4000"
+
+			description=		"The top-of-the-line weapon manufactured by the Bushido corporation. This weapon consists of dual particle weapons linked by a high-speed control system."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"alternating"
+				damage=				"particle:3d8+3"
+				fireRate=			"6"
+				lifetime=			"30"
+				powerUse=			"600"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itLightIonBlaster;"
+			name=				"light ion blaster"
+			attributes=			"commonwealth, EI, energyWeapon, military, majorItem"
+			  
+			level=				"7"
+			frequency=			"common"
+			  
+			value=				"50000"
+			mass=				"3000"
+
+			description=		"EI consistently denies rumors that it used stolen Ares schematics to develop this line of ion weapons."
+			>
+
+		<Image imageID="&rsItems7;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:4d6"
+				fireRate=			"10"
+				lifetime=			"30"
+				powerUse=			"500"
+
+				effect=				"&efEIBlasterBeam;"
+				fireEffect=			"&efEIBlasterFire;"
+				hitEffect=			"&efEIBlasterHit;" 
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itStarCannon;"
+			name=				"Katana star cannon"
+			attributes=			"bushido, commonwealth, energyWeapon, majorItem, military, specialty"
+			  
+			level=				"7"
+			frequency=			"common"
+
+			value=				"62000"
+			mass=				"5000"
+			  
+			description=		"The star cannon fires a stream of high-energy ions that continue to cause damage as they punch through armor."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:4d6-1"
+				fireRate=			"14"
+				lifetime=			"40"
+				passthrough=		"50"
+				powerUse=			"750"
+
+				effect=				"&efStarCannonBeam;"
+				fireEffect=			"&efStarCannonFire;"
+				hitEffect=			"&efStarCannonHit;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itMarkVHowitzer;"
+			name=				"mark V howitzer"
+			attributes=			"commonwealth, howitzer, majorItem, makayev, military"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+
+			value=				"61000"
+			mass=				"6000"
+			  
+			description=		"The mark V howitzer fires a light thermonuclear shell."
+			>
+
+		<Image imageID="&rsItemsMakayev3;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:8d12; momentum:3; WMD:4"
+				fireRate=			"40"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"600"
+				recoil=				"2"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itNAMIMineLauncher;"
+			name=				"NAMI mine launcher"
+			attributes=			"commonwealth, majorItem, military, NAMI"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+
+			value=				"30000"
+			mass=				"2000"
+			  
+			description=		"The NAMI mine launcher is used by the Commonwealth Fleet to defend colonies in Ares space."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"40"
+				powerUse=			"30"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itStaticMine;"/>
+				<Missile ammoID="&itTrackingMine;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDualTeV9Blaster;"
+			name=				"dual TeV 9 blaster"
+			attributes=			"commonwealth, EI, energyWeapon, majorItem, military"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+
+			value=				"48000"
+			mass=				"9000"
+			  
+			description=		"Two TeV 9 blasters linked by a common fire control."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="0" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				configuration=		"dual"
+				damage=				"particle:5d8"
+				fireRate=			"15"
+				lifetime=			"40"
+				powerUse=			"600"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniTeV9Blaster;"
+			name=				"omnidirectional TeV 9 blaster"
+			attributes=			"commonwealth, EI, energyWeapon, military, majorItem"
+			  
+			level=				"7"
+			frequency=			"rare"
+
+			value=				"64000"
+			mass=				"5000"
+			  
+			description=		"A single TeV 9 blaster mounted on an automated turret."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"particle:5d8"
+				fireRate=			"15"
+				lifetime=			"40"
+				powerUse=			"400"
+
+				effect=				"&efParticleBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itDualSAR10Cannon;"
+			name=				"dual SAR/10 cannon"
+			attributes=			"commonwealth, majorItem, military, pacificDefense"
+			  
+			level=				"7"
+			frequency=			"common"
+
+			value=				"45000"
+			mass=				"5000"
+			  
+			description=		"After the Ares onslaught of 2372, the Fleet upgraded its Centurion gunships to this thermonuclear cannon."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+				configuration=		"dual"
+
+				damage=				"thermo:2d8; momentum:1; WMD:1"
+				fireRate=			"14"
+				missileSpeed=		"70"
+				lifetime=			"60"
+				powerUse=			"600"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itSAR40Cannon;"
+			name=				"SAR/40 cannon"
+			attributes=			"commonwealth, majorItem, military, pacificDefense"
+			  
+			level=				"7"
+			frequency=			"uncommon"
+
+			value=				"48000"
+			mass=				"5000"
+			  
+			description=		"This is a heavier version of the SAR/10 thermonuclear cannon."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:3d10; momentum:1; WMD:4"
+				fireRate=			"14"
+				missileSpeed=		"70"
+				lifetime=			"60"
+				powerUse=			"600"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itThermoCannon;"
+			name=				"thermo cannon"
+			attributes=			"bushido, commonwealth, majorItem, military, specialty"
+			  
+			level=				"7"
+			frequency=			"common"
+
+			value=				"32000"
+			mass=				"5000"
+			  
+			description=		"Produced in great numbers in the Syrtis War, the cannon is now common throughout the Outer Realm."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="192" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"10"
+				powerUse=			"50"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itThermoCannonShell;"
+						type=			"missile"
+
+						damage=			"thermo:6d12; momentum2; WMD5"
+						missileSpeed=	"60"
+						hitPoints=		"30"
+						lifetime=		"100"
+
+						effect=			"&efThermoCannonShell;"
+						sound=			"&snRecoillessCannon;"
+						>
+				</Missile>
+			</Missiles>
+
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itTritiumCannon;"
+			name=				"tritium cannon"
+			attributes=			"commonwealth, majorItem, military, NAMI"
+			  
+			level=				"7"
+			frequency=			"common"
+
+			value=				"65000"
+			mass=				"5000"
+			  
+			description=		"The tritium shells fired by this cannon detonate on contact in a thermonuclear explosion."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:5d12; momentum:2; WMD:3"
+				fireRate=			"20"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"500"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itFusionfireHowitzer;"
+			name=				"Fusionfire howitzer"
+			attributes=			"commonwealth, howitzer, majorItem, military, NAMI"
+			  
+			level=				"8"
+			frequency=			"common"
+
+			value=				"100000"
+			mass=				"6000"
+			  
+			description=		"This venerable weapon design is still common at the edge of Human Space."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:11d12; momentum:3; WMD:4"
+				fireRate=			"40"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"1200"
+				recoil=				"2"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itIonBlaster;"
+			name=				"ion blaster"
+			attributes=			"commonwealth, EI, energyWeapon, military, majorItem"
+			  
+			level=				"8"
+			frequency=			"common"
+			  
+			value=				"85000"
+			mass=				"4000"
+
+			description=		"The ion blaster fires a bolt of ionized particles."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:11d6"
+				fireRate=			"20"
+				lifetime=			"30"
+				powerUse=			"1000"
+
+				effect=				"&efEIBlasterBeam;"
+				fireEffect=			"&efEIBlasterFire;"
+				hitEffect=			"&efEIBlasterHit;" 
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itIonFlameCannon;"
+			name=				"ion flame cannon"
+			attributes=			"bushido, commonwealth, energyWeapon, majorItem, military"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+
+			value=				"100000"
+			mass=				"3000"
+			  
+			description=		"The ion flame cannon fires multiple ion blasts in an arc in front of the ship."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:1d6+2"
+				fireRate=			"16"
+				lifetime=			"20"
+				powerUse=			"1000"
+
+				effect=				"&efIonBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="0" posRadius="0" angle="0"/>
+				<Shot posAngle="0" posRadius="0" angle="-8"/>
+				<Shot posAngle="0" posRadius="0" angle="-5"/>
+				<Shot posAngle="0" posRadius="0" angle="-2"/>
+				<Shot posAngle="0" posRadius="0" angle="2"/>
+				<Shot posAngle="0" posRadius="0" angle="5"/>
+				<Shot posAngle="0" posRadius="0" angle="8"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itRasiermesserLauncher;"
+			name=				"Rasiermesser launcher"
+			attributes=			"commonwealth, majorItem, military, rasiermesser"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+
+			value=				"70000"
+			mass=				"3000"
+			  
+			description=		"After the success of the SmartCannon, the Rasiermesser corporation developed a line of missiles for the military."
+			>
+
+		<Image imageID="&rsItemsRasiermesser4;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"16"
+				powerUse=			"100"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itGotha10Missile;"/>
+				<Missile ammoID="&itGotha400Seeker;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniThermoCannon;"
+			name=				"omnidirectional thermo cannon"
+			attributes=			"bushido, commonwealth, majorItem, military, specialty"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+
+			value=				"165000"
+			mass=				"6000"
+			  
+			description=		"This is a modified thermo cannon mounted on an automated turret."
+			>
+
+		<Image imageID="&rsItemsBushido2;" imageX="288" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				omnidirectional=	"true"
+
+				fireRate=			"16"
+				powerUse=			"150"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itThermoCannonShell;"
+						type=			"missile"
+
+						damage=			"thermo:6d12; momentum2; WMD5"
+						missileSpeed=	"60"
+						hitPoints=		"30"
+						lifetime=		"100"
+
+						effect=			"&efThermoCannonShell;"
+						sound=			"&snRecoillessCannon;"
+						>
+				</Missile>
+			</Missiles>
+
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itTM7Cannon;"
+			name=				"TM7 multitarget cannon"
+			attributes=			"commonwealth, majorItem, military, taikon"
+			  
+			level=				"8"
+			frequency=			"uncommon"
+
+			value=				"120000"
+			mass=				"2000"
+			  
+			description=		"Taikon's TM7 cannon launches warheads that split into three independent missiles."
+			>
+
+		<Image imageID="&rsItemsTaikon1;" imageX="96" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"16"
+				powerUse=			"50"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itTM7Warhead;"
+						type=			"missile"
+
+						missileSpeed=	"40"
+						lifetime=		"12"
+						hitPoints=		"30"
+
+						failsafe=		"5"
+
+						sound=			"&snMissileLauncher;"
+						>
+
+					<Effect>
+						<Image imageID="&rsWeaponTM7HD;" imageX="0" imageY="0" imageWidth="32" imageHeight="32" rotationCount="120" rotationColumns="12"/>
+						
+						<Group angleOffset="180" radiusOffset="8">
+							<ParticleSystem
+									style=				"jet"
+									fixedPos=			"true"
+									emitRate=			"80"
+									tangentSpeed=		"3d2-3"
+									particleLifetime=	"20-60"
+									XformTime=			"20"
+									>
+								<ParticleEffect>
+									<Particle
+											style=			"plain"
+											minWidth=		"1"
+											maxWidth=		"4"
+											primaryColor=	"#ffffc0"
+											secondaryColor=	"#7e7e74"
+											/>
+								</ParticleEffect>
+							</ParticleSystem>
+				
+							<Ray
+									style=			"smooth"
+									shape=			"tapered"
+									length=			"50"
+									width=			"30"
+									intensity=		"40"
+									primaryColor=	"#ffffc0"
+									secondaryColor=	"#7e7e74"
+									/>
+						</Group>
+					</Effect>
+
+					<HitEffect 
+							sound=	"&snArmorHit1;"
+							>
+						<ParticleExplosion
+								particleCount=		"2d4"
+								particleSpeed=		"25"
+								particleLifetime=	"20"
+								>
+							<Image imageID="&rsDebris1;" imageX="0" imageY="0" imageWidth="4" imageHeight="4" imageFrameCount="8" imageTicksPerFrame="3"/>
+						</ParticleExplosion>
+					</HitEffect>
+
+					<Fragment 
+							count=				"3"
+							type=				"missile"
+
+							damage=				"thermo:5d12; momentum:3; WMD:6"
+							missileSpeed=		"50"
+							lifetime=			"60"
+							maneuverRate=		"9"
+
+							multiTarget=		"true"
+							autoAcquireTarget=	"true"
+							>
+
+						<Effect>
+							<Image imageID="&rsWeaponTM7FragmentHD;" imageX="0" imageY="0" imageWidth="16" imageHeight="16" rotationCount="120" rotationColumns="12"/>
+						</Effect>
+					</Fragment>
+				</Missile>
+			</Missiles>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itHeavyIonBlaster;"
+			name=				"heavy ion blaster"
+			attributes=			"commonwealth, EI, energyWeapon, military, majorItem"
+			  
+			level=				"9"
+			frequency=			"common"
+			  
+			value=				"170000"
+			mass=				"4500"
+
+			description=		"This is a more powerful version of the ion blaster."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:24d6"
+				fireRate=			"30"
+				lifetime=			"30"
+				powerUse=			"1500"
+
+				effect=				"&efEIBlasterBeam;"
+				fireEffect=			"&efEIBlasterFire;"
+				hitEffect=			"&efEIBlasterHit;" 
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itNAMIHeavyLauncher;"
+			name=				"NAMI heavy launcher"
+			attributes=			"commonwealth, majorItem, military, NAMI"
+			  
+			level=				"9"
+			frequency=			"uncommon"
+
+			value=				"140000"
+			mass=				"8000"
+			  
+			description=		"The NAMI heavy launcher is designed for the capital ships of the Commonwealth Fleet."
+			>
+
+		<Image imageID="&rsItemsNAMI4;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"40"
+				powerUse=			"100"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itS3Missile;"/>
+				<Missile ammoID="&itM2Missile;"/>
+				<Missile ammoID="&itM5Missile;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniIonBlaster;"
+			name=				"omnidirectional ion blaster"
+			attributes=			"commonwealth, EI, energyWeapon, military, majorItem"
+			  
+			level=				"9"
+			frequency=			"rare"
+
+			value=				"190000"
+			mass=				"5000"
+			  
+			description=		"Similar in design to the ion blaster, but mounted on an automated turret."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"ion:11d6"
+				fireRate=			"24"
+				lifetime=			"30"
+				powerUse=			"2000"
+
+				effect=				"&efEIBlasterBeam;"
+				fireEffect=			"&efEIBlasterFire;"
+				hitEffect=			"&efEIBlasterHit;" 
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itSAR200AdvancedCannon;"
+			name=				"SAR/200 advanced cannon"
+			attributes=			"commonwealth, majorItem, military, pacificDefense"
+			  
+			level=				"9"
+			frequency=			"rare"
+
+			value=				"200000"
+			mass=				"15000"
+			  
+			description=		"The recently introduced SAR/200 cannon is designed to defend carriers against Ares gunships."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:7d12; momentum:2; WMD:2"
+				fireRate=			"12"
+				missileSpeed=		"70"
+				lifetime=			"60"
+				powerUse=			"2000"
+				deviceSlots=		"2"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itAdvancedTritiumCannon;"
+			name=				"advanced tritium cannon"
+			attributes=			"commonwealth, majorItem, military, NAMI"
+			  
+			level=				"9"
+			frequency=			"uncommon"
+
+			value=				"190000"
+			mass=				"5000"
+			  
+			description=		"This improved version can fire at more than triple the rate of the tritium cannon. Unfortunately, the cannon overheats quickly if fired continuously."
+			>
+
+		<Image imageID="&rsItemsNAMI3;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"thermo:5d12; momentum:2; WMD:3"
+				fireRate=			"6"
+				missileSpeed=		"40"
+				lifetime=			"60"
+				powerUse=			"2000"
+
+				counter=			"temperature"
+				counterActivate=	"1"
+				counterUpdate=		"-1"
+				counterUpdateRate=	"5"
+
+				effect=				"&efThermoShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<ItemType UNID="&itIM90Blaster;"
+			name=				"IM90 multitarget blaster"
+			attributes=			"commonwealth, energyWeapon, majorItem, military, taikon"
+			  
+			level=				"10"
+			frequency=			"rare"
+
+			value=				"440000"
+			mass=				"16000"
+			  
+			description=		"Taikon's IM90 blaster mounts three independently targeted gun barrels, each firing a blast of ion energy."
+			>
+
+		<Image imageID="&rsItemsTaikon1;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				omnidirectional=	"true"
+				multiTarget=		"true"
+				powerUse=			"3000"
+
+				type=				"beam"
+				damage=				"ion:6d6"
+				fireRate=			"20"
+				lifetime=			"30"
+
+				effect=				"&efIonBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+			<Configuration aimTolerance="6">
+				<Shot angle="-3"/>
+				<Shot angle="0"/>
+				<Shot angle="3"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itPlasmaCannon;"
+			name=				"plasma cannon"
+			attributes=			"commonwealth, EI, majorItem, military"
+			  
+			level=				"10"
+			frequency=			"rare"
+
+			value=				"400000"
+			mass=				"2000"
+			  
+			description=		"This weapon emits a powerful plasma burst that can incinerate an unprotected ship."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"plasma:60; WMD:4"
+				
+				fireRate=			"20"
+
+				powerUse=			"3000"
+				sound=				"&snRecoillessCannon;"
+				>
+			
+			<ParticleSystem
+					style=				"comet"
+					emitLifetime=		"1"
+					emitRate=			"100"
+					emitSpeed=			"35-45"
+					emitWidth=			"50"
+					spreadAngle=		"3"
+					
+					particleLifetime=	"60"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+			
+			<Effect>
+				<ParticleSystem
+						style=				"jet"
+						fixedPos=			"true"
+						emitRate=			"2-4"
+						tangentSpeed=		"-8-8"
+						particleLifetime=	"10"
+						XformTime=			"30"
+						>
+					<ParticleEffect>
+						<Orb
+								instance=			"owner"
+						
+								style=				"smooth"
+								animate=			"fade"
+								radius=				"20"
+								lifetime=			"10"
+								intensity=			"20"
+						
+								blendMode=			"screen"
+								primaryColor=		"#feff00"
+								secondaryColor=		"#ff7f00"
+								/>
+					</ParticleEffect>
+				</ParticleSystem>
+			</Effect>
+		</Weapon>
+	</ItemType>
+<!-- StKatharines.xml -->
+<!-- Stormhound.xml -->
+<!-- SungCitadel.xml -->
+<!-- SungFortress.xml -->
+<!-- SungSlaveCamp.xml -->
+<!-- SungSlavers.xml -->
+<ItemType UNID="&itQianlongArchcannon;"
+			name=				"Qianlong archcannon"
+			level=				"9"
+			value=				"220000"
+			mass=				"2500"
+			frequency=			"notrandom"
+			attributes=			"MajorItem; Military; NotForSale; qianlongArchcannon; sungSlavers"
+
+			charges=			"32"
+			description=		"The pinnacle of Sung Slaver technology, the Qianlong archcannon fires antimatter shells. The archcannon recharges with longzhu spheres."
+			>
+
+		<Image imageID="&rsItems9;" imageX="96" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"antimatter:8d12; WMD:7"
+				fireRate=			"16"
+				missileSpeed=		"40"
+				lifetime=			"113"
+				powerUse=			"100"
+				charges=			"true"
+
+				effect=				"&efQianlongProjectile;"
+				fireEffect=			"&efQianlongFire;"
+				hitEffect=			"&efQianlongHit;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+
+		<Events>
+			<OnAIUpdate>
+				(if (and (leq (itmGetCharges gItem) 256)
+						(objGetItems gSource "u +LongzhuSphere;"))
+					(block Nil
+						(objFireItemEvent gSource gItem 'Recharge { charges:256 })
+						(objRemoveItem gSource (itmCreate &itLongzhuSphere; 1))
+						)
+					)
+			</OnAIUpdate>
+			
+			<Recharge>
+				; aCharges = amount to recharge
+				; Returns the amount recharged
+				(block (
+					(newCharges (@ gData 'charges))
+					(rechargeNeeded (min newCharges (subtract 9999 (itmGetCharges gItem))))
+					)
+					(if (gr rechargeNeeded 0)
+						(shpRechargeItem gSource gItem rechargeNeeded)
+						)
+					rechargeNeeded
+					)
+			</Recharge>
+		</Events>
+
+		<Language>
+			<Text id="core.charges">charge(s)</Text>
+		</Language>
+	</ItemType>
+<ItemType UNID="&itParticleBoltCannon;"
+			name=				"Nandao bolt cannon"
+			level=				"6"
+			value=				"25000"
+			mass=				"2000"
+			frequency=			"rare"
+			numberAppearing=	"1"
+			attributes=			"MajorItem; Military; NotForSale; sungSlavers"
+
+			description=		"The Nandao bolt cannon fires a sublight pulse of heavy ions."
+			>
+
+		<Image imageID="&rsItems6;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"30"
+				powerUse=			"40"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itParticleBoltCartridge;"
+						type=			"missile"
+
+						lifetime=		"80"
+						damage=			"particle:15d8; WMD:4"
+
+						missileSpeed=	"60"
+						sound=			"&snRecoillessCannon;"
+						>
+
+					<Effect>
+						<Starburst
+								spikeCount=		"1d6+2"
+								spikeLength=	"30-50"
+								primaryColor=	"#65ff2c"
+								secondaryColor=	"#808417"
+								/>
+						
+						<Orb
+								style=			"smooth"
+								radius=			"40"
+								intensity=		"20"
+								primaryColor=	"#65ff2c"
+								secondaryColor=	"#65ff2c"
+								/>
+					</Effect>
+				</Missile>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<!-- Tenhove.xml -->
+<!-- TeratonResearch.xml -->
+<!-- Teratons.xml -->
+<ItemType UNID="&itKytrynBlaster;"
+			name=				"Kytryn blaster"
+			level=				"9"
+			value=				"220000"
+			mass=				"3000"
+			frequency=			"rare"
+			attributes=			"Alien; MajorItem; Military; Teraton"
+			unknownType=		"&itUnknownAlienDevice10;"
+
+			description=		"Kytryn blasters were created by the Teratons based on research on Iocrym technology."
+			>
+
+		<Image imageID="&rsItems9;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"particles"
+				damage=				"plasma:40; WMD5"
+				
+				fireRate=			"16"
+
+				powerUse=			"3000"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<ParticleSystem
+					style=				"amorphous"
+					emitRate=			"40"
+					emitSpeed=			"36-44"
+					emitLifetime=		"1"
+					spreadAngle=		"6"
+					
+					particleLifetime=	"80"
+					particleEffect=		"&efPlasmaParticleDefault;"
+					>
+			</ParticleSystem>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itKytrynLauncher;"
+			name=				"Kytryn launcher"
+			level=				"10"
+			value=				"350000"
+			mass=				"5000"
+			frequency=			"rare"
+			attributes=			"Alien; MajorItem; Military; Teraton"
+			unknownType=		"&itUnknownAlienDevice10;"
+
+			description=		"This Teraton weapon launches a Kytryn plasma pod warhead, which blossoms into a shell of plasma energy."
+			>
+
+		<Image imageID="&rsItems1;" imageX="0" imageY="480" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				fireRate=			"40"
+				powerUse=			"200"
+				launcher=			"true"
+				>
+
+			<Missiles>
+				<Missile ammoID="&itKytrynPlasmaSeed;"/>
+			</Missiles>
+		</Weapon>
+	</ItemType>
+<!-- Tinkers.xml -->
+<ItemType UNID="&itDualMarkIIIHowitzer;"
+			name=				"dual mark III howitzer"
+			attributes=			"cannotOrder, commonwealth, howitzer, majorItem, makayev, tinkers"
+
+			level=				"7"
+			value=				"47000"
+			mass=				"10000"
+			frequency=			"notRandom"
+			numberAppearing=	"1"
+
+			description=		"The Tinkers Guild has developed a technique for combining two mark III howitzers."
+			>
+
+		<Image imageID="&rsItemsMakayev3;" imageX="192" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				configuration=		"dual"
+				damage=				"blast:8d12; momentum3; WMD4"
+				fireRate=			"40"
+				missileSpeed=		"50"
+				lifetime=			"120"
+				powerUse=			"720"
+				recoil=				"4"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itOmniXRayLaserCannon;"
+			name=				"omnidirectional x-ray laser"
+			attributes=			"bushido, cannotOrder, commonwealth, energyWeapon, majorItem, tinkers"
+			  
+			level=				"5"
+			value=				"10000"
+			mass=				"2500"
+			frequency=			"notRandom"
+
+			description=		"The Tinkers Guild designed this nuclear-powered laser mounted on an omnidirectional turret."
+			>
+
+		<Image imageID="&rsItemsBushido1;" imageX="192" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				omnidirectional=	"true"
+				damage=				"laser:8d4"
+				fireRate=			"16"
+				lifetime=			"30"
+				powerUse=			"200"
+
+				effect=				"&efLaserBeamDefault;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+	</ItemType>
+<!-- Transcendence.xml -->
+<!-- UndergroundCaverns.xml -->
+<!-- UndergroundStructures.xml -->
+<!-- UrakWarlords.xml -->
+<ItemType UNID="&itUrakMassDriver;"
+			name=				"Urak mass driver"
+			level=				"3"
+			value=				"2100"
+			mass=				"6000"
+			frequency=			"rare"
+			attributes=			"MajorItem; NotForSale; Urak"
+
+			description=		"The Urak mass driver is a short-range dual kinetic cannon that shoots heavy metal slugs."
+
+			sortName=			"Urak.1.30"
+			>
+
+		<Image imageID="&rsItems3;" imageX="288" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"kinetic:1d6+1; momentum1"
+				fireRate=			"10"
+				missileSpeed=		"40"
+				lifetime=			"38"
+				powerUse=			"60"
+
+				effect=				"&efKineticBoltDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90" posRadius="12" angle="3d5-9"/>
+				<Shot posAngle="270" posRadius="12" angle="3d5-9"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itUrakMassDriverAdvanced;"
+			name=				"advanced Urak mass driver"
+			level=				"4"
+			value=				"4600"
+			mass=				"4500"
+			frequency=			"rare"
+			attributes=			"MajorItem; NotForSale; Urak"
+
+			description=		"The advanced version of the Urak mass driver fires high-explosive shells."
+
+			sortName=			"Urak.1.20"
+			>
+
+		<Image imageID="&rsItems4;" imageX="0" imageY="192" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				damage=				"blast:1d6+1; momentum:1; WMD:4"
+				fireRate=			"14"
+				missileSpeed=		"40"
+				lifetime=			"38"
+				powerUse=			"100"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Configuration aimTolerance="5">
+				<Shot posAngle="90" posRadius="12" angle="3d5-9"/>
+				<Shot posAngle="270" posRadius="12" angle="3d5-9"/>
+			</Configuration>
+		</Weapon>
+	</ItemType>
+<ItemType UNID="&itUrakHowitzer;"
+			name=				"Urak howitzer"
+			level=				"5"
+			value=				"7000"
+			mass=				"4500"
+			frequency=			"veryrare"
+			numberAppearing=	"1"
+			attributes=			"Howitzer; MajorItem; NotForSale; Urak"
+
+			description=		"Urak howitzers fire high-explosive shells that explode on proximity to their target."
+
+			sortName=			"Urak.1.10"
+			>
+
+		<Image imageID="&rsItems5;" imageX="0" imageY="96" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"missile"
+
+				fireRate=			"36"
+				missileSpeed=		"50"
+				lifetime=			"90"
+				powerUse=			"200"
+				recoil=				"2"
+
+				effect=				"&efBlastShellDefault;"
+				sound=				"&snRecoillessCannon;"
+				>
+
+			<Fragment 
+					count=			"30-36"
+					type=			"missile"
+					lifetime=		"10"
+					damage=			"blast:1d6; momentum:1; WMD:4"
+					missileSpeed=	"32-48"
+					>
+
+				<Effect>
+					<ImageAndTail 
+							imageID=			"&rsMissiles;" 
+							imageX=				"96" 
+							imageY=				"0" 
+							imageWidth=			"16" 
+							imageHeight=		"16"
+							imageFrameCount=	"2"
+							imageTicksPerFrame=	"2"
+
+							length=				"48"
+							width=				"3"
+							primaryColor=		"0xff, 0xff, 0xff"
+							secondaryColor=		"0xc0, 0xc2, 0x85"
+							/>
+				</Effect>
+			</Fragment>
+		</Weapon>
+	</ItemType>
+<!-- UsefulItems.xml -->
+<!-- Ventari.xml -->
+<ItemType UNID="&itIonDisruptor;"
+			name=				"ion disruptor"
+			attributes=			"energyWeapon, military, majorItem, notForSale, ventari"
+			  
+			level=				"7"
+			frequency=			"rare"
+
+			value=				"35000"
+			mass=				"3000"
+			  
+			description=		"The ion disruptor's beam can penetrate a ship's hull and ionize the delicate mechanisms of weapons and other devices."
+			>
+
+		<Image imageID="&rsItemsEI3;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				damage=				"ion:5d6; deviceDisrupt:2"
+				fireRate=			"20"
+				lifetime=			"30"
+				powerUse=			"500"
+
+				effect=				"&efEIDisruptorBeam;"
+				fireEffect=			"&efEIDisruptorFire;"
+				hitEffect=			"&efEIDisruptorHit;"
+				sound=				"&snLaserCannon;"
+				>
+		</Weapon>
+
+	</ItemType>
+<!-- Volcanic.xml -->
+<!-- Volkov.xml -->
+<!-- WeaponEnhancementItems.xml -->
+<!-- Worlds.xml -->
+<!-- Xenophobes.xml -->
+<ItemType UNID="&itXenophobeLancer;"
+			name=				"Xenophobe ion lancer"
+			level=				"7"
+			value=				"55000"
+			mass=				"4500"
+			frequency=			"rare"
+			attributes=			"EnergyWeapon; Military; MajorItem; NotForSale; NotStandard"
+
+			description=		"The Xenophobes developed this powerful ion weapon for their Worldships."
+			>
+
+		<Image imageID="&rsItems7;" imageX="288" imageY="0" imageWidth="96" imageHeight="96"/>
+
+		<Weapon
+				type=				"beam"
+
+				repeating=			"4"
+				damage=				"ion:1d8"
+				fireRate=			"16"
+				lifetime=			"60"
+				powerUse=			"650"
+
+				sound=				"&snLaserCannon;"
+				>
+
+			<Effect>
+				<Ray
+						style=			"jagged"
+						shape=			"straight"
+						length=			"72"
+						
+						primaryColor=	"#00d5ff"
+						secondaryColor=	"#006b80"
+						>
+					<Events>
+						<GetParameters>
+							(block (
+								(damageHP (@ gData 'damageHP))
+								)
+								{
+									width: (mathScale damageHP 10 140 20 40 50)
+									intensity: 80
+									}
+								)
+						</GetParameters>
+					</Events>
+				</Ray>
+			
+				<ParticlePattern
+						style=			"comet"
+						particleCount=	"200"
+						primaryColor=	"#00d5ff"
+						jitterLength=	"80-150"
+						>
+					<Events>
+						<GetParameters>
+							(block (
+								(damageHP (@ gData 'damageHP))
+								)
+
+								{
+									particleCount: (mathScale damageHP 10 140 100 300 50)
+									length: 72 ;(mathScale damageHP 10 140 60 220 50)
+									width: 9
+									}
+								)
+						</GetParameters>
+					</Events>
+				</ParticlePattern>
+			</Effect>
+		</Weapon>
+
+	</ItemType>
 </TranscendenceModule>
